@@ -17,12 +17,12 @@ textarea, #steps_count {font: inherit; color: black;}
 
 #sectionheader {
 
-	font: 25px arial;
+	font: 1.2em arial;
     background: #614e9b;
     padding: 10px;
     color: #fff !important;
     isplay: block;
-    inline-size: 450px; 
+    inline-size: 350px; 
     overflow: hidden;
     text-align: center;
 
