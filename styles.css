@@ -15,14 +15,23 @@ textarea, #steps_count {font: inherit; color: black;}
 #contact, #contactshort {min-width: 20em;}
 .nowrap {white-space: nowrap;}
 
+#sectionheader {
+
+	font: 25px arial;
+    background: #614e9b;
+    padding: 10px;
+    color: #fff !important;
+    isplay: block;
+    inline-size: 450px; 
+    overflow: hidden;
+    text-align: center;
+
+}
+
 #sectionhead {
     font-size: 1.2em;
     background: #614e9b;
     padding: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
     color: #fff !important;
     display: block;
     inline-size: 250px; 
