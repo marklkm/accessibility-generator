@@ -21,7 +21,7 @@ textarea, #steps_count {font: inherit; color: black;}
     background: #614e9b;
     padding: 10px;
     color: #fff !important;
-    isplay: block;
+    display: block;
     inline-size: 350px; 
     overflow: hidden;
     text-align: center;
@@ -110,7 +110,7 @@ button, .toggle {
 	font-size: 80%;
 	vertical-align: super;
 }
-label {margin-right: 20px;}
+label {margin-right: 10px;}
 		
 
 /* IE hacks */
