@@ -153,7 +153,7 @@
 					<tr>
 						<td>
 							<div id="separateaccess" class="hide">
-								<input type="checkbox" name="separateaccess" value="route" id="separateaccess_yes" /><label for="separateaccess_yes">The step-free or wheelchair access is by a separate route.<span title="Often venues have a separate route into the venue for wheelchair users and those needing step free access. It's important to not assume a venue doesn't have step free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route">(?)</span></label>
+								<input type="checkbox" name="separateaccess" value="route" id="separateaccess_yes" /><label for="separateaccess_yes">The step-free or wheelchair access is by a separate route.<span title="Often events have a separate route into the events for wheelchair users and those needing step free access. It's important to not assume an event doesn't have step free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route">(?)</span></label>
 							</div>
 						</td>
 					</tr>
@@ -249,16 +249,33 @@
 							<input type="radio" name="hearingloop" value="" id="hearingloop_" /><label for="hearingloop_">&nbsp; unknown</label>
 						</td>
 					</tr>
+					
 					<tr id="isl">
 						<td><label>ISL interpreter?</label></td>
 						<td>
 							<input type="radio" name="isl" value="yes: an ISL interpreter" id="isl_yes" /><label for="isl_yes">&nbsp; yes</label>
-							<input type="radio" name="isl" value="no: An ISL interpreter" id="isl_no" /><label for="isl_no">&nbsp; no</label>
+							<input type="radio" name="isl" value="no: an ISL interpreter" id="isl_no" /><label for="isl_no">&nbsp; no</label>
 							<input type="radio" name="isl" value="reqad: an ISL interpreter" id="isl_reqad" /><label for="isl_reqad">&nbsp; by request in advance</label>
 							<input type="radio" name="isl" value="req: an ISL interpreter" id="isl_req" /><label for="isl_req">&nbsp; by request at the event</label>
 							<input type="radio" name="isl" value="" id="isl_" /><label for="isl_">&nbsp; unknown</label>
 						</td>
 					</tr>
+
+					<!-- add on -->
+
+					<tr id="social">
+						<td><label>Does your event have a question about accessibility requirements of attendee’s?</label><span title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event. Please tell us at least 2 weeks before the Trinity event. We need 2 weeks to arrange services such as sign language interpreters.">(?)</span></td>
+						<td>
+							<input type="radio" name="social" value="yes: a standard accessibility contact statement on all publicity" id="social_yes" /><label for="social_yes">&nbsp; yes</label>
+							<input type="radio" name="social" value="no: a standard accessibility contact statement on all publicity" id="social_no" /><label for="isl_no">&nbsp; no</label>
+
+							<input type="radio" name="social" value="" id="social_" /><label for="social_">&nbsp; unknown</label>
+							
+						</td>
+					</tr>
+					<!-- end -->
+
+
 					<tr id="quietspace">
 						<td><label>Designated quiet space?<span title="Events can be overwhelming for many people. Providing a quiet, sensory-friendly space is important so people can take a break from the main-event. Find out more about creating a sensory-friendly environment at the TCD Sense Project.">(?)</span></label><br>Visit <a href="https://linktr.ee/TCDSense" target="_blank">TCD Sense Project</a></td>
 						<td>
@@ -290,6 +307,8 @@
 						</td>
 					</tr>
 				</table>
+
+
 				<div id="film">
 					<h2 id="sectionhead">Film:</h2>
 					<table>
@@ -303,6 +322,7 @@
 						</tr>
 					</table>
 				</div>
+
 				<div id="filmhide" class="hide">
 					<table>
 						<tr id="subtitles">
@@ -356,14 +376,14 @@
 				<div><textarea name="comment" id="comment" placeholder="Details"></textarea></div>
 			</div>
 			<div>
-				<label>Please provide contact details for any access enquiries (if not included elsewhere):</label>
+				<label>Please provide contact details, i.e. event organiser and email address, for any access enquiries (if not included elsewhere):</label>
 				<input type="text" id="contact" name="contact">
 			</div>
 		</div>
 		
 		<div id="shortquestions" class="questions">
-			<h2 class="sectionhead">Access to venue</h2>
-			<div id="accessshort"><label>Does the venue have:</label>
+			<h2 class="sectionhead">Access to event</h2>
+			<div id="accessshort"><label>Does the event have:</label>
 				<input type="radio" name="accessshort" value="wa" id="accessshort_wa" />
 				<label for="accessshort_wa">Wheelchair access<span title="Wheelchair access requires flat access (no lip, transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room.">(?)</span></label>
 				<input type="radio" name="accessshort" value="sf" id="accessshort_sf" />
@@ -374,7 +394,7 @@
 				<label for="accessshort_">Unknown</label>
 			</div>
 			<div id="separateaccessshort" class="hide">
-				<input type="checkbox" name="separateaccessshort" value="route" id="separateaccessshort_yes" /><label for="separateaccessshort_yes">The step-free or wheelchair access is by a separate route.<span title="Often venues have a separate route into the venue for wheelchair users and those needing step free access. It's important to not assume a venue doesn't have step free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route">(?)</span></label>
+				<input type="checkbox" name="separateaccessshort" value="route" id="separateaccessshort_yes" /><label for="separateaccessshort_yes">The step-free or wheelchair access is by a separate route.<span title="Often events have a separate route into the events for wheelchair users and those needing step free access. It's important to not assume an event doesn't have step free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route">(?)</span></label>
 			</div>
 			<div id="stepsshort" class="hide">
 				<label for="stepsshort_data">How many steps<span id="separateshowshort"> into the main entrance</span>?<span title="Give a number of steps or a number of flights of stairs for instance, you can also state and further details (such as height; whether they are straight stairs or whether they have handrail here. If there is separate step free access please describe the main route.">(?)</span></label></td>
@@ -391,11 +411,24 @@
 				<span class="nowrap"><input type="checkbox" name="basicseatingshort" value="yes: basic seating" id="basicseatingshort" /><label for="basicseatingshort">Basic seating?</label></span>
 				<span class="nowrap"><input type="checkbox" name="wheelchairtoiletshort" value="yes: an accessible toilet" id="wheelchairtoiletshort" /><label for="wheelchairtoiletshort">Wheelchair accessible toilet?</label></span>
 				<span class="nowrap"><input type="checkbox" name="genderneutraltoiletshort" value="yes: a gender neutral toilet" id="genderneutraltoiletshort" /><label for="genderneutraltoiletshort">Gender-neutral toilet?<span title="at most events this would be a single cubicle facility">(?)</span></label></span>
+				
 				<span class="nowrap"><input type="checkbox" name="hearingloopshort: a hearing loop" value="yes" id="hearingloopshort" /><label for="hearingloopshort">Hearing loop?</label></span>
+				
 				<span class="nowrap"><input type="checkbox" name="islshort" value="yes: an isl interpreter" id="islshort" /><label for="islshort">isl interpreter?</label></span>
+
+				<!-- add on -->
+				<span class="nowrap"><input type="checkbox" name="islshort" value="yes: an isl interpreter" id="islshort" /><label for="islshort">test</label></span>
+				<!-- end -->
+
+				
 				<span class="nowrap"><input type="checkbox" name="quietspaceshort" value="yes: a designated quiet space" id="quietspaceshort" /><label for="quietspaceshort">Designated quiet space?<span title="At some events people provide a space that is designated as a quiet space where people can go if they need that. Examples where this is a good idea is where the event might be very emotional or triggering or where the main event is very loud and people might need a break for any number of reasons.">(?)</span></label></span>
 				<span class="nowrap"><input type="checkbox" name="parkingshort" value="yes: general car parking" id="parkingshort" /><label for="parkingshort">Parking nearby/onsite?</label></span>
-				<span class="nowrap"><input type="checkbox" name="bluebadgeshort" value="yes: blue badge parking" id="bluebadgeshort" /><label for="bluebadgeshort">Disabled Person's Parking</label></span>
+				
+				<span class="nowrap"><input type="checkbox" name="bluebadgeshort" value="yes: blue badge parking" id="bluebadgeshort" /><label for="bluebadgeshort">Disabled Person's Parking</label>
+				</span>
+
+
+
 				<span class="nowrap"><input type="checkbox" name="subtitlesshort" value="yes: subtitles" id="subtitlesshort" /><label for="subtitlesshort">Subtitles?</label></span>
 				<span class="nowrap"><input type="checkbox" name="ccshort" value="yes: closed caption" id="ccshort" /><label for="ccshort">Including closed caption?<span title="Closed caption are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)</span></label></span>
 				<span class="nowrap"><input type="checkbox" name="audiodescriptionshort" value="yes: audio description" id="audiodescriptionshort" /><label for="audiodescriptionshort">Including audio description?<span title="Audio description is description of what is happening on screen for those with sight impairments">(?)</span></label></span>

@@ -359,6 +359,7 @@ var generator = (function ($) {
 				'genderneutraltoilet',
 				'hearingloop',
 				'isl',
+				'social',
 				'quietspace',
 				'parking',
 				'bluebadge',
