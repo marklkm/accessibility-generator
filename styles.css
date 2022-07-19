@@ -15,6 +15,13 @@ textarea, #steps_count {font: inherit; color: black;}
 #contact, #contactshort {min-width: 20em;}
 .nowrap {white-space: nowrap;}
 
+/* space after radio buttons */
+input[type="radio"]{
+      margin-right: 5px;
+}
+
+
+/* sectionheader for the category headings */
 #sectionheader {
 
 	font: 1.2em arial;
