@@ -18,7 +18,11 @@ textarea, #steps_count {font: inherit; color: black;}
 /* space after radio buttons */
 input[type="radio"]{
       margin-right: 5px;
+      display: inline-block;
+      position: relative;
 }
+
+
 
 
 /* sectionheader for the category headings */

@@ -140,9 +140,6 @@
 		<!--The set of questions for the standard version of the form-->
 		<div id="questions" class="questions">
 
-			<div>
-
-
 
 
 				<h2 id="sectionhead"> <strong>Access to the event:</strong></h2>
@@ -152,7 +149,7 @@
 					<tr id="access">
 						<td><label>Does the event have:</label>
 
-							<input type="radio" class="radio inline" name="access" value="wa" id="access_wa" />
+							<input type="radio" class="radio inline" name="access collapseGroup" value="wa" id="access_wa" data-toggle="collapse"/>
 							<label for="access_wa">Wheelchair access<span title="Wheelchair access requires flat access (no lip/transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room.">(?)</span></label>
 							<input type="radio" class="radio inline" name="access" value="sf" id="access_sf" />
 							<label for="access_sf">Step-free access only<span title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway">(?)</span></label>
@@ -171,6 +168,8 @@
 					</tr>
 				</table>
 			</div>
+
+
 
 			<div id="steps" class="hide">
 				<h2 id="sectionhead">Steps:</h2>
@@ -497,28 +496,25 @@
 		
 	</div>
 
+
+
+
 	<!-- Restore any existing jQuery -->
 	<script type="text/javascript">
-
-		$(document).ready(function() {
-    $('#example').DataTable( {
-        dom: 'Bfrtip',
-        buttons: [
-            'copy', 'excelFlash', 'excel', 'pdf', 'print',{
-            text: 'Reload',
-            action: function ( e, dt, node, config ) {
-                dt.ajax.reload();
-            }
-        }
-        ]
-    } );
-} );
 		if (typeof originalJquery !== 'undefined') {
 			window.jQuery = originalJquery;
 		}
 		if (typeof originalDollar !== 'undefined') {
 			window.$ = originalDollar;
 		}
+
+		$('[name="collapseGroup"]').on('change', function() {  
+  if($(this).val() === "yes") {
+    $('#collapseOne').collapse('show');
+  } else {
+    $('#collapseOne').collapse('hide');
+  }
+});
 	</script>
 	
 </div>
