@@ -22,7 +22,7 @@ input[type="radio"]{
       position: relative;
 }
 
-
+.radioButton{display:block;position:absolute}
 
 
 /* sectionheader for the category headings */
