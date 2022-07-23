@@ -334,13 +334,42 @@ var generator = (function ($) {
 			// Process the 'no' options
 			s += generator.compileOptions (buckets.no, "There isn't ", 'or');
 			
+			
+
 			// Add comment, if any
+
+			var organiser = $('#organiser')[0].value.trim ();
+			s += generator.processText (s, organiser);
+
 			var comment = $('#comment')[0].value.trim ();
 			s += generator.processText (s, comment);
 			
 			// Add contact details, if any
 			var contact = $('#contact')[0].value.trim ();
-			s += generator.processText (s, contact, 'You can contact us about access on ');
+			s += generator.processText (s, contact, "Event organiser is: ");
+			
+			// Show the result
+			generator.showResult (s);
+
+			// organiser email
+			var conemail = $('#conemail')[0].value.trim ();
+			s += generator.processText (s, conemail, "Event organiser email is: ");
+			
+			// Show the result
+			generator.showResult (s);
+
+
+			// event name
+			var ename = $('#ename')[0].value.trim ();
+			s += generator.processText (s, ename, "Event name is: ");
+			
+			// Show the result
+			generator.showResult (s);
+
+
+			// event location
+			var elocation = $('#elocation')[0].value.trim ();
+			s += generator.processText (s, elocation, "Event location is: ");
 			
 			// Show the result
 			generator.showResult (s);
@@ -469,16 +498,23 @@ var generator = (function ($) {
 			// Process the checkbox options
 			s += generator.compileOptions (buckets.yes, 'There is ', 'and');
 			
+
+
 			// Add comment, if any
 			var comment = $('#commentshort')[0].value.trim();
 			s += generator.processText (s, comment);
-			
+		
+
+
 			// Add contact details, if any
 			var contact = $('#contactshort')[0].value.trim();
-			s += generator.processText (s, contact, 'You can contact us about access on ');
-			
+			s += generator.processText (s, contact, 'Event Organiser is ');
+
+
 			// Show the result
 			generator.showResult (s);
+
+
 		},
 		
 		
@@ -513,6 +549,35 @@ var generator = (function ($) {
 			return result;
 		},
 		
+
+				// Function to process text options for organiser
+		processText: function (s, organiser, prefix)
+		{
+			// Return nothing if no value
+			if (!organiser.length) {return '';}
+			
+			// Start the result
+			var result = '';
+
+		
+			
+			// Add newline if there is already other results
+			if (s.length) {result += "\n";}
+			
+			// Add prefix if required
+			if (prefix) {
+				result += prefix;
+			}
+			
+			// Add the organiser name
+			result += organiser;
+
+		
+			
+			// Return the result
+			return result;
+		},
+
 		
 		// Function to process text options
 		processText: function (s, comment, prefix)

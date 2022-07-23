@@ -7,15 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
 
-	<div class="container">
-
-<div id="accessstatementgenerator">
-
-
-	<!-- Stash any existing jQuery -->
+  	<!-- Stash any existing jQuery -->
 	<script type="text/javascript">
 		if (typeof window.$ !== 'undefined') {
 			var originalDollar = $.noConflict(true);
@@ -42,6 +35,13 @@
 		/* Templates sometimes overwrite textarea height for some reason */
 		textarea {height: auto !important;}
 	</style>
+</head>
+<body>
+
+
+
+
+
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-white bg-white static-top">
@@ -78,6 +78,12 @@
   </div>
 
 </nav>
+
+	<div class="container pt-5">
+
+
+
+<div id="accessstatementgenerator">
 
 	<h1>Accessibility Statement Generator</h1>
 
@@ -142,9 +148,46 @@
 
 
 
+
+
+<!-- Access to the event -->
+
+			<div>
+		
+				
+				<div><textarea name="organiser" id="organiser" placeholder="Example: Defining Disability Art Exhibition event. Location: JCR Hamilton."></textarea></div> 
+
+					
+
+					<h2>Event Name</h2>
+				<input type="text" id="ename" name="ename">
+
+				<h2>Event Location </h2>
+				<p style="margin-top:10px;">Check the event against the building/room checker facility listed here: <a href="https://www.tcd.ie/disability/physical-access/building/" target="_blank">Is your building accessible?</a></p>
+				<input type="text" id="elocation" name="elocation">
+
+
+					<h2>Event Organiser Name</h2>
+				<input type="text" id="contact" name="contact">
+
+					<h2>Event Organiser Email </h2>
+				<input type="text" id="conemail" name="conemail">
+
+
+			</div>
+
 				<h2 id="sectionhead"> <strong>Access to the event:</strong></h2>
 
-				<p style="margin-top:20px;">Check the event against the room checker facility listed here: <a href="https://www.tcd.ie/disability/physical-access/building/" target="_blank">Is your building accessible?</a></p>
+
+<!-- Event location -->
+
+
+		
+
+			<!-- end -->
+
+
+	
 				<table class="table" cellspacing="0" width="100%">
 					<tr id="access">
 						<td><label>Does the event have:</label>
@@ -241,15 +284,11 @@
 							<input type="radio" name="wheelchairtoilet" value="" id="wheelchairtoilet_" /><label for="wheelchairtoilet_">unknown</label>
 						</td>
 					</tr>
-					<tr id="genderneutraltoilet">
-						<td><label>Gender-neutral toilet? <span title="at most events this would be a single cubicle facility">(?)</span></label>
-						</td>
-						<td>
-							<input type="radio" name="genderneutraltoilet" value="yes: a gender-neutral neutral toilet" id="genderneutraltoilet_yes" /><label for="genderneutraltoilet_yes">yes</label>
-							<input type="radio" name="genderneutraltoilet" value="no: a gender-neutral toilet" id="genderneutraltoilet_no" /><label for="genderneutraltoilet_no">no</label>
-							<input type="radio" name="genderneutraltoilet" value="" id="genderneutraltoilet_" /><label for="genderneutraltoilet_">unknown</label>
-						</td>
-					</tr>
+
+					<!-- gender neutral -->
+
+					<!-- end of gender neutral -->
+
 					<tr id="hearingloop">
 						<td><label>Hearing loop?</label></td>
 						<td>
@@ -386,20 +425,19 @@
 				</div>
 			</div>
 
+<!-- Event location -->
 			<div>
-				<h2>Name and location of event:</h2>
+				<!--<h2>Name and location of event:</h2>-->
 				
 				<div><textarea name="comment" id="comment" placeholder="Example: Defining Disability Art Exhibition event. Location: JCR Hamilton."></textarea></div>
 
 				<div>
 
-				<label>Please provide contact details, i.e. event organiser and email address, for any access enquiries (if not included elsewhere):</label>
-				<input type="text" id="contact" name="contact">
+	
 			</div>
 			</div>
 
-			<!-- name of event -->
-
+		
 
 			<!-- end -->
 
@@ -437,7 +475,11 @@
 				<span class="nowrap"><input type="checkbox" name="paddedseatingshort" value="yes: padded seating" id="paddedseatingshort" /><label for="paddedseatingshort">Padded/comfortable seating?</label></span>
 				<span class="nowrap"><input type="checkbox" name="basicseatingshort" value="yes: basic seating" id="basicseatingshort" /><label for="basicseatingshort">Basic seating?</label></span>
 				<span class="nowrap"><input type="checkbox" name="wheelchairtoiletshort" value="yes: an accessible toilet" id="wheelchairtoiletshort" /><label for="wheelchairtoiletshort">Wheelchair accessible toilet?</label></span>
-				<span class="nowrap"><input type="checkbox" name="genderneutraltoiletshort" value="yes: a gender neutral toilet" id="genderneutraltoiletshort" /><label for="genderneutraltoiletshort">Gender-neutral toilet?<span title="at most events this would be a single cubicle facility">(?)</span></label></span>
+				
+				<!-- gender neutral -->
+	
+
+				<!-- end of gender neutral -->
 				
 				<span class="nowrap"><input type="checkbox" name="hearingloopshort: a hearing loop" value="yes" id="hearingloopshort" /><label for="hearingloopshort">Hearing loop?</label></span>
 				
