@@ -25,6 +25,22 @@ input[type="radio"]{
 .radioButton{display:block;position:absolute}
 
 
+/* Accessibility Generator Statement - Header */
+
+#generatorheader {
+
+	font: 1.5em arial;
+	font-weight: bold;
+  background: #614e9b;
+  padding: 10px;
+  color: #fff !important;
+  display: block;
+  inline-size: 450px; 
+  overflow: hidden;
+  text-align: center;
+
+}
+
 /* sectionheader for the category headings */
 #sectionheader {
 
@@ -32,11 +48,11 @@ input[type="radio"]{
 	font-weight: bold;
   background: #614e9b;
   padding: 10px;
-    color: #fff !important;
-    display: block;
-    inline-size: 350px; 
-    overflow: hidden;
-    text-align: center;
+  color: #fff !important;
+  display: block;
+  inline-size: 350px; 
+  overflow: hidden;
+  text-align: center;
 }
 
 table, th, td {
