@@ -346,14 +346,14 @@ var generator = (function ($) {
 			
 			// Add contact details, if any
 			var contact = $('#contact')[0].value.trim ();
-			s += generator.processText (s, contact, "Event organiser is: ");
+			s += generator.processText (s, contact, "The event organiser is: ");
 			
 			// Show the result
 			generator.showResult (s);
 
 			// organiser email
 			var conemail = $('#conemail')[0].value.trim ();
-			s += generator.processText (s, conemail, "Event organiser email is: ");
+			s += generator.processText (s, conemail, "The event organiser's email is: ");
 			
 			// Show the result
 			generator.showResult (s);
@@ -361,7 +361,7 @@ var generator = (function ($) {
 
 			// event name
 			var ename = $('#ename')[0].value.trim ();
-			s += generator.processText (s, ename, "Event name is: ");
+			s += generator.processText (s, ename, "The event name is: ");
 			
 			// Show the result
 			generator.showResult (s);
@@ -369,7 +369,7 @@ var generator = (function ($) {
 
 			// event location
 			var elocation = $('#elocation')[0].value.trim ();
-			s += generator.processText (s, elocation, "Event location is: ");
+			s += generator.processText (s, elocation, "The event location is: ");
 			
 			// Show the result
 			generator.showResult (s);
