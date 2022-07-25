@@ -97,7 +97,7 @@
 
 		<p style="margin-top:20px;">The Accessibility Generator Statement is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible!</p>
 
-		 <p>Just fill in the information you have, hit 'Generate Accessibility Statement' and then the 'Select Statement' and copy the text produced (which you can edit in place) to wherever you need it.</p> 
+		 <p class="fw-bold monospace">Just fill in the information you have, hit 'Generate Accessibility Statement' button and then the 'Select Statement' button and copy the text produced (which you can edit in place) to wherever you need it.</p> 
 
 		<p>The <a href="" target="_blank" rel="noopener">Trinity Accessible Information Policy</a> sets out a formal commitment by Trinity that information should be available in an accessible format, without discrimination against those with disabilities. This complies with the Disability Act 2005 and shows evidence that Trinity ensure that all facilities including events are accessible to all.</p>
 
@@ -311,7 +311,8 @@
 					<!-- add on -->
 
 					<tr id="social">
-						<td><label>Does your event have a question about accessibility requirements of attendees?</label><span title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event. Please tell us at least 2 weeks before the Trinity event. We need 2 weeks to arrange services such as sign language interpreters.">(?)</span></td>
+						<td><label>Does the event have a question about accessibility requirements of attendees?</label><span title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event. Please tell us at least 2 weeks before the Trinity event. We need 2 weeks to arrange services such as sign language interpreters.">(?)</span></td>
+
 						<td>
 							<input type="radio" name="social" value="yes: a standard accessibility contact statement on all publicity" id="social_yes" /><label for="social_yes">yes</label>
 							<input type="radio" name="social" value="no: a standard accessibility contact statement on all publicity" id="social_no" /><label for="isl_no">no</label>
@@ -364,13 +365,30 @@
 
 					<p></p>
 					<table>
+						
+
+					<tr id="slides">
+						<td><label>Are the presentation slides (MS PowerPoint etc.) accessible?</label><br><a href="https://www.tcd.ie/disability/teaching-info/TIC/materials.php" target="_blank" rel="noopener">Guidelines for Creating Accessible Materials</a></td>
+
+						<td>
+							<input type="radio" name="slides" value="yes: acccessible presentation slides" id="slides_yes" /><label for="slides_yes">yes</label>
+
+							<input type="radio" name="slides" value="no: acccessible presentation slides" id="social_no" /><label for="slides_no">no</label>
+
+							<input type="radio" name="slides" value="" id="slides_" /><label for="slides_">unknown</label>
+							
+						</td>
+					</tr>
+
 						<tr>
-							<td>Does this event include a video showing or video call?&nbsp; </td>
+
+							<td>Does the event include a video showing or video call?&nbsp; </td>
 							<td>
 								<input type="radio" name="film" value="yes" id="film_yes" /><label for="film_yes">yes</label>
 								<input type="radio" name="film" value="no" id="film_no" /><label for="film_no">no</label>
 								<input type="radio" name="film" value="" id="film_" /><label for="film_">unknown</label>
 							</td>
+
 						</tr>
 					</table>
 				</div>
@@ -411,11 +429,11 @@
 						<tr id="englishaudio">
 							<td><label>English language audio?</label></td>
 							<td>
-								<input type="radio" name="englishaudio" value="yes: english audio" id="englishaudio_yes" /><label for="englishaudio_yes">yes</label>
-								<input type="radio" name="englishaudio" value="no: english audio" id="englishaudio_no" /><label for="englishaudio_no">no</label>
-								<input type="radio" name="englishaudio" value="reqad: english audio" id="englishaudio_reqad" /><label for="englishaudio_reqad">by request in advance</label>
-								<input type="radio" name="englishaudio" value="req: english audio" id="englishaudio_req" /><label for="englishaudio_req">by request at the event</label>
-								<input type="radio" name="englishaudio" value="" id="englishaudio_" /><label for="englishaudio_">unknown</label>
+								<input type="radio" name="englishaudio" value="yes: English audio" id="englishaudio_yes" /><label for="englishaudio_yes">yes</label>
+								<input type="radio" name="englishaudio" value="no: English audio" id="englishaudio_no" /><label for="englishaudio_no">no</label>
+								<input type="radio" name="englishaudio" value="reqad: English audio" id="englishaudio_reqad" /><label for="englishaudio_reqad">by request in advance</label>
+								<input type="radio" name="englishaudio" value="req: English audio" id="englishaudio_req" /><label for="englishaudio_req">by request at the event</label>
+								<input type="radio" name="englishaudio" value="" id="Englishaudio_" /><label for="englishaudio_">unknown</label>
 							</td>
 						</tr>
 					</table>
@@ -499,7 +517,7 @@
 				<span class="nowrap"><input type="checkbox" name="ccshort" value="yes: closed caption" id="ccshort" /><label for="ccshort">Including closed caption?<span title="Closed caption are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)</span></label></span>
 				<span class="nowrap"><input type="checkbox" name="audiodescriptionshort" value="yes: audio description" id="audiodescriptionshort" /><label for="audiodescriptionshort">Including audio description?<span title="Audio description narrates what is happening on screen for people who are blind or visually impaired.">(?)</span></label></span>
 
-				<span class="nowrap"><input type="checkbox" name="englishaudioshort" value="yes: english audio" id="englishaudioshort" /><label for="englishaudioshort">English language audio?</label></span>
+				<span class="nowrap"><input type="checkbox" name="englishaudioshort" value="yes: English audio" id="englishaudioshort" /><label for="englishaudioshort">English language audio?</label></span>
 			</div>
 
 			<h2>Further details and contacts</h2>
@@ -528,12 +546,12 @@
 </p>
 		
 		<div id="generate">
-			<button>Generate Accessibility Statement</button>
+			<button type="button">Generate Accessibility Statement</button>
 			<div class="clear"></div>
 		</div>
 		
 		<div id="select" class="hide">
-			<button>Select Statement</button>
+			<button type="button">Select Statement</button>
 			<div class="clear"></div>
 		</div>
 

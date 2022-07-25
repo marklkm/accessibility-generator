@@ -389,6 +389,7 @@ var generator = (function ($) {
 				'hearingloop',
 				'isl',
 				'social',
+				'slides',
 				'quietspace',
 				'parking',
 				'bluebadge',

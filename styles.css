@@ -151,7 +151,7 @@ button, .toggle {
 	font-size: 80%;
 	vertical-align: super;
 }
-label {margin:  10px;}
+label {margin:  2px;}
 		
 #organiser, #comment {
 	display:  none;
