@@ -34,8 +34,9 @@ input[type="radio"]{
   background: #614e9b;
   padding: 10px;
   color: #fff !important;
-  display: block;
-  inline-size: 450px; 
+  display: inline-flex;
+   align-items: center;
+    justify-content: center; 
   overflow: hidden;
   text-align: center;
 
@@ -49,8 +50,11 @@ input[type="radio"]{
   background: #614e9b;
   padding: 10px;
   color: #fff !important;
-  display: block;
-  inline-size: 350px; 
+  /*display: block;*/
+  display: inline-flex;
+  /*inline-size: 350px; */
+   align-items: center;
+    justify-content: center;
   overflow: hidden;
   text-align: center;
 }

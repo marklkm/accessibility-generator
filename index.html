@@ -1,11 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <title>Accessibility Generator Statement</title>
-  <link rel="shortcut icon"  href="//www.tcd.ie/favicon.ico?v=3" type="image/x-icon" />
-  <meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="description" content="Accessibility Statement Generator">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="keywords" content="Accessibility,Generator,Trinity,Event">
+  <title>Accessibility Generator Statement | Make Events Accessible</title>
+  <link rel="shortcut icon"  href="//www.tcd.ie/favicon.ico?v=3" type="image/x-icon" />
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
   	<!-- Stash any existing jQuery -->
@@ -18,7 +23,7 @@
 		}
 	</script>
 
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><script>
 	<script src="jquery.tooltip.js"></script>
 	<script src="generator.js" type="text/javascript"></script>
@@ -36,12 +41,9 @@
 		textarea {height: auto !important;}
 	</style>
 </head>
+
+
 <body>
-
-
-
-
-
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-white bg-white static-top">
@@ -53,31 +55,32 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Faculties and Schools</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#">Research</a>
-        </li>
+      	<ul class="navbar-nav ms-auto">
+        	<li class="nav-item">
+          	<a class="nav-link active" aria-current="page" href="#">Faculties and Schools</a>
+        	</li>
+        	<li class="nav-item">
+          	<a class="nav-link" href="#">Courses</a>
+        	</li>
+         	<li class="nav-item">
+          	<a class="nav-link" href="#">Research</a>
+        	</li>
 
-         <li class="nav-item">
-          <a class="nav-link" href="#">A-Z</a>
-        </li>
+         	<li class="nav-item">
+          	<a class="nav-link" href="#">A-Z</a>
+        	</li>
 
-        <li class="nav-item">
+        	<li class="nav-item">
           <a class="nav-link" href="#">Gaeilge</a>
-        </li>
+        	</li>
         
-        </li>
-      </ul>
-    </div>
-  </div>
+        	</li>
+      	</ul>
+    	</div>
+  	</div>
 
-</nav>
+	</nav>
+	<!-- End of Navigation -->
 
 	<div class="container pt-5">
 
@@ -93,18 +96,9 @@
 
 
 		<p style="margin-top:20px;">The Accessibility Generator Statement is designed to provide clear and concise access information for events. Just fill in the information you have, hit generate and then copy the text produced (which you can edit in place) to wherever you need it. Having clear information is very important for an event to be as accessible and inclusive as possible!</p>
-		<p>You can contact the Disability Service by:
 
-<ul class="list-group">
+		<p>The <a href="" target="_blank" rel="noopener">Trinity Accessible Information Policy</a> sets out a formal commitment by Trinity that information should be available in an accessible format, without discrimination against those with disabilities. This complies with the Disability Act 2005 and shows evidence that Trinity ensure that all facilities including events are accessible to all.</p>
 
-  <li class="list-group-item">Email: askds@tcd.ie</li>
-  <li class="list-group-item">Phone: 01 896 3111</li>
-  <li class="list-group-item">Text: 087 113 3185</li>
-</ul>
-
-</p>
-
-<p>Or visit the Disability Service Office, Room 2054, in the Arts Building. More information at: <a href="https://www.tcd.ie/disability/contact/" target="_blank">Disability Service Office.</a></p>
 
 		<hr />
 
@@ -168,7 +162,7 @@
 
 
 					<h2>Event Organiser Name</h2>
-					<p>School/Department/Club/Society/Organisation</p>
+					<p>School/Department/Club/Society/Organisation/Company</p>
 				<input type="text" id="contact" name="contact">
 
 					<h2>Event Organiser Email </h2>
@@ -302,7 +296,7 @@
 					</tr>
 					
 					<tr id="isl">
-						<td><label>ISL interpreter?</label><span title="Please indicate if you have any access requirements so that we may facilitate you in attending this event. Please tell us at least 2 weeks before the Trinity event. We need 2 weeks to arrange services such as sign language interpreters.">(?)</span></td>
+						<td><label>ISL interpreter?</label><span title="Please indicate if you have any access requirements so that we may facilitate you in attending this event. Please tell us at least 2 weeks before the Trinity event. We need 2 weeks to arrange services such as sign language interpreters.">(?)</span><p><a href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank">How to book an ISL interpreter in Trinity.</a></p></td>
 						<td>
 							<input type="radio" name="isl" value="yes: an ISL interpreter" id="isl_yes" /><label for="isl_yes">yes</label>
 							<input type="radio" name="isl" value="no: an ISL interpreter" id="isl_no" /><label for="isl_no">no</label>
@@ -393,7 +387,7 @@
 						</tr>
 						<div id="cc" class="hide">
 							<tr id="cc">
-								<td><label>Including closed caption?<span title="Closed caption are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)</span></label></td>
+								<td><label>Including closed captions?<span title="Closed captions are subtitles for people who are deaf or hard of hearing. They describe the noises and speech in the video or meeting.">(?)</span></label></td>
 								<td><input type="radio" name="cc" value="yes: closed caption" id="cc_yes" /><label for="cc_yes">yes</label>
 									<input type="radio" name="cc" value="no: closed caption" id="cc_no" /><label for="cc_no">no</label>
 									<input type="radio" name="cc" value="reqad: closed caption" id="cc_reqad" /><label for="cc_reqad">by request in advance</label>
@@ -518,6 +512,18 @@
 				<input type="text" id="contactshort" name="contactshort">
 			</div>
 		</div>
+
+
+		<p style="margin-top:20px;">You can contact the Disability Service by:
+
+<ul class="list-group">
+
+  <li class="list-group-item">Email: askds@tcd.ie</li>
+  <li class="list-group-item">Phone: 01 896 3111</li>
+  <li class="list-group-item">Text: 087 113 3185</li>
+</ul>
+
+</p>
 		
 		<div id="generate">
 			<button>Generate Accessibility Statement</button>
@@ -530,7 +536,12 @@
 		</div>
 
 
+
+
 		<textarea id="result" class="hide"></textarea>
+
+
+		<button id="doPrint">Print</button>
 
 
 
@@ -558,6 +569,17 @@
     $('#collapseOne').collapse('hide');
   }
 });
+
+document.getElementById("doPrint").addEventListener("click", function() {
+     var printContents = document.getElementById('result').innerHTML;
+     var originalContents = document.body.innerHTML;
+     document.body.innerHTML = printContents;
+     window.print();
+     document.body.innerHTML = originalContents;
+});
+
+
+
 	</script>
 	
 </div>
