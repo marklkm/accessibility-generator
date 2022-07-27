@@ -9,7 +9,7 @@ table tr td:first-child {width: 30%;}
 #contactdetails {width: 25em;}
 ol li {margin: 1em 0 1em;}
 .grey {color: #888; background: #fff;}
-textarea, #steps_count {font: inherit; color: black; }
+textarea, #steps_count {font: inherit; color: black;}
 #result {padding: 10px; border: 1px solid #000; resize: none; width: 57%; font: inherit; color: black; }
 #comment, #commentshort, #organiser {width: 57%; resize: none;}
 #contact, #contactshort, #conemail, #ename, #elocation {min-width: 20em;}
@@ -22,19 +22,9 @@ input[type="radio"]{
       position: relative;
 }
 
+
 .radioButton{display:block;position:absolute}
 
-
-@media print{
-    body *:not(#result):not(#result *){
-        visibility: hidden;
-    }
-    #my-section{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
 
 /* Accessibility Generator Statement - Header */
 
@@ -113,7 +103,7 @@ a:active {
 
 #buttons {display:none;}
 
-h2 {font-size: 1.3em; margin-top: 2em;}
+h2,h3 {font-size: 1.3em; margin-top: 2em;}
 /* Style the label so it looks like a button */
 button, .toggle {
 	/*border: 4px outset #FF9999;*/

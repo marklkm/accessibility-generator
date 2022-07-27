@@ -157,19 +157,19 @@
 
 					
 
-					<h2>Event Name</h2>
+					<h3>Event Name</h3>
 				<input type="text" id="ename" name="ename">
 
-				<h2>Event Location</h2>
+				<h3>Event Location</h3>
 				<p style="margin-top:10px;">Check the event against the building/room checker facility listed here: <a href="https://www.tcd.ie/disability/physical-access/building/" target="_blank">Is your building accessible?</a></p>
 				<input type="text" id="elocation" name="elocation">
 
 
-					<h2>Event Organiser Name</h2>
-					<p>School/Department/Club/Society/Organisation/Company</p>
+					<h3>Event Organiser Name</h3>
+					<p>School/Department/Club/Society/Organisation</p>
 				<input type="text" id="contact" name="contact">
 
-					<h2>Event Organiser Email </h2>
+					<h3>Event Organiser Email </h3>
 				<input type="text" id="conemail" name="conemail">
 
 
@@ -578,23 +578,15 @@
 
 
       <textarea id="result" class="hide"></textarea>
- 
-
-   
-
-
-			<div class="clear"></div>
-			<input type="button" onclick="printTextArea()" value="Print Select Statement">
-			<div class="clear"></div>
 
 
 
-
+<div class="clear"></div>
+<input type="button" onclick="printTextArea()" value="Print Select Statement">
 		<hr />
 
 		
 	</div>
-
 
 
 
@@ -616,23 +608,21 @@
 });
 
 
+	</script>
 
+
+    <script type="text/javascript">
       function printTextArea() {
-        childWindow = window.open('','childWindow','location=no, menubar=no, toolbar=no');
+        childWindow = window.open('','childWindow','location=yes, menubar=yes, toolbar=yes');
         childWindow.document.open();
-        childWindow.document.write('<body>');
-        childWindow.document.write(document.getElementById('result').value.replace(/n/gi,'<br>'));
-        childWindow.document.write('</body');
+        childWindow.document.write('<html><head></head><body>');
+        childWindow.document.write(document.getElementById('result').value.replace(/\n/gi,'<br>'));
+        childWindow.document.write('</body></html>');
         childWindow.print();
         childWindow.document.close();
         childWindow.close();
       }
-
-
-	</script>
-
-
-
+    </script>
 	
 </div>
 

@@ -618,7 +618,7 @@ var generator = (function ($) {
 			
 			// Adjust the text box size if required
 			var text = $('#result')[0];
-			text.style.height = 20 + 'px';
+			text.style.height = 30 + 'px';
 			var adjustedHeight = text.clientHeight;
 			adjustedHeight = Math.max (text.scrollHeight, adjustedHeight);
 			adjustedHeight = adjustedHeight - 20;
