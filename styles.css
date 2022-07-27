@@ -9,8 +9,8 @@ table tr td:first-child {width: 30%;}
 #contactdetails {width: 25em;}
 ol li {margin: 1em 0 1em;}
 .grey {color: #888; background: #fff;}
-textarea, #steps_count {font: inherit; color: black;}
-#result {padding: 10px; border: 1px solid #000; resize: none; width: 57%; font: inherit; color: black;}
+textarea, #steps_count {font: inherit; color: black; }
+#result {padding: 10px; border: 1px solid #000; resize: none; width: 57%; font: inherit; color: black; }
 #comment, #commentshort, #organiser {width: 57%; resize: none;}
 #contact, #contactshort, #conemail, #ename, #elocation {min-width: 20em;}
 .nowrap {white-space: nowrap;}
@@ -156,6 +156,25 @@ label {margin:  2px;}
 #organiser, #comment {
 	display:  none;
 }		
+
+
+#printstyle {
+
+    background-color: #FF9999;
+    position: relative;
+    z-index: 3;
+    float: left;
+    text-align: center;
+    margin: 1em;
+    /* text-transform: uppercase; */
+    font-size: 1.2em;
+    font-weight: bold;
+    /* background: #FF9999; */
+    padding: 8px 10px 10px 10px;
+    color: #000 !important;
+    vertical-align: middle;
+    display: inline-block;
+}
 
 
 .data-tooltip {

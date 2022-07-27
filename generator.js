@@ -49,6 +49,7 @@ var generator = (function ($) {
 			$("#select").click (function () {
 				$('#result').focus();
 				$('#result').select();
+				$('#result').window.print();
 			});
 			
 			// Standard version
