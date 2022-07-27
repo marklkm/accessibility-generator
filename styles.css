@@ -25,6 +25,17 @@ input[type="radio"]{
 .radioButton{display:block;position:absolute}
 
 
+@media print{
+    body *:not(#result):not(#result *){
+        visibility: hidden;
+    }
+    #my-section{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
 /* Accessibility Generator Statement - Header */
 
 #generatorheader {

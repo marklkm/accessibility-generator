@@ -245,6 +245,7 @@ var generator = (function ($) {
 				stepheight = $('#steps_height input:checked').val();
 				handrail = $('#steps_hr input:checked').val();
 			}
+
 			
 			//
 			// Statement generation starts here
@@ -324,7 +325,7 @@ var generator = (function ($) {
 			var buckets = generator.determineFacilitiesAvailability ('#facilities', '');
 			
 			// Process the 'yes' options
-			s += generator.compileOptions (buckets.yes, 'There is ', 'and');
+			s += generator.compileOptions (buckets.yes, 'There is/are ', 'and');
 			
 			// Process the 'by request in advance' options
 			s += generator.compileOptions (buckets.reqad, 'There is ', 'and', ', by request in advance');
@@ -617,7 +618,7 @@ var generator = (function ($) {
 			
 			// Adjust the text box size if required
 			var text = $('#result')[0];
-			text.style.height = 10 + 'px';
+			text.style.height = 20 + 'px';
 			var adjustedHeight = text.clientHeight;
 			adjustedHeight = Math.max (text.scrollHeight, adjustedHeight);
 			adjustedHeight = adjustedHeight - 20;
