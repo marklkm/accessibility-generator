@@ -303,7 +303,7 @@
 					
 					<tr id="isl">
 						<td><label data-tooltip="ISL Interpreters should be provided upon request. Ask attendees if they have any accessibility requirements at least two weeks before an event.">ISL Interpretor? &nbsp;<i class="bi bi-question-circle-fill"></i></label>
-							<p><a href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank">How to book an ISL interpreter in Trinity.</a></p></td>
+							<p style="margin-top:20px;"><a href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank">How to book an ISL interpreter in Trinity.</a></p></td>
 						<td>
 							<input type="radio" name="isl" value="yes: an ISL interpreter" id="isl_yes" /><label for="isl_yes">yes</label>
 							<input type="radio" name="isl" value="no: an ISL interpreter" id="isl_no" /><label for="isl_no">no</label>
@@ -330,7 +330,8 @@
 
 
 					<tr id="quietspace">
-						<td><label data-tooltip="Events can be overwhelming for many people. Providing a quiet, sensory-friendly space is important so people can take a break from the main-event. Find out more about creating a sensory-friendly environment at the TCD Sense Project.">Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label><br>Visit <a href="https://linktr.ee/TCDSense" target="_blank">TCD Sense Project</a></td>
+						<td><label data-tooltip="Events can be overwhelming for many people. Providing a quiet, sensory-friendly space is important so people can take a break from the main-event. Find out more about creating a sensory-friendly environment at the TCD Sense Project.">Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
+							<p style="margin-top:20px;">Visit <a href="https://linktr.ee/TCDSense" target="_blank">TCD Sense Project</a></p></td>
 						<td>
 							<input type="radio" name="quietspace" value="yes: a designated quiet space" id="quietspace_yes" /><label for="quietspace_yes">yes</label>
 							<input type="radio" name="quietspace" value="no: a designated quiet space" id="quietspace_no" /><label for="quietspace_no">no</label>
@@ -354,7 +355,8 @@
 					</tr>-->
 
 					<tr id="bluebadge">
-						<td><label>Disabled Person's Parking near the event?<br>More information on Blue Badge parking in Trinity: <a href="https://www.tcd.ie/disability/physical-access/parking.php" target="_blank">Accessible Campus Parking information</a></label></td>
+						<td><label>Disabled Person's Parking near the event?<br>More information on Blue Badge parking in Trinity:
+						<p style="margin-top:20px;"> <a href="https://www.tcd.ie/disability/physical-access/parking.php" target="_blank">Accessible Campus Parking information</a></p></label></td>
 						<td>
 							<input type="radio" name="bluebadge" value="yes: blue badge parking" id="bluebadge_yes" /><label for="bluebadge_yes">yes</label>
 							<input type="radio" name="bluebadge" value="no: blue badge parking" id="bluebadge_no" /><label for="bluebadge_no">no</label>
@@ -376,7 +378,7 @@
 						
 
 					<tr id="slides">
-						<td><label>Are the presentation slides (MS PowerPoint etc.) accessible?</label><br><a href="https://www.tcd.ie/disability/teaching-info/TIC/materials.php" target="_blank" rel="noopener">Guidelines for Creating Accessible Materials</a></td>
+						<td><label>Are the presentation slides (MS PowerPoint etc.) accessible?</label><p style="margin-top:20px;"><a href="https://www.tcd.ie/disability/teaching-info/TIC/materials.php" target="_blank" rel="noopener">Guidelines for Creating Accessible Materials</a></p></td>
 
 						<td>
 							<input type="radio" name="slides" value="yes: accessible presentation slides" id="slides_yes" /><label for="slides_yes">yes</label>
@@ -584,7 +586,7 @@
 
 
 <div class="clear"></div>
-<input type="button" onclick="printTextArea()" value="Print Select Statement">
+<input type="button" onclick="printTextArea()" value="Download Statement as a PDF">
 		<hr />
 
 		
@@ -610,11 +612,9 @@
 });
 
 
-	</script>
+		// print generated text
 
-
-    <script type="text/javascript">
-      function printTextArea() {
+		      function printTextArea() {
         childWindow = window.open('','childWindow','location=yes, menubar=yes, toolbar=yes');
         childWindow.document.open();
         childWindow.document.write('<html><head></head><body>');
@@ -624,7 +624,10 @@
         childWindow.document.close();
         childWindow.close();
       }
-    </script>
+
+
+	</script>
+
 	
 </div>
 
