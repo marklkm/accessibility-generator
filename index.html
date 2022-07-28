@@ -587,7 +587,7 @@
 
 
 <div class="clear"></div>
-<input type="button" onclick="printTextArea()" value="Download Statement as a PDF">
+<input type="button" id="selectBtn" value="Download Statement as a PDF">
 		<hr />
 
 		
@@ -611,9 +611,14 @@
     $('#collapseOne').collapse('hide');
   }
 });
+</script>
 
 
-		// print generated text
+<script type="text/javascript">
+		// print generated text button
+
+
+		document.getElementById("selectBtn").addEventListener("click", printTextArea);
 
 		      function printTextArea() {
         childWindow = window.open('','childWindow','location=yes, menubar=yes, toolbar=yes');
