@@ -139,7 +139,7 @@ button, .toggle {
 .tooltipindicator {
     margin-left: 4px;
     text-align: center;
-    width: 1.4em;
+    width: 1.6em;
     height: 1.4em;
     font-weight: bold;
     display: inline-block;
@@ -207,7 +207,7 @@ label {margin:  2px;}
   margin-bottom: 5px;
   margin-left: -80px;
   padding: 7px;
-  width: 160px;
+  width: 220px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
