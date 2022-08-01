@@ -109,6 +109,7 @@ var generator = (function ($) {
 		{
 			$('#result').hide();
 			$('#select').hide();
+			$('#selectBtn').hide();
 			if ($("#type")[0].checked) {	// If the (single) checkbox is ticked
 				$('#questions').fadeOut (function () {
 					$('#shortquestions').fadeIn ('slow');
