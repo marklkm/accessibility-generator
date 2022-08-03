@@ -326,7 +326,7 @@ var generator = (function ($) {
 			var buckets = generator.determineFacilitiesAvailability ('#facilities', '');
 			
 			// Process the 'yes' options
-			s += generator.compileOptions (buckets.yes, 'There is/are ', 'and');
+			s += generator.compileOptions (buckets.yes, 'There is ', 'and');
 			
 			// Process the 'by request in advance' options
 			s += generator.compileOptions (buckets.reqad, 'There is ', 'and', ', by request in advance');
@@ -337,7 +337,8 @@ var generator = (function ($) {
 			// Process the 'no' options
 			s += generator.compileOptions (buckets.no, "There isn't ", 'or');
 			
-			
+
+
 
 			// Add comment, if any
 
@@ -392,6 +393,7 @@ var generator = (function ($) {
 				'hearingloop',
 				'isl',
 				'social',
+				'online',
 				'slides',
 				'quietspace',
 				'parking',
