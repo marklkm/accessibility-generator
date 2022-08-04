@@ -156,12 +156,15 @@
 
 <!-- Access to the event -->
 
-			<div>
+			<div class="container">
 		
 				
 				<div style="display:none;"><textarea name="organiser" id="organiser" placeholder="Example: Defining Disability Art Exhibition event. Location: JCR Hamilton."></textarea></div> 
 
-					
+					<!-- test label input -->
+
+
+					<!-- end -->
 
 					<h3>Event Name</h3>
 				<input type="text" id="ename" name="ename">
@@ -169,6 +172,32 @@
 				<h3>Event Location</h3>
 				<p style="margin-top:10px;">Check the event against the building/room checker facility listed here: <a href="https://www.tcd.ie/disability/physical-access/building/" target="_blank">Is your building accessible?</a></p>
 				<input type="text" id="elocation" name="elocation">
+
+
+
+				<!-- add online -->
+
+<div id="facilities">
+
+
+				<table class="table" style="margin-top:20px;">
+
+                <tr id="online">
+                        <td><label>Online Event?</label>
+                        	<p style="margin-top:20px;">If it's an online event please refer to the following information on <a href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a></p></td>
+
+                        <td>
+                            <input type="radio" name="online" value="yes: an online event" id="online_yes" /><label for="online_yes">yes</label>
+                            <input type="radio" name="online" value="no: an online event" id="online_no" /><label for="online_no">no</label>
+
+                            <input type="radio" name="online" value="" id="online_" /><label for="online_">unknown</label>
+                            
+                        </td>
+                </tr>
+            </table>
+        </div>
+
+				<!-- end -->
 
 
 					<h3>Event Organiser Name</h3>
@@ -180,6 +209,10 @@
 
 
 			</div>
+
+
+
+
 
 				<h2 id="sectionhead"> <strong>Access to the event:</strong></h2>
 
@@ -258,7 +291,7 @@
 				<p>Which of the following are available?</p>
 				<table class="table table-striped">
 
-                <tr id="online">
+                <!--<tr id="online">
                         <td><label>Online Event?</label>
                         	<p style="margin-top:20px;">Visit <a href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a></p></td>
 
@@ -269,7 +302,7 @@
                             <input type="radio" name="online" value="" id="online_" /><label for="online_">unknown</label>
                             
                         </td>
-                </tr>
+                </tr>-->
 
 
 
