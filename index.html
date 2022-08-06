@@ -233,9 +233,13 @@
 						<td><label>Does the event have:</label>
 
 							<input type="radio" class="radio inline" name="access" value="wa" id="access_wa" data-toggle="collapse"/>
-							<label for="access_wa" data-tooltip="Wheelchair access requires flat access (no lip/transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room.">Wheelchair access&nbsp;<i class="bi bi-info-circle-fill"></i></label>
+							<label for="access_wa" data-bs-toggle="tooltip" data-bs-placement="top"
+							title="Wheelchair access requires flat access (no lip/transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room.">Wheelchair access&nbsp;<i class="bi bi-info-circle-fill"></i></label>
 							<input type="radio" class="radio inline" name="access" value="sf" id="access_sf" />
-							<label for="access_sf" data-tooltip="e.g. There is a significant lip/transition change into the room or there is a narrow doorway.">Step-free access only&nbsp;<i class="bi bi-info-circle-fill"></i></label>
+							<label for="access_sf" 
+							data-bs-toggle="tooltip" data-bs-placement="top"
+							title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway.">
+							Step-free access only&nbsp;<i class="bi bi-info-circle-fill"></i></label>
 							<input type="radio" class="radio inline" name="access" value="no" id="access_no" />
 							<label for="access_no">No step-free access</label>
 							<input type="radio" class="radio inline" name="access" value="" id="access_" />
@@ -245,7 +249,9 @@
 					<tr>
 						<td>
 							<div id="separateaccess" class="hide">
-								<input type="checkbox" name="separateaccess" value="route" id="separateaccess_yes" /><label for="separateaccess_yes" data-tooltip="Often events have a separate route into the events for wheelchair users and those needing step free access. It's important to not assume an event doesn't have step free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">The step-free or wheelchair access is by a separate route.</label>
+								<input type="checkbox" name="separateaccess" value="route" id="separateaccess_yes" /><label for="separateaccess_yes"
+								data-bs-toggle="tooltip" data-bs-placement="top"
+							title="Often events have a separate route into the events for wheelchair users and those needing step free access. It's important to not assume an event doesn't have step free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">The step-free or wheelchair access is by a separate route.&nbsp;<i class="bi bi-info-circle-fill"></i></label>
 							</div>
 						</td>
 					</tr>
@@ -259,7 +265,9 @@
 				<table class="table table-striped">
 					<tr>
 						<td>
-							<label for="steps_count" data-tooltip="Give a number of steps or a number of flights of stairs.">Approximately how many steps<span id="separateshow"> into the main entrance</span>?&nbsp;<i class="bi bi-info-circle-fill"></i></label>
+							<label for="steps_count" data-bs-toggle="tooltip" data-bs-placement="top"
+							title="Give a number of steps or a number of flights of stairs.">
+								Approximately how many steps<span id="separateshow"> into the main entrance</span>?&nbsp;<i class="bi bi-info-circle-fill"></i></label>
 						</td>
 						<td>
 							<span class="nowrap"><input type="text" id="steps_count" name="steps_count" /></span>
@@ -270,7 +278,9 @@
 						<td id="steps_height">
 							<input type="radio" name="steps" value="lip" id="lip" /><label for="steps_height_lip">a lip/lips</label>
 							<input type="radio" name="steps" value="shallow" id="shallow" /><label for="shallow">&nbsp;shallow</label>
+							
 							<input type="radio" name="steps" value="standard height" id="standard height" /><label for="standard height">approximately standard height</label>
+
 							<input type="radio" name="steps" value="deep" id="deep" /><label for="deep">deep</label>
 							<input type="radio" name="steps" value="" id="steps_height_" /><label for="steps_height_">unknown</label>
 						</td>
@@ -280,7 +290,14 @@
 						<td id="steps_hr">
 							<input type="radio" name="steps_hr" value="no" id="steps_hr_no" /><label for="steps_hr_no">no</label>
 							<input type="radio" name="steps_hr" value="one" id="steps_hr_one" /><label for="steps_hr_one">on one side</label>
-							<input type="radio" name="steps_hr" value="both" id="steps_hr_both" /><label for="steps_hr_both" data-tooltip="narrow stairs so that someone can hold both at the same time, not a wide flight with one each side">on both sides&nbsp;<i class="bi bi-info-circle-fill"></i></label>
+							
+							<input type="radio" name="steps_hr" value="both" id="steps_hr_both" />
+
+							<label for="steps_hr_both" 
+							data-bs-toggle="tooltip" data-bs-placement="top"
+							title="narrow stairs so that someone can hold both at the same time, not a wide flight with one each side.">
+on both sides&nbsp;<i class="bi bi-info-circle-fill"></i></label>
+
 							<input type="radio" name="steps_hr" value="" id="steps_hr_" /><label for="steps_hr_">unknown</label>
 						</td>
 					</tr>
@@ -333,7 +350,11 @@
 
 							<!-- end -->
 
-							<input type="radio" name="wheelchairtoilet" value="yes: a partially accessible toilet" id="wheelchairtoilet_p" /><label for="wheelchairtoilet_p" data-tooltip="For instance a toilet that is not large enough for a wheelchair to move around in or which is big enough but doesn't have any grab rails.">partially accessible toilet&nbsp;<i class="bi bi-info-circle-fill"></i></label>
+							<input type="radio" name="wheelchairtoilet" value="yes: a partially accessible toilet" id="wheelchairtoilet_p" />
+							<label for="wheelchairtoilet_p" data-bs-toggle="tooltip" data-bs-placement="top"
+							title="For instance a toilet that is not large enough for a wheelchair to move around in or which is big enough but doesn't have any grab rails.">
+
+								Partially accessible toilet&nbsp;<i class="bi bi-info-circle-fill"></i></label>
 							
 							<input type="radio" name="wheelchairtoilet" value="no: an accessible toilet" id="wheelchairtoilet_no" /><label for="wheelchairtoilet_no">no</label>
 
@@ -358,7 +379,12 @@
 					</tr>
 					
 					<tr id="isl">
-						<td><label data-tooltip="ISL Interpreters should be provided upon request. Ask attendees if they have any accessibility requirements at least two weeks before an event.">ISL Interpretor? &nbsp;<i class="bi bi-info-circle-fill"></i></label>
+						<td><label 
+							data-bs-toggle="tooltip" data-bs-placement="top"
+							title="ISL Interpreters should be provided upon request. Ask attendees if they have any accessibility requirements at least two weeks before an event.">
+
+
+							ISL Interpretor? &nbsp;<i class="bi bi-info-circle-fill"></i></label>
 							<p style="margin-top:20px;"><a href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank">How to book an ISL interpreter in Trinity.</a></p></td>
 						<td>
 							<input type="radio" name="isl" value="yes: an ISL interpreter" id="isl_yes" /><label for="isl_yes">yes</label>
@@ -372,7 +398,11 @@
 					<!-- add on -->
 
 					<tr id="social">
-						<td><label data-tooltip="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event. Please tell us at least 2 weeks before the Trinity event. We need 2 weeks to arrange services such as sign language interpreters.">Does the event have a question about accessibility requirements of attendees?&nbsp;<i class="bi bi-info-circle-fill"></i></label></td>
+						<td><label 
+										data-bs-toggle="tooltip" data-bs-placement="top"
+							title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event. Please tell us at least 2 weeks before the Trinity event. We need 2 weeks to arrange services such as sign language interpreters.">
+
+							Does the event have a question about accessibility requirements of attendees?&nbsp;<i class="bi bi-info-circle-fill"></i></label></td>
 
 						<td>
 							<input type="radio" name="social" value="yes: a standard accessibility contact statement on all publicity" id="social_yes" /><label for="social_yes">yes</label>
@@ -484,7 +514,10 @@
 							</td>
 						</tr>
 						<tr id="audiodescription">
-							<td><label data-tooltip="Audio description is what's happening on screen for those with sight impairments">Is there an audio description?&nbsp;<i class="bi bi-info-circle-fill"></i></label></td>
+							<td><label 
+								data-bs-toggle="tooltip" data-bs-placement="top"
+							title="Audio description is what's happening on screen for those with sight impairments.">
+							Is there an audio description?&nbsp;<i class="bi bi-info-circle-fill"></i></label></td>
 							<td>
 								<input type="radio" name="audiodescription" value="yes: audio description" id="audiodescription_yes" /><label for="audiodescription_yes">yes</label>
 								<input type="radio" name="audiodescription" value="no: audio description" id="audiodescription_no" /><label for="audiodescription_no">no</label>
@@ -497,7 +530,9 @@
 
 												<div id="cc" class="hide">
 							<tr id="cc">
-								<td><label data-tooltip="Closed captions are subtitles for people who are deaf or hard of hearing.">Including closed captions?&nbsp;<i class="bi bi-info-circle-fill"></i></label></td>
+								<td><label data-bs-toggle="tooltip" data-bs-placement="top"
+							title="Closed captions are subtitles for people who are deaf or hard of hearing.">
+Including closed captions?&nbsp;<i class="bi bi-info-circle-fill"></i></label></td>
 								<td><input type="radio" name="cc" value="yes: closed caption" id="cc_yes" /><label for="cc_yes">yes</label>
 									<input type="radio" name="cc" value="no: closed caption" id="cc_no" /><label for="cc_no">no</label>
 									<input type="radio" name="cc" value="reqad: closed caption" id="cc_reqad" /><label for="cc_reqad">by request in advance</label>
@@ -643,7 +678,9 @@
 
 
 <div class="clear"></div>
-<input type="button" id="selectBtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Download Statement as a PDF document after you click on the Generate Accessibility Statement button" value="Download Statement as a PDF" class="">
+
+
+<input type="button" id="selectBtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Download Statement as a PDF document after you click on the Generate Accessibility Statement button" value="Download Statement as a PDF">
 		<hr />
 
 		
@@ -664,7 +701,7 @@
         <!--Grid row-->
         <div class="row">
  <!-- Grid column -->
-          <div class="col-xl-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <div class="col-xl-4 col-lg-4 col-xl-4 mx-auto mt-4">
             <h6 class="mb-4 font-weight-bold"> Trinity College Dublin, The University of Dublin</h6>
             <p><i class="fas fa-home mr-3"></i> College Green</p>
             <p><i class="fas fa-envelope mr-3"></i> Dublin 2, Ireland</p>
@@ -694,9 +731,7 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
      
             <p><a href="https://www.tcd.ie/accessibility/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none text-white"><i class="bi bi-chevron-double-right"></i> Accessibility</a></p>
-            <p><a href="https://www.tcd.ie/privacy/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none text-white"><i class="bi bi-chevron-double-right"></i> Privacy</a></p>
 
-            <p><a href="https://www.tcd.ie/contacts/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none text-white"><i class="bi bi-chevron-double-right"></i> Contact</a></p>
 
             <p><a href="https://abilitycoop.com/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none text-white"><i class="bi bi-chevron-double-right"></i> Trinity Ability Co_op</a></p>
 
@@ -807,6 +842,14 @@
         childWindow.close();
       }
 
+	</script>
+
+<!-- TOOLTIPS -->
+	<script type="text/javascript">
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 	</script>
 
 
