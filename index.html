@@ -110,7 +110,9 @@
 
 		<p style="margin-top:20px;">The Accessibility Generator Statement is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible!</p>
 
+		<div class="alert alert-info" role="alert">
 		 <p class="fw-bold monospace">Just fill in the information you have, hit 'Generate Accessibility Statement' button and then the 'Select Statement' button and copy the text produced (which you can edit in place) to wherever you need it. You can click on the 'Download Statement as a PDF' button after you click on the 'Generate Accessibility Statement' button to download/save the generated text as a PDF document.</p> 
+		</div>
 
 		<p>The <a href="https://www.tcd.ie/about/policies/accessible-info-policy.php" target="_blank" rel="noopener">Trinity Accessible Information Policy</a> sets out a formal commitment by Trinity that information should be available in an accessible format, without discrimination against those with disabilities. This complies with the <a href="https://www.tcd.ie/equality/legislation/disability-act/" target="_blank" rel="noopener nonreferrer"
 			data-bs-toggle="tooltip" title="" data-bs-original-title="The Disability Act was enacted in 2005 and includes a number of positive action measures designed to promote participation by people with disabilities in everyday life.">Disability Act 2005</a> and shows evidence that Trinity ensure that all facilities including events are accessible to all.</p>
@@ -670,25 +672,35 @@ Including closed captions?&nbsp;<i class="bi bi-info-circle-fill"></i></label></
 
 		
 		<div id="generate">
-			<button type="button">Generate Accessibility Statement</button>
+			<button type="button" class="btn btn-dark btn-lg text-white"><i class="bi bi-arrow-right-square"></i>&nbsp;Generate Accessibility Statement</button>
 			<div class="clear"></div>
 		</div>
 		
 		<div id="select" class="hide">
-			<button type="button">Select Statement</button><br>
+			<button type="button" class="btn btn-dark btn-lg text-white"><i class="bi bi-text-left"></i>&nbsp;Select Statement</button><br>
 			<div class="clear"></div>
 		</div>
 
 
-
-      <textarea rows="10" cols="30" id="result" class="hide"></textarea>
+<div class="form-outline mb-4">
+      <textarea rows="10" cols="30" id="result" class="hide form-control"></textarea>
+    </div>
 
 
 
 <div class="clear"></div>
 
+<div id="selectBtn">
 
-<input type="button" id="selectBtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Download Statement as a PDF document after you click on the Generate Accessibility Statement button" value="Download Statement as a PDF">
+<button type="button" class="btn btn-info btn-md text-black"
+ data-bs-toggle="tooltip" data-bs-placement="right" title="Download the Accessibility Statement as a PDF document after you click on the Generate Accessibility Statement button." value="Download Statement as a [PDF]"><i class="bi bi-arrow-down-square-fill"></i>&nbsp;Download Accessibility Statement as a [PDF]</button>
+</div>
+
+
+<div class="clear"></div>
+
+
+
 		<hr />
 
 		
@@ -756,11 +768,11 @@ Including closed captions?&nbsp;<i class="bi bi-info-circle-fill"></i></label></
 
       <!-- Section: Copyright -->
       <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
+        <div class="row d-flex align-items-right">
 
 
           <!-- Grid column -->
-          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-right text-md-right">
             <!-- Facebook -->
             <a href="https://www.facebook.com/trinitycollegedublin" target="_blank" rel="noopener nonreferrer"
 
