@@ -68,6 +68,8 @@ var generator = (function ($) {
 			$('#access').change (generator.accessChange);
 			$('#social').change (generator.filmChange);
 			$('#social').click(generator.filmChange);
+			$('#ename').change (generator.filmChange);
+			$('#ename').click(generator.filmChange);
 			$('#online').change (generator.filmChange);
 			$('#online').click(generator.filmChange);
 			$('#film').change (generator.filmChange);
@@ -365,7 +367,7 @@ var generator = (function ($) {
 			s += generator.processText (s, conemail, "The event organiser's email is: ");
 			
 			// Show the result
-			generator.showResult (s);
+			//generator.showResult (s);
 
 
 			// event name
