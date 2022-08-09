@@ -57,12 +57,18 @@ var generator = (function ($) {
 			generator.accessChange ();
 			generator.filmChange ();
 			generator.separateWording ();
+			$('#online').change (generator.toggleSteps);
+			$('#online').click (generator.toggleSteps);
+			$('#social').change (generator.toggleSteps);
+			$('#social').click (generator.toggleSteps);
 			$('#access').change (generator.toggleSteps);
 			$('#access').click (generator.toggleSteps);
 			$('#separateaccess').change (generator.toggleSteps);
 			$('#separateaccess').click (generator.toggleSteps);
 			$('#separateaccess').change(generator.separateWording);
 			$('#separateaccess').click (generator.separateWording);
+			$('#online').change (generator.accessChange);
+			$('#social').change (generator.accessChange);
 			$('#access').change (generator.accessChange);
 			$('#film').change (generator.filmChange);
 			$('#film').click(generator.filmChange);
