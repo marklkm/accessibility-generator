@@ -57,10 +57,6 @@ var generator = (function ($) {
 			generator.accessChange ();
 			generator.filmChange ();
 			generator.separateWording ();
-			$('#online').change (generator.toggleSteps);
-			$('#online').click (generator.toggleSteps);
-			$('#social').change (generator.toggleSteps);
-			$('#social').click (generator.toggleSteps);
 			$('#access').change (generator.toggleSteps);
 			$('#access').click (generator.toggleSteps);
 			$('#separateaccess').change (generator.toggleSteps);
@@ -70,6 +66,10 @@ var generator = (function ($) {
 			$('#online').change (generator.accessChange);
 			$('#social').change (generator.accessChange);
 			$('#access').change (generator.accessChange);
+			$('#social').change (generator.filmChange);
+			$('#social').click(generator.filmChange);
+			$('#online').change (generator.filmChange);
+			$('#online').click(generator.filmChange);
 			$('#film').change (generator.filmChange);
 			$('#film').click(generator.filmChange);
 			$('#greyed').click (generator.refresh);
