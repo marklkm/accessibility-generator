@@ -179,7 +179,7 @@
 				<input type="text" id="ename" name="ename">
 
 				<h3>Event Location</h3>
-				<p style="margin-top:10px;">Check the event against the building/room checker facility listed here: <a href="https://www.tcd.ie/disability/physical-access/building/" target="_blank">Is your building accessible?</a></p>
+				<p style="margin-top:10px;">Check the event against the building/room checker: <br><a href="https://www.tcd.ie/disability/physical-access/building/" target="_blank">Is your building accessible?</a></p>
 				<input type="text" id="elocation" name="elocation">
 
 
@@ -544,10 +544,10 @@ Designated quiet space?&nbsp;<i class="bi bi-info-circle-fill"></i></label>
 								<td><label data-bs-toggle="tooltip" data-bs-placement="top"
 							title="Closed captions are subtitles for people who are deaf or hard of hearing.">
 Including closed captions?&nbsp;<i class="bi bi-info-circle-fill"></i></label></td>
-								<td><input type="radio" name="cc" value="yes: closed caption" id="cc_yes" /><label for="cc_yes">yes</label>
-									<input type="radio" name="cc" value="no: closed caption" id="cc_no" /><label for="cc_no">no</label>
-									<input type="radio" name="cc" value="reqad: closed caption" id="cc_reqad" /><label for="cc_reqad">by request in advance</label>
-									<input type="radio" name="cc" value="req: closed caption" id="cc_req" /><label for="cc_req">by request at the event</label>
+								<td><input type="radio" name="cc" value="yes: closed captions" id="cc_yes" /><label for="cc_yes">yes</label>
+									<input type="radio" name="cc" value="no: closed captions" id="cc_no" /><label for="cc_no">no</label>
+									<input type="radio" name="cc" value="reqad: closed captions" id="cc_reqad" /><label for="cc_reqad">by request in advance</label>
+									<input type="radio" name="cc" value="req: closed captions" id="cc_req" /><label for="cc_req">by request at the event</label>
 									<input type="radio" name="cc" value="" id="cc_" /><label for="cc_">unknown</label>
 								</td>
 							</tr>
@@ -637,7 +637,7 @@ Including closed captions?&nbsp;<i class="bi bi-info-circle-fill"></i></label></
 
 
 				<span class="nowrap"><input type="checkbox" name="subtitlesshort" value="yes: subtitles" id="subtitlesshort" /><label for="subtitlesshort">Subtitles?</label></span>
-				<span class="nowrap"><input type="checkbox" name="ccshort" value="yes: closed caption" id="ccshort" /><label for="ccshort">Including closed caption?<span title="Closed caption are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)</span></label></span>
+				<span class="nowrap"><input type="checkbox" name="ccshort" value="yes: closed captions" id="ccshort" /><label for="ccshort">Including closed captions?<span title="Closed captions are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)</span></label></span>
 				<span class="nowrap"><input type="checkbox" name="audiodescriptionshort" value="yes: audio description" id="audiodescriptionshort" /><label for="audiodescriptionshort">Including audio description?<span title="Audio description narrates what is happening on screen for people who are blind or visually impaired.">(?)</span></label></span>
 
 				<span class="nowrap"><input type="checkbox" name="englishaudioshort" value="yes: English audio" id="englishaudioshort" /><label for="englishaudioshort">English language audio?</label></span>
@@ -675,17 +675,18 @@ Including closed captions?&nbsp;<i class="bi bi-info-circle-fill"></i></label></
 
 
 <div class="form-outline mb-4">
-      <textarea rows="10" cols="30" id="result" class="hide form-control"></textarea>
+      <textarea rows="10" cols="30" id="result" class="hide"></textarea>
     </div>
 
 
 
 <div class="clearfix"></div>
 
-<div id="selectBtn">
+<div id="selectBtn" class="hide">
 
 <button type="button" class="btn btn-info btn-md text-black"
  data-bs-toggle="tooltip" data-bs-placement="right" title="Download the Accessibility Statement as a PDF document after you click on the Generate Accessibility Statement button." value="Download Statement as a [PDF]"><i class="bi bi-arrow-down-square-fill"></i>&nbsp;Download Accessibility Statement as a [PDF]</button>
+ <div class="clearfix"></div>
 </div>
 
 <div class="clearfix"></div>

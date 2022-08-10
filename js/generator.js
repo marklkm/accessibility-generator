@@ -636,6 +636,7 @@ var generator = (function ($) {
 			
 			// Show the selection control
 			$('#select').show ();
+			$('#selectBtn').show ();
 		}
 	};
 	
