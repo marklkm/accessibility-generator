@@ -185,7 +185,7 @@
 <!-- EVENT LOCATION -->
 <label for="basic-url" class="form-label"><h3>Event Location</h3>
 </label>
-<h6>Check the event against the building/room checker: <a href="https://www.tcd.ie/disability/physical-access/building/" target="_blank">Is your building accessible?</a></h6>
+<h6>Check the event against the building checker: <a href="https://www.tcd.ie/disability/physical-access/building/" target="_blank">Is your building accessible?</a></h6>
 <div class="input-group input-group-lg w-50">
   <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="elocation" name="elocation">
 </div>
@@ -199,7 +199,7 @@
 
                 <tr id="online">
                         <td><label>Online Event?</label>
-                        	<p style="margin-top:20px;">If it's an online event please refer to the following information on <a href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a></p></td>
+                        	<p style="margin-top:20px;">If it's an online event, please refer to the following information: <a href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a></p></td>
 
                         <td>
                             <input type="radio" name="online" value="yes: an online event" id="online_yes" /><label for="online_yes">yes</label>
@@ -207,8 +207,21 @@
 
                             <input type="radio" name="online" value="" id="online_" /><label for="online_">unknown</label>
                             
-                        </td>
+                        </td>  
                 </tr>
+
+                <tr>
+                <td><label>In-Person Event?</label></td>
+
+                        <td>
+                            <input type="radio" name="inperson" value="yes: an in-person event" id="inperson_yes" /><label for="inperson_yes">yes</label>
+                            <input type="radio" name="inperson" value="no: an inp-erson event" id="inperson_no" /><label for="inperson_no">no</label>
+
+                            <input type="radio" name="inperson" value="" id="inperson_" /><label for="inperson_">unknown</label>
+                            
+                        </td>
+                      </tr>
+
             </table>
         </div>
 

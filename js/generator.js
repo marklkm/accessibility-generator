@@ -72,6 +72,8 @@ var generator = (function ($) {
 			$('#ename').click(generator.filmChange);
 			$('#online').change (generator.filmChange);
 			$('#online').click(generator.filmChange);
+			$('#inperson').change (generator.filmChange);
+			$('#inperson').click(generator.filmChange);
 			$('#film').change (generator.filmChange);
 			$('#film').click(generator.filmChange);
 			$('#greyed').click (generator.refresh);
@@ -401,6 +403,7 @@ var generator = (function ($) {
 				'isl',
 				'social',
 				'online',
+				'inperson',
 				'slides',
 				'quietspace',
 				'parking',
