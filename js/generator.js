@@ -70,6 +70,12 @@ var generator = (function ($) {
 			$('#social').click(generator.filmChange);
 			$('#ename').change (generator.filmChange);
 			$('#ename').click(generator.filmChange);
+			$('#elocation').change (generator.filmChange);
+			$('#elocation').click(generator.filmChange);
+			$('#contact').change (generator.filmChange);
+			$('#contact').click(generator.filmChange);
+			$('#conemail').change (generator.filmChange);
+			$('#conemail').click(generator.filmChange);
 			$('#online').change (generator.filmChange);
 			$('#online').click(generator.filmChange);
 			$('#inperson').change (generator.filmChange);
@@ -404,6 +410,9 @@ var generator = (function ($) {
 				'social',
 				'online',
 				'inperson',
+				'contact',
+				'conemail',
+				'ename',
 				'slides',
 				'quietspace',
 				'parking',
