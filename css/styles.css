@@ -82,8 +82,10 @@ table, th, td {
 
 /* unvisited link */
 a:link {
-  color: #000;
-  font-weight: bold;
+color: #000;
+font-weight: bold;
+font-size: 1rem;
+line-height: 1.4375rem;
 }
 
 /* visited link */
@@ -93,7 +95,8 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #000;
+  color: #A31F34;
+  transition: color 0.35s ease-out;
 }
 
 /* selected link */
