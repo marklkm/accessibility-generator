@@ -32,7 +32,7 @@ input[type="radio"]{
 
 	font: 1.5em arial;
 	font-weight: bold;
-  background: #614e9b;
+  background: #1B79B7;
   padding: 10px;
   color: #fff !important;
   display: inline-flex;
@@ -71,7 +71,7 @@ table, th, td {
 
 #sectionhead {
     font-size: 1.2em;
-    background: #614e9b;
+    background: #1B79B7;
     padding: 10px;
     color: #fff !important;
     display: block;
