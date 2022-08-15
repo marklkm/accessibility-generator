@@ -66,6 +66,7 @@ var generator = (function ($) {
 			$('#online').change (generator.accessChange);
 			$('#social').change (generator.accessChange);
 			$('#access').change (generator.accessChange);
+			$('#ename').change (generator.accessChange);
 			$('#social').change (generator.filmChange);
 			$('#social').click(generator.filmChange);
 			$('#ename').change (generator.filmChange);
@@ -357,30 +358,36 @@ var generator = (function ($) {
 
 			// Add comment, if any
 
-			var organiser = $('#organiser')[0].value.trim ();
-			s += generator.processText (s, organiser);
+			//var organiser = $('#organiser')[0].value.trim ();
+			//s += generator.processText (s, organiser);
+			//s += ". ";
 
 			var comment = $('#comment')[0].value.trim ();
 			s += generator.processText (s, comment);
+			s += ". ";
+		
 			
 			// Add contact details, if any
 			var contact = $('#contact')[0].value.trim ();
-			s += generator.processText (s, contact, "The event organiser is: ");
+			s += generator.processText (s, contact, "The event organiser is ");
+			s += ". ";
 			
 			// Show the result
 			generator.showResult (s);
 
 			// organiser email
 			var conemail = $('#conemail')[0].value.trim ();
-			s += generator.processText (s, conemail, "The event organiser's email is: ");
-			
+			s += generator.processText (s, conemail, "The event organiser's email is ");
+			s += ". ";
+	
 			// Show the result
 			//generator.showResult (s);
 
 
 			// event name
 			var ename = $('#ename')[0].value.trim ();
-			s += generator.processText (s, ename, "The event name is: ");
+			s += generator.processText (s, ename, "The event name is ");
+			s += ". ";
 			
 			// Show the result
 			generator.showResult (s);
@@ -388,7 +395,8 @@ var generator = (function ($) {
 
 			// event location
 			var elocation = $('#elocation')[0].value.trim ();
-			s += generator.processText (s, elocation, "The event location is: ");
+			s += generator.processText (s, elocation, "The event location is ");
+			s += ". ";
 			
 			// Show the result
 			generator.showResult (s);
