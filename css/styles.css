@@ -22,6 +22,11 @@ input[type="radio"]{
       position: relative;
 }
 
+.responsive-image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
 
 .radioButton{display:block;position:absolute}
 
