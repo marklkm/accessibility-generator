@@ -52,6 +52,7 @@
 <body>
 
 <!-- Navigation -->
+
 <nav class="navbar navbar-expand-lg bg-white">
   <div class="container">
     <a class="navbar-brand" href="https://www.tcd.ie/" target="_blank" 
@@ -62,8 +63,6 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-
 
      <div class="collapse navbar-collapse" id="navbarNav">
       	<ul class="navbar-nav ms-auto">
@@ -80,23 +79,21 @@
 
          	<li class="nav-item">
           	<a class="nav-link" href="https://www.tcd.ie/az/" target="_blank" rel="noopener">A-Z</a>
-        	</li>
-        
-       
+        	</li>   
       	</ul>
     	</div>
   	</div>
-
 	</nav>
+
 	<!-- End of Navigation -->
 
 
 	<div class="container">
 
 
-<div id="accessstatementgenerator">
+	<div id="accessstatementgenerator">
 
-	<h1 class="h1" id="#top">Trinity Event Generator</h1>
+		<h1 class="h1" id="#top">Trinity Event Generator</h1>
 
 	<div id="intro">
 
@@ -112,6 +109,9 @@
       <img src="https://pxl-tcdie.terminalfour.net/fit-in/1500x9999/filters:no_upscale()/prod01/channel_3/media/tcd/homepage/campanile-trees.jpg" class="w-100 img-fluid" alt="Trinity College Dublin Campanile and trees">
     </section>
 <!-- Background image -->
+
+
+
 
 		<p style="margin-top:20px;">The Trinity College Dublin Event Generator is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible!</p>
 
@@ -156,7 +156,6 @@
 				<input type="checkbox" name="toggled" id="type" value="1" />
 			</div>
 
-			<div class="clear"></div>
 		</div>
 
 		
@@ -165,19 +164,12 @@
 		<div id="questions" class="questions">
 
 
-<!-- Access to the event -->
 
-			<div class="container">
+
+		<div class="container">
 		
-				
-				<div style="display:none;"><textarea name="organiser" id="organiser" placeholder="Example: Defining Disability Art Exhibition event. Location: JCR Hamilton."></textarea></div> 
 
-					<!-- test label input -->
-
-
-					<!-- end -->
-
-<div id="facilities">
+		<div id="facilities">
 
 <!-- EVENT NAME -->
 <label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Name</h4></label>
@@ -259,17 +251,9 @@
 <!-- MAIN PART FOR ALL THE QUESTIONS -->
 <!-- =============================== -->
 
+<!-- Section 1 - Access to the Event -->
 
 				<h2 id="generatorheader"> Access to the Event</h2>
-
-
-<!-- Event location -->
-
-
-		
-
-			<!-- end -->
-
 
 	
 				<table class="table table-striped" cellspacing="0" width="100%">
@@ -916,6 +900,29 @@ Back to Top</a>
     $('#collapseOne').collapse('hide');
   }
 });
+
+/* bootstrap validation */
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()		
 </script>
 
 
