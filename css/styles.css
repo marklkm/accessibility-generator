@@ -22,7 +22,7 @@ input[type="radio"]{
       position: relative;
 }
 
-.back-to-top {
+/*.back-to-top {
     padding-bottom: 0.125rem;
     background-image: linear-gradient(to right,#A31F34 75%,transparent 75%);
     background-position: left bottom;
@@ -36,7 +36,7 @@ input[type="radio"]{
     text-decoration: none;
     text-align: center;
     transition: color 0.25s ease;
-}
+}*/
 
 
 .responsive-image {
