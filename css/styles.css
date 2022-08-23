@@ -22,22 +22,6 @@ input[type="radio"]{
       position: relative;
 }
 
-/*.back-to-top {
-    padding-bottom: 0.125rem;
-    background-image: linear-gradient(to right,#A31F34 75%,transparent 75%);
-    background-position: left bottom;
-    max-width: 9%;
-    background-repeat: repeat-x;
-    background-size: 0.5rem 0.125rem;
-    font-family: "Adelle W01 Italic";
-    display: inline-block;
-    font-size: 0.85rem;
-    color: #272727;
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.25s ease;
-}*/
-
 
 .responsive-image {
     max-width: 100%;
