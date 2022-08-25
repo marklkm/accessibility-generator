@@ -5,15 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="keywords" content="Trinity, Event, Generator, Accessibility, Disability, Inclusive, Facilities">
   <title>Trinity Accessibility Event Generator | Make Events Accessible</title>
-  <link rel="shortcut icon"  href="//www.tcd.ie/favicon.ico?v=3" type="image/x-icon" />
+  <link rel="shortcut icon" href="//www.tcd.ie/favicon.ico?v=3" type="image/x-icon" />
   <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-print-css/css/bootstrap-print.min.css" media="print">
+  <link rel="stylesheet" href="css/bootstrap-print.min.css" media="print">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/docs.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
 
   	<!-- Stash any existing jQuery -->
 	<script type="text/javascript">
@@ -46,6 +45,7 @@
 		/* Templates sometimes overwrite textarea height for some reason */
 		textarea {height: auto !important;}
 	</style>
+
 </head>
 
 
@@ -168,51 +168,46 @@
 		<div class="container">
 		
 
-		<div id="facilities">
+	<div id="eventinfo">
 
-<!-- EVENT NAME -->
-<label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Name</h4></label>
-<div class="input-group w-50">
-  <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename">
-</div>
+		<!-- EVENT NAME -->
+		<label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Name</h4></label>
+		<div class="input-group w-50">
+  		<input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename">
+		</div>
 
 
 				<!-- add online -->
 
+		<table class="table table-striped" style="margin-top:20px;">
+       
+       <tr id="online">
+          <td>
+          		<label>Online Event?</label>
+              <p style="margin-top:20px;">If it's an online event, please refer to the <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a> for more information. </p>
+          </td>
+          <td>
+              <input type="radio" name="online" value="yes: an online event" id="online_yes" />
+              <label for="online_yes">yes</label>
+              <input type="radio" name="online" value="no: an online event" id="online_no" /><label for="online_no">no</label>
+              <input type="radio" name="online" value="" id="online_" /><label for="online_">unknown</label>   
+          </td>  
+        </tr>
 
+        <tr id="inperson">
+           <td>
+           		<label>In-Person Event?</label>
+              <p style="margin-top:20px;">Check the event against the <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/physical-access/building/" target="_blank" class="word-wrap">Accessibility Checker</a>
+              </p>
+            </td>
 
-
-				<table class="table table-striped" style="margin-top:20px;">
-
-                <tr id="online">
-                        <td><label>Online Event?</label>
-                        	<p style="margin-top:20px;">If it's an online event, please refer to the <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility </a> information. </p></td>
-
-                        <td>
-                            <input type="radio" name="online" value="yes: an online event" id="online_yes" /><label for="online_yes">yes</label>
-                            <input type="radio" name="online" value="no: an online event" id="online_no" /><label for="online_no">no</label>
-
-                            <input type="radio" name="online" value="" id="online_" /><label for="online_">unknown</label>
-                            
-                        </td>  
-                </tr>
-
-                 <tr id="inperson">
-
-
-                <td><label>In-Person Event?</label>
-                	<p style="margin-top:20px;">Check the event against the <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/physical-access/building/" target="_blank" class="word-wrap">Accessibility Checker
-</a></p></td>
-
-                        <td>
-                            <input type="radio" name="inperson" value="yes: an in-person event" id="inperson_yes" /><label for="inperson_yes">yes</label>
-                            
-                            <input type="radio" name="inperson" value="no: an in-person event" id="inperson_no" /><label for="inperson_no">no</label>
-
-                            <input type="radio" name="inperson" value="" id="inperson_" /><label for="inperson_">unknown</label>
-                            
-                        </td>
-                      </tr>
+            <td>
+               	<input type="radio" name="inperson" value="yes: an in-person event" id="inperson_yes" /><label for="inperson_yes">yes</label> 
+                <input type="radio" name="inperson" value="no: an in-person event" id="inperson_no" /><label for="inperson_no">no</label>
+                <input type="radio" name="inperson" value="" id="inperson_" />
+                <label for="inperson_">unknown</label>   
+            </td>
+        </tr>
 
             </table>
         </div>
@@ -278,7 +273,7 @@
 							<div id="separateaccess" class="hide">
 								<input type="checkbox" name="separateaccess" value="route" id="separateaccess_yes" /><label for="separateaccess_yes"
 								data-bs-toggle="tooltip" data-bs-placement="top"
-							title="Often events have a separate route into the events for wheelchair users and those needing step free access. It's important to not assume an event doesn't have step free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">The step-free or wheelchair access is by a separate route.&nbsp;<i class="bi bi-question-circle-fill"></i></label>
+							title="Often events have a separate route into the events for wheelchair users and those needing step free access. It's important to not assume an event doesn't have step free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">&nbsp;The step-free or wheelchair access is by a separate route.&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 							</div>
 						</td>
 					</tr>
@@ -335,7 +330,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 				<h2 id="generatorheader">Facilities</h2> 
 
 				<p>Which of the following are available?</p>
-				<table class="table table-striped">
+				<table class="tableon">
 
                 <!--<tr id="online">
                         <td><label>Online Event?</label>
@@ -472,8 +467,8 @@ Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 					</tr>-->
 
 					<tr id="bluebadge">
-						<td><label>Disabled Person's Parking near the event?<br>More information on Blue Badge parking in Trinity:
-						<p style="margin-top:20px;"> <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/physical-access/parking.php" target="_blank">Accessible Campus Parking information</a></p></label></td>
+						<td><label>Disabled Person's Parking near the event?<br>See more information on <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/physical-access/parking.php" target="_blank">Accessible Campus Parking</a> at Trinity.</label>
+						</td>
 						<td>
 							<input type="radio" name="bluebadge" value="yes: blue badge parking" id="bluebadge_yes" /><label for="bluebadge_yes">yes</label>
 							<input type="radio" name="bluebadge" value="no: blue badge parking" id="bluebadge_no" /><label for="bluebadge_no">no</label>
@@ -588,7 +583,10 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 
 				<div class="form-outline mb-4"><textarea name="comment" id="comment" rows="5" placeholder="&nbsp;Please enter any further comments or details for the event."></textarea></div>
 
-				<div>
+				
+
+
+		<div>
 
 	
 			</div>
@@ -894,6 +892,12 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 </div>
 <!-- End of .container -->
 
+	
+</div>
+
+</container>
+
+<!-- JS SCRIPTS HERE -->
 
 
 	<!-- Restore any existing jQuery -->
@@ -938,10 +942,9 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 </script>
 
 
+<!--  print generated text button -->
 <script type="text/javascript">
-		// print generated text button
-
-
+		
 		document.getElementById("selectBtn").addEventListener("click", printTextArea);
 
 		      function printTextArea() {
@@ -957,6 +960,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 
 	</script>
 
+
 <!-- TOOLTIPS -->
 	<script type="text/javascript">
 		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -965,11 +969,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 	</script>
 
-
-	
-</div>
-
-</container>
+<!-- ============ -->
 
 </body>
 </html>

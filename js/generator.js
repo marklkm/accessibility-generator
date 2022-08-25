@@ -63,10 +63,10 @@ var generator = (function ($) {
 			$('#separateaccess').click (generator.toggleSteps);
 			$('#separateaccess').change(generator.separateWording);
 			$('#separateaccess').click (generator.separateWording);
-			$('#online').change (generator.accessChange);
-			$('#social').change (generator.accessChange);
+			//$('#online').change (generator.accessChange);
+			//$('#social').change (generator.accessChange);
 			$('#access').change (generator.accessChange);
-			$('#ename').change (generator.accessChange);
+			//$('#ename').change (generator.accessChange);
 			$('#social').change (generator.filmChange);
 			$('#social').click(generator.filmChange);
 			$('#ename').change (generator.filmChange);
@@ -336,6 +336,26 @@ var generator = (function ($) {
 				}
 				s += ". ";
 			}
+
+			// EVENT INFO
+
+			// Determine the event info available / unavailable
+			// This generates the yes, no, reqad and req arrays for lists of what is available
+			var buckets = generator.determineFacilitiesAvailability ('#eventinfo', '');
+			
+			// Process the 'yes' options
+			s += generator.compileOptions (buckets.yes, 'There is ', 'and');
+			
+			// Process the 'by request in advance' options
+			s += generator.compileOptions (buckets.reqad, 'There is ', 'and', ', by request in advance');
+			
+			// Process the 'by request at the event' options
+			s += generator.compileOptions (buckets.req, 'There is ', 'and', ', by request at the event');
+			
+			// Process the 'no' options
+			s += generator.compileOptions (buckets.no, "There isn't ", 'or');
+
+
 			
 			// Determine the facilities available / unavailable
 			// This generates the yes, no, reqad and req arrays for lists of what is available
@@ -360,17 +380,17 @@ var generator = (function ($) {
 
 			//var organiser = $('#organiser')[0].value.trim ();
 			//s += generator.processText (s, organiser);
-			//s += ". ";
+			s += ". ";
 
 			var comment = $('#comment')[0].value.trim ();
 			s += generator.processText (s, comment);
-			s += ". ";
+			//s += ". ";
 		
 			
 			// Add contact details, if any
 			var contact = $('#contact')[0].value.trim ();
 			s += generator.processText (s, contact, "The event organiser is ");
-			s += ". ";
+			//s += ". ";
 			
 			// Show the result
 			generator.showResult (s);
@@ -378,7 +398,7 @@ var generator = (function ($) {
 			// organiser email
 			var conemail = $('#conemail')[0].value.trim ();
 			s += generator.processText (s, conemail, "The event organiser's email is ");
-			s += ". ";
+			//s += ". ";
 	
 			// Show the result
 			//generator.showResult (s);
