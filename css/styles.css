@@ -100,6 +100,7 @@ a:link {
  font-weight: bold;
  font-size: 1.2rem;
  line-height: 1.4375rem;
+ text-decoration: none;
 }
 
 /* visited link */
@@ -109,8 +110,9 @@ a:link {
 
 /* mouse over link */
 a:hover {
- color: #A31F34;
+ color: #1074b7;
  transition: color 0.35s ease-out;
+ text-decoration: underline;
 }
 
 /* selected link */
