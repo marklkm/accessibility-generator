@@ -546,7 +546,8 @@ var generator = (function ($) {
 
 			// Determine the facilities available / unavailable
 			// This generates the yes, no, reqad and req arrays for lists of what is available
-			var buckets = generator.determineFacilitiesAvailability ('#facilitiesshort', 'short');
+			//var buckets = generator.determineFacilitiesAvailability ('#facilitiesshort', 'short');
+			var buckets = generator.determineFacilitiesAvailability ('#contactdetails');
 			
 			// Process the checkbox options
 			s += generator.compileOptions (buckets.yes, 'There is ', 'and');
@@ -554,7 +555,7 @@ var generator = (function ($) {
 
 
 			// Add comment, if any
-			var comment = $('#commentshort')[0].value.trim();
+			var comment = $('#commentshort','#contactdetails')[0].value.trim();
 			s += generator.processText (s, comment);
 		
 
