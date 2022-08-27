@@ -100,7 +100,7 @@ a:link {
  font-weight: bold;
  font-size: 1.2rem;
  line-height: 1.4375rem;
- text-decoration: none;
+ text-decoration: underline;
 }
 
 /* visited link */

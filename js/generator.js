@@ -57,6 +57,8 @@ var generator = (function ($) {
 			generator.accessChange ();
 			generator.filmChange ();
 			generator.separateWording ();
+			$('#ename').change (generator.enameChange);
+			$('#ename').click(generator.enameChange);
 			$('#access').change (generator.toggleSteps);
 			$('#access').click (generator.toggleSteps);
 			$('#separateaccess').change (generator.toggleSteps);
@@ -69,14 +71,12 @@ var generator = (function ($) {
 			//$('#ename').change (generator.accessChange);
 			$('#social').change (generator.filmChange);
 			$('#social').click(generator.filmChange);
-			$('#ename').change (generator.filmChange);
-			$('#ename').click(generator.filmChange);
-			$('#elocation').change (generator.filmChange);
-			$('#elocation').click(generator.filmChange);
-			$('#contact').change (generator.filmChange);
-			$('#contact').click(generator.filmChange);
-			$('#conemail').change (generator.filmChange);
-			$('#conemail').click(generator.filmChange);
+			$('#elocation').change (generator.elocationChange);
+			$('#elocation').click(generator.elocationChange);
+			$('#contact').change (generator.contactChange);
+			$('#contact').click(generator.contactChange);
+			$('#conemail').change (generator.conemailChange);
+			$('#conemail').click(generator.conemailChange);
 			$('#online').change (generator.filmChange);
 			$('#online').click(generator.filmChange);
 			$('#inperson').change (generator.filmChange);
@@ -172,6 +172,7 @@ var generator = (function ($) {
 			generator.toggleSteps ();
 			generator.accessChange ();
 			generator.filmChange ();
+			generator.enameChange ();
 			generator.separateWording ();
 		},
 		
@@ -407,7 +408,7 @@ var generator = (function ($) {
 			// event name
 			var ename = $('#ename')[0].value.trim ();
 			s += generator.processText (s, ename, "The event name is ");
-			s += ". ";
+			//s += ". ";
 			
 			// Show the result
 			generator.showResult (s);
@@ -416,7 +417,7 @@ var generator = (function ($) {
 			// event location
 			var elocation = $('#elocation')[0].value.trim ();
 			s += generator.processText (s, elocation, "The event location is ");
-			s += ". ";
+			//s += ". ";
 			
 			// Show the result
 			generator.showResult (s);
