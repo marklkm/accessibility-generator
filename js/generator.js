@@ -52,6 +52,7 @@ var generator = (function ($) {
 				$('#result').window.print();
 			});
 			
+
 			// Standard version
 			generator.toggleSteps ();
 			generator.accessChange ();
@@ -59,6 +60,8 @@ var generator = (function ($) {
 			generator.separateWording ();
 			$('#ename').change (generator.enameChange);
 			$('#ename').click(generator.enameChange);
+			$('#online').change (generator.filmChange);
+			$('#online').click(generator.filmChange);
 			$('#access').change (generator.toggleSteps);
 			$('#access').click (generator.toggleSteps);
 			$('#separateaccess').change (generator.toggleSteps);
@@ -75,10 +78,11 @@ var generator = (function ($) {
 			$('#elocation').click(generator.elocationChange);
 			$('#contact').change (generator.contactChange);
 			$('#contact').click(generator.contactChange);
+			$('#contactorg').change (generator.contactChange);
+			$('#contactorg').click(generator.contactChange);
+
 			$('#conemail').change (generator.conemailChange);
 			$('#conemail').click(generator.conemailChange);
-			$('#online').change (generator.filmChange);
-			$('#online').click(generator.filmChange);
 			$('#inperson').change (generator.filmChange);
 			$('#inperson').click(generator.filmChange);
 			$('#film').change (generator.filmChange);
@@ -172,7 +176,7 @@ var generator = (function ($) {
 			generator.toggleSteps ();
 			generator.accessChange ();
 			generator.filmChange ();
-			generator.enameChange ();
+			//generator.enameChange ();
 			generator.separateWording ();
 		},
 		
@@ -381,7 +385,20 @@ var generator = (function ($) {
 
 			//var organiser = $('#organiser')[0].value.trim ();
 			//s += generator.processText (s, organiser);
-			s += ". ";
+			//s += ". ";
+
+
+			// event name
+			var ename = $('#ename')[0].value.trim ();
+			s += generator.processText (s, ename, "The event name is ");
+			//s += ". ";
+
+			// provide contact details box
+			var contact=$('#contact')[0].value;				
+				if (contact!="" && s!="") s+= "\nYou can contact us about access on " +contact;
+				else if (contact!="") s+= "You can contact us about access on " +contact;
+				s += '. ';
+
 
 			var comment = $('#comment')[0].value.trim ();
 			s += generator.processText (s, comment);
@@ -389,12 +406,12 @@ var generator = (function ($) {
 		
 			
 			// Add contact details, if any
-			var contact = $('#contact')[0].value.trim ();
-			s += generator.processText (s, contact, "The event organiser is ");
+			var contactorg = $('#contactorg')[0].value.trim ();
+			s += generator.processText (s, contactorg, "The event organiser is ");
 			//s += ". ";
 			
 			// Show the result
-			generator.showResult (s);
+			//generator.showResult (s);
 
 			// organiser email
 			var conemail = $('#conemail')[0].value.trim ();
@@ -404,14 +421,9 @@ var generator = (function ($) {
 			// Show the result
 			//generator.showResult (s);
 
-
-			// event name
-			var ename = $('#ename')[0].value.trim ();
-			s += generator.processText (s, ename, "The event name is ");
-			//s += ". ";
 			
 			// Show the result
-			generator.showResult (s);
+			//generator.showResult (s);
 
 
 			// event location
@@ -439,7 +451,7 @@ var generator = (function ($) {
 				'social',
 				'online',
 				'inperson',
-				'contact',
+				'contactorg',
 				'conemail',
 				'ename',
 				'slides',
@@ -562,8 +574,8 @@ var generator = (function ($) {
 
 
 			// Add contact details, if any
-			var contact = $('#contactshort')[0].value.trim();
-			s += generator.processText (s, contact, 'Event Organiser is ');
+			var contactorg = $('#contactorg')[0].value.trim();
+			s += generator.processText (s, contactorg, 'Event Organiser is ');
 
 
 			// Show the result

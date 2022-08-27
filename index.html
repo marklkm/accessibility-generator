@@ -170,7 +170,7 @@
 	<div id="eventinfo">
 
 		<!-- EVENT NAME -->
-		<label for="basic-url" class="form-label mt-4"><h3 class="h3">Event Name</h3></label>
+		<label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Name</h4></label>
 		<div class="input-group w-50">
   		<input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename">
 		</div>
@@ -214,7 +214,7 @@
 				<!-- end -->
 
 <!-- EVENT LOCATION -->
-<label for="basic-url" class="form- mt-4"><h3 class="h3">Event Location</h3>
+<label for="basic-url" class="form- mt-4"><h4 class="h4">Event Location</h4>
 </label>
 <div class="input-group w-50">
   <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="elocation" name="elocation">
@@ -222,15 +222,15 @@
 
 
 <!-- EVENT ORGANISER NAME -->
-<label for="basic-url" class="form-label mt-4"><h3 class="h3">Event Organiser Name
-</h3></label>
+<label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Organiser Name
+</h4></label>
 <div class="input-group w-50">
-  <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="contact" name="contact" placeholder="School/Dept/Club/Society/Org/Unit/Centre">
+  <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org/Unit/Centre">
 </div>
 
 <!-- EVENT ORGANISER EMAIL -->
-<label for="basic-url" class="form-label mt-4"><h3 class="h3">Event Organiser Email
-</h3></label>
+<label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Organiser Email
+</h4></label>
 <div class="input-group w-50">
   <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="conemail" name="conemail" placeholder="Please provide a valid email">
 </div>
@@ -346,7 +346,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 
 
 
-
+          <!-- seating -->
 					<tr id="seating">
 						<td><label>Seating?</label></td>
 						<td>
@@ -357,6 +357,8 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 							<input type="radio" name="seating" value="" id="seating_" /><label for="seating_">unknown</label>
 						</td>
 					</tr>
+					<!-- seating -->
+
 					<tr id="wheelchairtoilet">
 						<td><label>Wheelchair accessible toilet?</label></td>
 						
@@ -480,7 +482,7 @@ Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 
 
 				<div id="film">
-					<h2 id="generatorheader">Audio and Visual</h2>
+					<h2 id="generatorheader">Audio &amp; Visual</h2>
 
 					<p>Information on making media accessible can be found at <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/teaching-info/TIC/materials/social-media.php" target="_blank">Social Media Accessibility</a></p>
 
@@ -578,11 +580,16 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 
 				<label for="access_wa" class="form-label mt-4" data-bs-toggle="tooltip" data-bs-placement="top"
 							title="These questions are not necessarily complete in terms of providing comprehensive access information. Please think about other details you might want to add in the further comments section. If the event has catering, you might want to include food options, for example, Kosher, Halal, Vegan, etc.">Any further comments or details?
-							<i class="bi bi-question-circle-fill"></i></i></label>
+							<i class="bi bi-question-circle-fill"></i></label>
 
 				<div class="form-outline mb-4"><textarea name="comment" id="comment" rows="5" placeholder="&nbsp;Please enter any further comments or details for the event."></textarea></div>
 
+<div>
+<label>Please provide contact details for any access inquiries (if not included elsewhere):</label> 
+<div class="clearfix"></div>
 
+	<input id="contact" name="contact" type="text" class="input-group w-75">
+</div>
 
 
 
@@ -670,8 +677,10 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 			<h2>Further details and contacts</h2>
 			<div>
 				<label>Any further comments?<span title="Examples of things here might be that there is a ramp but in needs putting out and who to contact or that the ramp is a split or gutter ramp which is not suitable for powerchair users, another might be that printouts of the script are available on the door (for those with hearing impairments)">(?)</label>
-				<div><textarea name="commentshort" id="commentshort" placeholder=""></textarea></div>
+				<div><textarea name="comment" id="comment" placeholder=""></textarea></div>
 			</div>
+
+			<div><label>Please provide contact details for any access inquiries (if not included elsewhere):</label> <input id="contact" name="contact" type="text"></div>
 
 
 
@@ -682,7 +691,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 
 
 		
-		<div id="generate">
+		<div id="generate" class="mt-4">
 			<button type="button" class="btn btn-dark btn-lg text-white"><i class="bi bi-arrow-right-square"></i>&nbsp;Generate Accessibility Statement</button>
 			<div class="clearfix"></div>
 		</div>
@@ -690,8 +699,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 		
 	    	<div id="select" class="hide">
 			<button type="button" class="btn btn-success btn-lg text-white"
-			data-bs-toggle="tooltip" data-bs-placement="right" title="Copy the text produced (which you can edit in place) to wherever you need it." >
-			<i class="bi bi-file-text-fill"></i>&nbsp;Select Accessibility Statement
+			data-bs-toggle="tooltip" data-bs-placement="right" title="Copy the text produced (which you can edit in place) to wherever you need it." >Select Accessibility Statement
 		</button>
 
 			<div class="clearfix"></div>
@@ -714,7 +722,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 <div id="selectBtn" class="hide">
 
 <button type="button" class="btn btn-info btn-lg text-black"
- data-bs-toggle="tooltip" data-bs-placement="right" title="Download the Accessibility Statement as a PDF document after you click on the Generate Accessibility Statement button." value="Download Statement as a [PDF]"><i class="bi bi-file-pdf-fill"></i>
+ data-bs-toggle="tooltip" data-bs-placement="right" title="Download the Accessibility Statement as a PDF document after you click on the Generate Accessibility Statement button." value="Download Statement as a [PDF]"><i class="bi bi-file-arrow-down-fill"></i>
 &nbsp;Download Accessibility Statement as a [PDF]</button>
  <div class="clearfix"></div>
 </div>
@@ -725,18 +733,17 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Contact &amp; Social Media for Trinity Disability Service</h5>
+        <h4 class="card-title h4">Contact &amp; Social Media for Trinity Disability Service</h4>
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><i class="bi bi-envelope-fill"></i>&nbsp;Email: askds@tcd.ie</li>
   <li class="list-group-item"><i class="bi bi-telephone-outbound-fill"></i>
 <a href="tel:0035318963111"> +353 1 896 3111</a>
   </li>
   <li class="list-group-item"><i class="bi bi-text-center"></i>&nbsp;Text: 087 113 3185</li>
+          <li class="list-group-item"><i class="bi bi-twitter"></i>&nbsp;<a href="https://twitter.com/TCDAbility" target="_blank" rel="noopener nonreferrer">Twitter</a></li>
     <li class="list-group-item"><i class="bi bi-instagram"></i>&nbsp;<a href="https://www.instagram.com/tcd.ability/" target="_blank" rel="noopener nonreferrer">Instagram</a></li>
-        <li class="list-group-item"><i class="bi bi-twitter"></i>&nbsp;<a href="https://twitter.com/TCDAbility" target="_blank" rel="noopener nonreferrer">Twitter</a></li>
+                <li class="list-group-item"><img src="https://img.icons8.com/color/24/000000/linktree.png"/>&nbsp;<a href="https://linktr.ee/TrinityDS" target="_blank" rel="noopener nonreferrer">Linktree</a></li>
         <li class="list-group-item"><i class="bi bi-facebook"></i>&nbsp;<a href="https://www.facebook.com/trinitydisabilityservice/" target="_blank" rel="noopener nonreferrer">Facebook</a></li>
-        <li class="list-group-item"><img src="https://img.icons8.com/color/24/000000/linktree.png"/>&nbsp;<a href="https://linktr.ee/TrinityDS" target="_blank" rel="noopener nonreferrer">Linktree</a></li>
-          <li class="list-group-item"><a href="https://www.youtube.com/user/DSServiceTCD" target="_blank" rel=" noopener nonreferrer"><i class="bi bi-youtube"></i>&nbsp;YouTube</a></li>
   <li class="list-group-item"><a href="https://www.tcd.ie/disability/" target="_blank" rel=" noopener nonreferrer"><img src="https://img.icons8.com/glyph-neue/24/000000/domain.png"/>&nbsp;Trinity Disability Service</a></li>
 </ul>
       </div>
@@ -746,7 +753,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Contact &amp; Social Media for Trinity Ability co_op</h5>
+        <h4 class="card-title h4">Contact &amp; Social Media for Trinity Ability co_op</h4>
 <ul class="list-group list-group-flush">
   <li class="list-group-item"><i class="bi bi-envelope-fill"></i>&nbsp;Email: abilitycoop@gmail.com</li>
   <li class="list-group-item"><i class="bi bi-twitter"></i>&nbsp;<a href="https://twitter.com/abilitycoop/" target="_blank" rel="noopener nonreferrer">Twitter</a></li>
@@ -755,7 +762,6 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
     <li class="list-group-item"><i class="bi bi-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/trinity-ability-co-op-9a20981ab/" target="_blank" rel="noopener nonreferrer">LinkedIn</a></li>
      <li class="list-group-item"><img src="https://img.icons8.com/color/24/000000/linktree.png"/>&nbsp;<a href="https://linktr.ee/abilitycoop" target="_blank" rel="noopener nonreferrer">Linktree</a></li>
      <li class="list-group-item"><a href="https://open.spotify.com/show/3EI3es71Uw4WVg1tyq1jC9" target="_blank" rel=" noopener nonreferrer"><i class="bi bi-spotify"></i>&nbsp;Spotify</a></li>
-      <li class="list-group-item"><a href="https://www.youtube.com/channel/UCg4z6K0tQL-KwcMGs1P4erw" target="_blank" rel=" noopener nonreferrer"><i class="bi bi-youtube"></i>&nbsp;YouTube</a></li>
        <li class="list-group-item"><a href="https://abilitycoop.com/" target="_blank" rel=" noopener nonreferrer"><img src="https://img.icons8.com/glyph-neue/24/000000/domain.png"/>&nbsp;Trinity Ability co_op</a></li>
 </ul>
       </div>
