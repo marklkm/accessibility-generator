@@ -107,8 +107,9 @@
 
 <!-- Background image -->
 <section class="p-4 d-flex justify-content-center mb-6">
-      <img src="https://pxl-tcdie.terminalfour.net/fit-in/1500x9999/filters:no_upscale()/prod01/channel_3/media/tcd/homepage/campanile-trees.jpg" class="w-100 img-fluid" alt="Trinity College Dublin. Showning the Campanile and trees in the foreground, and Trinity front square in the background." title="Trinity College Dublin. Showning the Campanile and trees in the foreground, and Trinity front square in the background.">
+      <img src="https://pxl-tcdie.terminalfour.net/fit-in/1500x9999/filters:no_upscale()/prod01/channel_3/media/tcd/homepage/campanile-trees.jpg" class="w-100 img-fluid" alt="Trinity College Dublin. Showning the Campanile and trees in the foreground, and Trinity front square in the background." title="Trinity College Dublin. Showning the Campanile and trees in the foreground, and Trinity front square in the background." class="lazyload w-100">
     </section>
+
 <!-- Background image -->
 
 
@@ -122,7 +123,9 @@
 
 
 		<p style="margin-top:20px;">Trinity College Dublin is committed to providing an environment that is accessible to individuals with disabilities. The <a aria-label="Opens in a new window" href="https://www.tcd.ie/about/policies/accessible-info-policy.php" target="_blank" rel="noopener">Trinity Accessible Information Policy</a> sets out a formal commitment by Trinity that information should be available in an accessible format, without discrimination against those with disabilities. This complies with the <a aria-label="Opens in a new window" href="https://www.tcd.ie/equality/legislation/disability-act/" target="_blank" rel="noopener nonreferrer"
-			data-bs-toggle="tooltip" title="" data-bs-original-title="The Disability Act was enacted in 2005 and includes a number of positive action measures designed to promote participation by people with disabilities in everyday life.">Disability Act 2005 </a> and shows evidence that Trinity College Dublin ensures that all facilities including events are accessible to all. The Trinity Ability co_op have just released their guidelines. This guide will provide clubs and societies with the information that they need to become more inclusive to students with disabilities. You can check them out on their website <a aria-label="Opens in a new window" href="https://abilitycoop.com/" target="_blank" rel="noopener nonreferrer">abilitycoop.com</a></p>
+			data-bs-toggle="tooltip" title="" data-bs-custom-class="custom-tooltip" data-bs-original-title="The Disability Act was enacted in 2005 and includes a number of positive action measures designed to promote participation by people with disabilities in everyday life.">Disability Act 2005 </a> and shows evidence that Trinity College Dublin ensures that all facilities including events are accessible to all. The Trinity Ability co_op have just released their guidelines. This guide will provide clubs and societies with the information that they need to become more inclusive to students with disabilities. You can check them out on their website <a aria-label="Opens in a new window" href="https://abilitycoop.com/" target="_blank" rel="noopener nonreferrer">abilitycoop.com</a></p>
+
+			<hr>	
 
 	</div>
 
@@ -254,11 +257,11 @@
 						<td><label>Does the event have:&nbsp;</label>
 
 							<input type="radio" class="radio inline" name="access" value="wa" id="access_wa" data-toggle="collapse"/>
-							<label for="access_wa" data-bs-toggle="tooltip" data-bs-placement="top"
+							<label for="access_wa" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="top"
 							title="Wheelchair access requires flat access (no lip/transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room.">Wheelchair access&nbsp;<i class="bi bi-question-circle-fill"></i></i></label>
 							<input type="radio" class="radio inline" name="access" value="sf" id="access_sf" />
 							<label for="access_sf" 
-							data-bs-toggle="tooltip" data-bs-placement="top"
+							data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"	
 							title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway.">
 							Step-free access only&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 							<input type="radio" class="radio inline" name="access" value="no" id="access_no" />
@@ -286,7 +289,7 @@
 				<table class="table">
 					<tr>
 						<td>
-							<label for="steps_count" data-bs-toggle="tooltip" data-bs-placement="top"
+							<label for="steps_count" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
 							title="Give a number of steps or a number of flights of stairs.">
 								Approximately how many steps<span id="separateshow"> into the main entrance</span>?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 						</td>
@@ -315,7 +318,7 @@
 							<input type="radio" name="steps_hr" value="both" id="steps_hr_both" />
 
 							<label for="steps_hr_both" 
-							data-bs-toggle="tooltip" data-bs-placement="top"
+							data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
 							title="Narrow stairs so that someone can hold both at the same time, not a wide flight with one on each side.">
 on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 
@@ -374,7 +377,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 							<!-- end -->
 
 							<input type="radio" name="wheelchairtoilet" value="yes: a partially accessible toilet" id="wheelchairtoilet_p" />
-							<label for="wheelchairtoilet_p" data-bs-toggle="tooltip" data-bs-placement="top"
+							<label for="wheelchairtoilet_p" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
 							title="For instance, a toilet that is not large enough for a wheelchair to move around in or which is big enough but doesn't have any grab rails.">
 
 								Partially accessible toilet&nbsp;<i class="bi bi-question-circle-fill"></i></label>
@@ -403,7 +406,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 					
 					<tr id="isl">
 						<td><label 
-							data-bs-toggle="tooltip" data-bs-placement="top"
+							data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
 							title="ISL Interpreters should be provided upon request. Ask attendees if they have any accessibility requirements at least two weeks before an event.">
 
 
@@ -422,8 +425,8 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 
 					<tr id="social">
 						<td><label 
-										data-bs-toggle="tooltip" data-bs-placement="top"
-							title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event. Please tell us at least 2 weeks before the Trinity event. We need 2 weeks to arrange services such as sign language interpreters.">
+										data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+							title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event'.">
 
 							Does the event have a question about accessibility requirements of attendees?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
 
@@ -441,7 +444,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 
 					<tr id="quietspace">
 						<td><label 
-					data-bs-toggle="tooltip" data-bs-placement="top"
+					data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
 							title="Events can be overwhelming for many people. Providing a quiet, sensory-friendly space is important so people can take a break from the main event. Find out more about creating a sensory-friendly environment at the TCD Sense Project.">
 Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 							<p style="margin-top:20px;">Refer to Trinity's Sensory Processing Project at <a aria-label="Opens in a new window" href="https://linktr.ee/TCDSense" target="_blank">TCD Sense Project</a></p></td>
@@ -541,7 +544,7 @@ Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 						</tr>
 						<tr id="audiodescription">
 							<td><label 
-								data-bs-toggle="tooltip" data-bs-placement="top"
+								data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
 							title="Audio description is what's happening on screen for those with sight impairments.">
 							Is there an audio description?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
 							<td>
@@ -556,7 +559,7 @@ Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 
 												<div id="cc" class="hide">
 							<tr id="cc">
-								<td><label data-bs-toggle="tooltip" data-bs-placement="top"
+								<td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
 							title="Closed captions are subtitles for people who are deaf or hard of hearing.">
 Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
 								<td><input type="radio" name="cc" value="yes: closed captions" id="cc_yes" /><label for="cc_yes">yes</label>
@@ -579,6 +582,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 
 
 				<label for="access_wa" class="form-label mt-4" data-bs-toggle="tooltip" data-bs-placement="top"
+				data-bs-custom-class="custom-tooltip"
 							title="These questions are not necessarily complete in terms of providing comprehensive access information. Please think about other details you might want to add in the further comments section. If the event has catering, you might want to include food options, for example, Kosher, Halal, Vegan, etc.">Any further comments or details?
 							<i class="bi bi-question-circle-fill"></i></label>
 
@@ -699,7 +703,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 		
 	    	<div id="select" class="hide">
 			<button type="button" class="btn btn-success btn-lg text-white"
-			data-bs-toggle="tooltip" data-bs-placement="right" title="Copy the text produced (which you can edit in place) to wherever you need it." >Select Accessibility Statement
+			data-bs-toggle="tooltip" data-bs-placement="right" title="Copy the text produced (which you can edit in place) to wherever you need it." ><i class="bi bi-file-text-fill"></i>&nbsp;Select Accessibility Statement
 		</button>
 
 			<div class="clearfix"></div>
@@ -743,8 +747,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
           <li class="list-group-item"><i class="bi bi-twitter"></i>&nbsp;<a href="https://twitter.com/TCDAbility" target="_blank" rel="noopener nonreferrer">Twitter</a></li>
     <li class="list-group-item"><i class="bi bi-instagram"></i>&nbsp;<a href="https://www.instagram.com/tcd.ability/" target="_blank" rel="noopener nonreferrer">Instagram</a></li>
                 <li class="list-group-item"><img src="https://img.icons8.com/color/24/000000/linktree.png"/>&nbsp;<a href="https://linktr.ee/TrinityDS" target="_blank" rel="noopener nonreferrer">Linktree</a></li>
-        <li class="list-group-item"><i class="bi bi-facebook"></i>&nbsp;<a href="https://www.facebook.com/trinitydisabilityservice/" target="_blank" rel="noopener nonreferrer">Facebook</a></li>
-  <li class="list-group-item"><a href="https://www.tcd.ie/disability/" target="_blank" rel=" noopener nonreferrer"><img src="https://img.icons8.com/glyph-neue/24/000000/domain.png"/>&nbsp;Trinity Disability Service</a></li>
+  <li class="list-group-item"><a href="https://www.tcd.ie/disability/" target="_blank" rel=" noopener nonreferrer"><img src="https://img.icons8.com/glyph-neue/24/000000/domain.png"/>&nbsp;Trinity Disability Service website</a></li>
 </ul>
       </div>
     </div>
@@ -761,8 +764,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
    <li class="list-group-item"><i class="bi bi-facebook"></i>&nbsp;<a href="https://www.facebook.com/Ability-Co_op-108998600831478/" target="_blank" rel="noopener nonreferrer">Facebook</a></li>
     <li class="list-group-item"><i class="bi bi-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/trinity-ability-co-op-9a20981ab/" target="_blank" rel="noopener nonreferrer">LinkedIn</a></li>
      <li class="list-group-item"><img src="https://img.icons8.com/color/24/000000/linktree.png"/>&nbsp;<a href="https://linktr.ee/abilitycoop" target="_blank" rel="noopener nonreferrer">Linktree</a></li>
-     <li class="list-group-item"><a href="https://open.spotify.com/show/3EI3es71Uw4WVg1tyq1jC9" target="_blank" rel=" noopener nonreferrer"><i class="bi bi-spotify"></i>&nbsp;Spotify</a></li>
-       <li class="list-group-item"><a href="https://abilitycoop.com/" target="_blank" rel=" noopener nonreferrer"><img src="https://img.icons8.com/glyph-neue/24/000000/domain.png"/>&nbsp;Trinity Ability co_op</a></li>
+       <li class="list-group-item"><a href="https://abilitycoop.com/" target="_blank" rel=" noopener nonreferrer"><img src="https://img.icons8.com/glyph-neue/24/000000/domain.png"/>&nbsp;Trinity Ability co_op website</a></li>
 </ul>
       </div>
 

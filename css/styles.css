@@ -27,6 +27,11 @@ input[type="radio"]{
       position: relative;
 }
 
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+  font-size: 20px;
+}
+
 
 /* Set with for responsive images */
 .responsive-image {
