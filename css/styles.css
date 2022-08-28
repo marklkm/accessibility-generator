@@ -17,7 +17,7 @@ ol li {margin: 1em 0 1em;}
 textarea, #steps_count {font: inherit; color: black;}
 #result {padding: 10px; border: 1px solid #000; resize: none; width: 57%; font: inherit; color: black; }
 #comment, #commentshort, #organiser {width: 57%; resize: none;}
-#contact, #contactshort, #conemail, #ename, #elocation {min-width: 20em;}
+#contact, #contactorg, #contactshort, #conemail, #ename, #elocation {min-width: 20em;}
 .nowrap {white-space: nowrap;}
 
 /* space after radio buttons */
