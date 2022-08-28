@@ -452,6 +452,7 @@ var generator = (function ($) {
 				'online',
 				'inperson',
 				'contactorg',
+				'contact',
 				'conemail',
 				'ename',
 				'slides',
