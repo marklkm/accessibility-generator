@@ -53,15 +53,29 @@ var generator = (function ($) {
 			});
 			
 
-			// Standard version
+			// Standard version questions
 			generator.toggleSteps ();
 			generator.accessChange ();
 			generator.filmChange ();
 			generator.separateWording ();
+			// Event Name
 			$('#ename').change (generator.enameChange);
 			$('#ename').click(generator.enameChange);
+			// Online event and In-person event
 			$('#online').change (generator.filmChange);
 			$('#online').click(generator.filmChange);
+			$('#inperson').change (generator.filmChange);
+			$('#inperson').click(generator.filmChange);
+			// Event location
+			$('#elocation').change (generator.elocationChange);
+			$('#elocation').click(generator.elocationChange);
+			// Event Organiser Name
+			$('#contactorg').change (generator.contactChange);
+			$('#contactorg').click(generator.contactChange);
+			//Event Organiser Email
+			$('#conemail').change (generator.conemailChange);
+			$('#conemail').click(generator.conemailChange);
+			// Access to the Event
 			$('#access').change (generator.toggleSteps);
 			$('#access').click (generator.toggleSteps);
 			$('#separateaccess').change (generator.toggleSteps);
@@ -74,17 +88,8 @@ var generator = (function ($) {
 			//$('#ename').change (generator.accessChange);
 			$('#social').change (generator.filmChange);
 			$('#social').click(generator.filmChange);
-			$('#elocation').change (generator.elocationChange);
-			$('#elocation').click(generator.elocationChange);
 			$('#contact').change (generator.contactChange);
 			$('#contact').click(generator.contactChange);
-			$('#contactorg').change (generator.contactChange);
-			$('#contactorg').click(generator.contactChange);
-
-			$('#conemail').change (generator.conemailChange);
-			$('#conemail').click(generator.conemailChange);
-			$('#inperson').change (generator.filmChange);
-			$('#inperson').click(generator.filmChange);
 			$('#film').change (generator.filmChange);
 			$('#film').click(generator.filmChange);
 			$('#greyed').click (generator.refresh);

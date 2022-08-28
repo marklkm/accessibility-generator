@@ -38,6 +38,7 @@ input[type="radio"]{
     max-width: 100%;
     display: block;
     height: auto;
+    background-size: cover;
 }
 
 /* set position for radio buttons */
