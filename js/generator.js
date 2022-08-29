@@ -61,33 +61,40 @@ var generator = (function ($) {
 			// Event Name
 			$('#ename').change (generator.enameChange);
 			$('#ename').click(generator.enameChange);
+			
 			// Online event and In-person event
-			$('#online').change (generator.filmChange);
-			$('#online').click(generator.filmChange);
-			$('#inperson').change (generator.filmChange);
-			$('#inperson').click(generator.filmChange);
+			$('#online').change (generator.onlineChange);
+			$('#online').click(generator.onlineChange);
+			$('#inperson').change (generator.inpersonChange);
+			$('#inperson').click(generator.inpersonChange);
+			
 			// Event location
 			$('#elocation').change (generator.elocationChange);
 			$('#elocation').click(generator.elocationChange);
+			
 			// Event Organiser Name
 			$('#contactorg').change (generator.contactChange);
 			$('#contactorg').click(generator.contactChange);
+			
 			//Event Organiser Email
 			$('#conemail').change (generator.conemailChange);
 			$('#conemail').click(generator.conemailChange);
+			
 			// Access to the Event
 			$('#access').change (generator.accessChange);
 			$('#access').change (generator.toggleSteps);
 			$('#access').click (generator.toggleSteps);
+			
 			$('#separateaccess').change (generator.toggleSteps);
 			$('#separateaccess').click (generator.toggleSteps);
 			$('#separateaccess').change(generator.separateWording);
 			$('#separateaccess').click (generator.separateWording);
+			
 			//$('#online').change (generator.accessChange);
 			//$('#social').change (generator.accessChange);
 			//$('#ename').change (generator.accessChange);
-			$('#social').change (generator.filmChange);
-			$('#social').click(generator.filmChange);
+			$('#social').change (generator.socialChange);
+			$('#social').click(generator.socialChange);
 			$('#contact').change (generator.contactChange);
 			$('#contact').click(generator.contactChange);
 			$('#film').change (generator.filmChange);
@@ -382,8 +389,24 @@ var generator = (function ($) {
 			
 			// Process the 'no' options
 			s += generator.compileOptions (buckets.no, "There isn't ", 'or');
-			
 
+			// Add comment, if any
+			var comment = $('#comment') [0].value.trim ();
+			s += generator.processText (s, comment);
+			s += ". ";
+			
+			// Add contact details, if any
+			
+			// provide contact details box
+			var contact=$('#contact')[0].value;				
+				if (contact!="" && s!="") s+= "\nYou can contact us about any access inquiries on " +contact;
+				else if (contact!="") s+= "You can contact us about any access inquiries on " +contact;
+			s += '. ';
+
+			// event name
+			var ename = $('#ename')[0].value.trim ();
+			s += generator.processText (s, ename, "The event name is ");
+			//s += ". ";
 
 
 			// Add comment, if any
@@ -393,20 +416,8 @@ var generator = (function ($) {
 			//s += ". ";
 
 
-			// event name
-			var ename = $('#ename')[0].value.trim ();
-			s += generator.processText (s, ename, "The event name is ");
-			//s += ". ";
-
-			// provide contact details box
-			var contact=$('#contact')[0].value;				
-				if (contact!="" && s!="") s+= "\nYou can contact us about access on " +contact;
-				else if (contact!="") s+= "You can contact us about access on " +contact;
-				s += '. ';
-
-
-			var comment = $('#comment')[0].value.trim ();
-			s += generator.processText (s, comment);
+			//var comment = $('#comment')[0].value.trim ();
+			//s += generator.processText (s, comment);
 			//s += ". ";
 		
 			
