@@ -140,11 +140,9 @@
 	<div class="requireJS">
 
 
-
 		<!--The buttons at the top-->
-	
+		<!-- The buttons for Short and Standard version -->
 		<div id="buttons">
-
 			<div class="toggle">
 				<label for="greyed">
 					<span class="unselected">Show inactive questions</span>
@@ -159,8 +157,8 @@
 				</label>
 				<input type="checkbox" name="toggled" id="type" value="1" />
 			</div>
-
 		</div>
+		<!-- End of the buttons for Short and Standard version -->
 
 		
 		
@@ -168,25 +166,21 @@
 		<div id="questions" class="questions">
 
 
-
-
 		<div class="container">
 		
 
-	<div id="eventinfo">
+		<div id="eventinfo">
 
 		<!-- EVENT NAME -->
 		<label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Name</h4></label>
 		<div class="input-group w-50">
   		<input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename">
 		</div>
+		<!-- End of Event Name -->
 
-
-				<!-- add online -->
-
+		<!-- Add Online Event -->
 		<table class="table" style="margin-top:20px;">
-       
-       <tr id="online">
+      <tr id="online">
           <td>
           		<label>Online Event?</label>
               <p style="margin-top:20px;">If it's an online event, please refer to the <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a> for more information. </p>
@@ -194,18 +188,19 @@
           <td>
               <input type="radio" name="online" value="yes: an online event" id="online_yes" />
               <label for="online_yes">yes</label>
-              <input type="radio" name="online" value="no: an online event" id="online_no" /><label for="online_no">no</label>
-              <input type="radio" name="online" value="" id="online_" /><label for="online_">unknown</label>   
+              <input type="radio" name="online" value="no: an online event" id="online_no" />
+              <label for="online_no">no</label>
+              <input type="radio" name="online" value="" id="online_" /><label for="online_">unknown
+              </label>   
           </td>  
-        </tr>
+      </tr>
 
-        <tr id="inperson">
+        <tr id="inperson"><!-- In-Person -->
            <td>
            		<label>In-Person Event?</label>
               <p style="margin-top:20px;">Check the event against the <a aria-label="Opens in a new window" href="https://www.tcd.ie/disability/physical-access/building/" target="_blank" class="word-wrap">Accessibility Checker</a>
               </p>
             </td>
-
             <td>
                	<input type="radio" name="inperson" value="yes: an in-person event" id="inperson_yes" /><label for="inperson_yes">yes</label> 
                 <input type="radio" name="inperson" value="no: an in-person event" id="inperson_no" /><label for="inperson_no">no</label>
@@ -214,38 +209,37 @@
             </td>
         </tr>
 
-            </table>
+      </table>
+      <!-- End of table -->
         </div>
 
-				<!-- end -->
 
-<!-- EVENT LOCATION -->
-<label for="basic-url" class="form- mt-4"><h4 class="h4">Event Location</h4>
-</label>
-<div class="input-group w-50">
-  <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="elocation" name="elocation">
-</div>
-
-
-<!-- EVENT ORGANISER NAME -->
-<label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Organiser Name
-</h4></label>
-<div class="input-group w-50">
-  <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" 
-  id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org/Unit/Centre">
-</div>
-
-<!-- EVENT ORGANISER EMAIL -->
-<label for="basic-url" class="form-label mt-4"><h4 class="h4">Event Organiser Email
-</h4></label>
-<div class="input-group w-50">
-  <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="conemail" name="conemail" placeholder="Please provide a valid email">
-</div>
-
-
-
-
+			<!-- EVENT LOCATION -->
+			<label for="basic-url" class="form- mt-4"><h4 class="h4">Event Location</h4>
+			</label>
+			<div class="input-group w-50">
+  			<input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="elocation" name="elocation">
 			</div>
+
+		<!-- EVENT ORGANISER NAME -->
+		<label for="basic-url" class="form-label mt-4">
+			<h4 class="h4">Event Organiser Name</h4>
+		</label>
+		<div class="input-group w-50">
+  		<input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" 
+  		id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org/Unit/Centre">
+		</div>
+
+		<!-- EVENT ORGANISER EMAIL -->
+		<label for="basic-url" class="form-label mt-4">
+			<h4 class="h4">Event Organiser Email</h4>
+		</label>
+		<div class="input-group w-50">
+  		<input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" 
+  		id="conemail" name="conemail" placeholder="Please provide a valid email">
+		</div>
+
+	</div>
 
 
 <!-- MAIN PART FOR ALL THE QUESTIONS -->
@@ -807,7 +801,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 <!-- <div class="container my-5"> -->
   <!-- Footer -->
   <footer
-          class="text-left text-lg-start text-white"
+          class="text-left text-lg-start text-white custom-footer"
           style="background-color: #36434d;"
           >
     <!-- Grid container -->
@@ -833,7 +827,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 
 
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 align-items-right">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 align-items-right customer-footer">
  <p><a href="https://www.tcd.ie/accessibility/" target="_blank" rel="noopener nonreferrer" 
  	class="text-white">Accessibility</a></p>
 

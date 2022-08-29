@@ -76,6 +76,7 @@ var generator = (function ($) {
 			$('#conemail').change (generator.conemailChange);
 			$('#conemail').click(generator.conemailChange);
 			// Access to the Event
+			$('#access').change (generator.accessChange);
 			$('#access').change (generator.toggleSteps);
 			$('#access').click (generator.toggleSteps);
 			$('#separateaccess').change (generator.toggleSteps);
@@ -84,7 +85,6 @@ var generator = (function ($) {
 			$('#separateaccess').click (generator.separateWording);
 			//$('#online').change (generator.accessChange);
 			//$('#social').change (generator.accessChange);
-			$('#access').change (generator.accessChange);
 			//$('#ename').change (generator.accessChange);
 			$('#social').change (generator.filmChange);
 			$('#social').click(generator.filmChange);
