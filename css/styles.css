@@ -31,23 +31,14 @@ input[type="radio"]{
   text-decoration: none;
 }
 
-@media (min-width: 1200px)
-.site-header .site-header__site-search {
-    display: block !important;
+@media (min-width: 992px)
+.bg-img {
+    height: 450px;
 }
 
-.site-header .site-header__site-nav ul {
-    display: none;
-    flex: 0 1 50%;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 20px 0 10px;
-}
-
-.site-header ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+@media (min-width: 992px)
+.bg-img {
+    padding: 0;
 }
 
 .custom-tooltip {
