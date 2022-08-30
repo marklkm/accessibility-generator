@@ -22,11 +22,11 @@
     <!-- Stash any existing jQuery -->
     <script>
         if (typeof window.$ !== 'undefined') {
-        			var originalDollar = $.noConflict(true);
-        		}
-        		if (typeof window.jQuery !== 'undefined') {
-        			var originalJquery = jQuery.noConflict(true);
-        		}
+                    var originalDollar = $.noConflict(true);
+                }
+                if (typeof window.jQuery !== 'undefined') {
+                    var originalJquery = jQuery.noConflict(true);
+                }
     </script>
 
     <!-- Scripts -->
@@ -39,16 +39,16 @@
     <script src="js/jquery.tooltip.js"></script>
     <script>
         $(function() {
-        			generator.init ();
-        		});
+                    generator.init ();
+                });
     </script>
 
     <style>
         /* If embedded in a Wordpress installation, hide the main title */
-        		#accessstatementgenerator h1 {display: none;}
+                #accessstatementgenerator h1 {display: none;}
         
-        		/* Templates sometimes overwrite textarea height for some reason */
-        		textarea {height: auto !important;}
+                /* Templates sometimes overwrite textarea height for some reason */
+                textarea {height: auto !important;}
     </style>
 
 </head>
@@ -56,39 +56,39 @@
 <body>
 
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
-<div class="container">
-   <a class="navbar-brand" href="https://www.tcd.ie/" target="_blank" rel="noopener">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.tcd.ie/" target="_blank" rel="noopener">
                 <img src="img/trinity_logo.jpeg" alt="Trinity College Dublin Logo" height="100">
             </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
- 
-  <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ms-auto ">
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="https://www.tcd.ie/study/">Students</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="https://www.tcd.ie/courses/">Courses</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="https://www.tcd.ie/research/">Research</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="https://www.tcd.ie/structure/">Faculties &amp; Schools</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="https://www.tcd.ie/alumni/">Alumni</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-2" href="https://www.tcd.ie/az/">A-Z</a>
-      </li>
-    </ul>
-  </div>
-</div>
-</nav>
+
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="https://www.tcd.ie/study/">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="https://www.tcd.ie/courses/">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="https://www.tcd.ie/research/">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="https://www.tcd.ie/structure/">Faculties &amp; Schools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="https://www.tcd.ie/alumni/">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="https://www.tcd.ie/az/">A-Z</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- End of Navigation -->
 
     <div class="container">
@@ -141,16 +141,16 @@
                 <div id="buttons">
                     <div class="toggle">
                         <label for="greyed">
-					<span class="unselected">Show inactive questions</span>
-					<span class="selected">Hide inactive questions</span>
-				</label>
+                    <span class="unselected">Show inactive questions</span>
+                    <span class="selected">Hide inactive questions</span>
+                </label>
                         <input type="checkbox" name="toggled" id="greyed" value="1" />
                     </div>
                     <div class="toggle">
                         <label for="type">
-					<span class="unselected">Go to short version</span>
-					<span class="selected">Go to standard version</span>
-				</label>
+                    <span class="unselected">Go to short version</span>
+                    <span class="selected">Go to standard version</span>
+                </label>
                         <input type="checkbox" name="toggled" id="type" value="1" />
                     </div>
                 </div>
@@ -240,10 +240,10 @@
 
                                 <input type="radio" class="radio inline" name="access" value="wa" id="access_wa" data-toggle="collapse" />
                                 <label for="access_wa" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="top" title="Wheelchair access requires flat access (no lip/transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room.">Wheelchair access&nbsp;<i class="bi bi-question-circle-fill"></i>
-						</label>
+                        </label>
                                 <input type="radio" class="radio inline" name="access" value="sf" id="access_sf" />
                                 <label for="access_sf" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway.">
-							Step-free access only&nbsp;<i class="bi bi-question-circle-fill"></i></label>
+                            Step-free access only&nbsp;<i class="bi bi-question-circle-fill"></i></label>
                                 <input type="radio" class="radio inline" name="access" value="no" id="access_no" />
                                 <label for="access_no">No step-free access</label>
                                 <input type="radio" class="radio inline" name="access" value="" id="access_" />
@@ -266,7 +266,7 @@
                         <tr>
                             <td>
                                 <label for="steps_count" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Give a number of steps or a number of flights of stairs.">
-								Approximately how many steps<span id="separateshow"> into the main entrance</span>?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
+                                Approximately how many steps<span id="separateshow"> into the main entrance</span>?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
                             </td>
                             <td>
                                 <span class="nowrap"><input type="text" id="steps_count" name="steps_count" /></span>
@@ -309,7 +309,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 
                         <!--<tr id="online">
                         <td><label>Online Event?</label>
-                        	<p style="margin-top:20px;">Visit <a href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a></p></td>
+                            <p style="margin-top:20px;">Visit <a href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a></p></td>
 
                         <td>
                             <input type="radio" name="online" value="yes: an online event" id="online_yes" /><label for="online_yes">yes</label>
@@ -350,7 +350,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
                                 <input type="radio" name="wheelchairtoilet" value="yes: a partially accessible toilet" id="wheelchairtoilet_p" />
                                 <label for="wheelchairtoilet_p" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="For instance, a toilet that is not large enough for a wheelchair to move around in or which is big enough but doesn't have any grab rails.">
 
-								Partially accessible toilet&nbsp;<i class="bi bi-question-circle-fill"></i></label>
+                                Partially accessible toilet&nbsp;<i class="bi bi-question-circle-fill"></i></label>
 
                                 <input type="radio" name="wheelchairtoilet" value="no: an accessible toilet" id="wheelchairtoilet_no" /><label for="wheelchairtoilet_no">no</label>
 
@@ -377,7 +377,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
                             <td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="ISL Interpreters should be provided upon request. Ask attendees if they have any accessibility requirements at least two weeks before an event.">
 
 
-							ISL Interpreter? &nbsp;<i class="bi bi-question-circle-fill"></i></label>
+                            ISL Interpreter? &nbsp;<i class="bi bi-question-circle-fill"></i></label>
                                 <p style="margin-top:20px;">More information on booking an <a aria-label="Read more on how to book an ISL interpreter in Trinity" href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank">ISL interpreter in Trinity</a></p>
                             </td>
                             <td>
@@ -394,7 +394,7 @@ on both sides&nbsp;<i class="bi bi-question-circle-fill"></i></label>
                         <tr id="social">
                             <td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event'.">
 
-							Does the event have a question about accessibility requirements of attendees?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
+                            Does the event have a question about accessibility requirements of attendees?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
 
                             <td>
                                 <input type="radio" name="social" value="yes: a standard accessibility contact statement on all publicity" id="social_yes" /><label for="social_yes">yes</label>
@@ -422,17 +422,17 @@ Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
                         </tr>
 
                         <!--<tr id="parking">
-						<td><label>Parking nearby/onsite?</label>
-						</td>
+                        <td><label>Parking nearby/onsite?</label>
+                        </td>
 
-						<td>
-							<input type="radio" name="parking" value="yes: general car parking" id="parking_yes" /><label for="parking_yes">yes</label>
-							<input type="radio" name="parking" value="no: general car parking" id="parking_no" /><label for="parking_no">no</label>
-							<input type="radio" name="parking" value="reqad: general car parking" id="parking_reqad" /><label for="parking_reqad">by request in advance</label>
-							<input type="radio" name="parking" value="req: general car parking" id="parking_req" /><label for="parking_req">by request at the event</label>
-							<input type="radio" name="parking" value="" id="park_" /><label for="parking_">unknown</label>
-						</td>
-					</tr>-->
+                        <td>
+                            <input type="radio" name="parking" value="yes: general car parking" id="parking_yes" /><label for="parking_yes">yes</label>
+                            <input type="radio" name="parking" value="no: general car parking" id="parking_no" /><label for="parking_no">no</label>
+                            <input type="radio" name="parking" value="reqad: general car parking" id="parking_reqad" /><label for="parking_reqad">by request in advance</label>
+                            <input type="radio" name="parking" value="req: general car parking" id="parking_req" /><label for="parking_req">by request at the event</label>
+                            <input type="radio" name="parking" value="" id="park_" /><label for="parking_">unknown</label>
+                        </td>
+                    </tr>-->
 
                         <tr id="bluebadge">
                             <td><label>Disabled Person's Parking near the event?<br>See more information on <a aria-label="Read more about Accessible Campus Parking" href="https://www.tcd.ie/disability/physical-access/parking.php" target="_blank">Accessible Campus Parking information</a></label>
@@ -508,7 +508,7 @@ Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
                             </tr>
                             <tr id="audiodescription">
                                 <td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Audio description is what's happening on screen for those with sight impairments.">
-							Is there an audio description?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
+                            Is there an audio description?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
                                 <td>
                                     <input type="radio" name="audiodescription" value="yes: audio description" id="audiodescription_yes" /><label for="audiodescription_yes">yes</label>
                                     <input type="radio" name="audiodescription" value="no: audio description" id="audiodescription_no" /><label for="audiodescription_no">no</label>
@@ -540,7 +540,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
                     <!-- can hide this with span style="display:none;" -->
 
                     <label for="access_wa" class="form-label mt-4" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="These questions are not necessarily complete in terms of providing comprehensive access information. Please think about other details you might want to add in the further comments section. If the event has catering, you might want to include food options, for example, Kosher, Halal, Vegan, etc.">Any further comments or details?
-							<i class="bi bi-question-circle-fill"></i></label>
+                            <i class="bi bi-question-circle-fill"></i></label>
 
                     <div class="form-outline mb-4"><textarea name="comment" id="comment" rows="5" placeholder="&nbsp;Please enter any further comments or details for the event."></textarea></div>
 
@@ -578,13 +578,13 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
                 </div>
                 <div id="separateaccessshort" class="hide">
                     <input type="checkbox" name="separateaccessshort" value="route" id="separateaccessshort_yes" /><label for="separateaccessshort_yes" data-tooltip="Often events have a separate route into the events for wheelchair users and those needing step-free access. It's important to not assume an event doesn't have step-free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">
-					The step-free or wheelchair access is by a separate route.</label>
+                    The step-free or wheelchair access is by a separate route.</label>
                 </div>
                 <div id="stepsshort" class="hide">
                     <label for="stepsshort_data">How many steps<span id="separateshowshort"> into the main entrance</span>?<span title="Give a number of steps or a number of flights of stairs for instance, you can also state and further details (such as height; whether they are straight stairs or whether they have handrail here. If there is separate step free access please describe the main route.">(?)</span></label></td>
                     <span class="nowrap">
-					<input type="text" id="stepsshort_data" name="stepsshort_data" />
-				</span>
+                    <input type="text" id="stepsshort_data" name="stepsshort_data" />
+                </span>
                 </div>
                 <div>
                     <h2 id="sectionhead">Facilities:</h2>
@@ -613,7 +613,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
                     <!--<span class="nowrap"><input type="checkbox" name="parkingshort" value="yes: general car parking" id="parkingshort" /><label for="parkingshort">Parking nearby/onsite?</label></span>-->
 
                     <span class="nowrap"><input type="checkbox" name="bluebadgeshort" value="yes: blue badge parking" id="bluebadgeshort" /><label for="bluebadgeshort">Disabled Person's Parking</label>
-				</span>
+                </span>
 
                     <span class="nowrap"><input type="checkbox" name="subtitlesshort" value="yes: subtitles" id="subtitlesshort" /><label for="subtitlesshort">Subtitles?</label></span>
                     <span class="nowrap"><input type="checkbox" name="ccshort" value="yes: closed captions" id="ccshort" /><label for="ccshort">Including closed captions?<span title="Closed captions are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)</span></label>
@@ -643,7 +643,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 
             <div id="select" class="hide">
                 <button type="button" class="btn btn-success btn-lg text-white" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy the text produced (which you can edit in place) to wherever you need it." aria-label="Select Accessibility Statement">Select Accessibility Statement
-		</button>
+        </button>
 
                 <div class="clearfix"></div>
 
@@ -711,8 +711,8 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
 
                 <div id="generate">
                     <button type="button" class="btn btn-dark mt-4 mb-4" aria-label="Back to Top">
-			<a href="#top" title="Back to the top of the page" class="mt-5 back-to-top text-decoration-none text-white">Back to Top of Page</a>
-		</button>
+            <a href="#top" title="Back to the top of the page" class="mt-5 back-to-top text-decoration-none text-white">Back to Top of Page</a>
+        </button>
                 </div>
 
                 <!-- ======== -->
@@ -835,13 +835,13 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
     <!-- Restore any existing jQuery -->
     <script>
         if (typeof originalJquery !== 'undefined') {
-        			window.jQuery = originalJquery;
-        		}
-        		if (typeof originalDollar !== 'undefined') {
-        			window.$ = originalDollar;
-        		}
+                    window.jQuery = originalJquery;
+                }
+                if (typeof originalDollar !== 'undefined') {
+                    window.$ = originalDollar;
+                }
         
-        		$('[name="collapseGroup"]').on('change', function() {  
+                $('[name="collapseGroup"]').on('change', function() {  
           if($(this).val() === "yes") {
             $('#collapseOne').collapse('show');
           } else {
@@ -877,7 +877,7 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
     <script>
         document.getElementById("selectBtn").addEventListener("click", printTextArea);
         
-        		      function printTextArea() {
+                      function printTextArea() {
                 childWindow = window.open('','childWindow','location=yes, menubar=yes, toolbar=yes');
                 childWindow.document.open();
                 childWindow.document.write('<html><head></head><body>');
@@ -890,12 +890,12 @@ Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></labe
     </script>
 
     <!-- TOOLTIPS -->
-<script>
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-</script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 
     <!-- ============ -->
 
