@@ -62,7 +62,12 @@ input[type="radio"]{
 }
 
 /* Accessibility Generator Statement - Header */
-#generatorheader {
+#generatorheader, 
+#accessheader, 
+#stepsheader, 
+#facilitiesheader,
+#filmheader, 
+#accessheadershort {
 	font: 1.5em Arial;
 	font-weight: bold;
   background: #1B79B7;
