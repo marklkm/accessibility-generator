@@ -1,7 +1,7 @@
 /* body {background: #fff; color: #000;} */
 
 body {
-    font: normal 1.2em Arial, Verdana;
+    font: normal 1.2em Arial, Verdana; /* best size and font for accessibility */
      line-height: 2;
 }
 
