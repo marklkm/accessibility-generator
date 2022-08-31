@@ -50,7 +50,7 @@ navbar2 {
   font-size:1.3em;
 }
 
-.button-purple {
+.button-purple, .button-purple:hover {
   background-color: #6200EA;
 }
 
