@@ -46,8 +46,12 @@ navbar2 {
 
 /* icons */
 .icon-purple {
-  color: #7b68ee;
+  color: #6200EA;
   font-size:1.3em;
+}
+
+.button-purple {
+  background-color: #6200EA;
 }
 
 .custom-footer p, .custom-footer a:link {
