@@ -44,6 +44,11 @@ navbar2 {
   width: 556px;
 }
 
+/* icons */
+.icon-purple {
+  color: #7b68ee;
+  font-size:1.3em;
+}
 
 .custom-footer p, .custom-footer a:link {
     font-size: 14px !important;
