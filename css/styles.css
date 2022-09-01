@@ -35,6 +35,13 @@ navbar2 {
   text-decoration: none;
 }
 
+.bg-image-full {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
 .custom-tooltip {
   --bs-tooltip-bg: var(--bs-primary);
   /* workings for line-height = 18 x 1.618 */
