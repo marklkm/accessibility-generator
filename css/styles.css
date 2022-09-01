@@ -71,6 +71,22 @@ navbar2 {
     line-height: 1.9 !important;
 }
 
+@media (min-width: 992px)
+.banner_img {
+    font-size: 52px;
+    margin-bottom: 0;
+    padding: 10px;
+}
+@media (min-width: 992px)
+.banner_img {
+    color: #fff;
+    line-height: 1.25;
+}
+.banner_img {
+    line-height: 1.25;
+    color: #fff;
+}
+
 /* Set with for responsive images */
 .responsive-image {
     max-width: 100%;
