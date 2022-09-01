@@ -61,6 +61,10 @@ navbar2 {
   font-size:1.3em;
 }
 
+.select_button, .select_button:hover {
+  background: #614e9b;
+}
+
 .button-purple, .button-purple:hover {
   background-color: #6200EA;
 }
@@ -110,7 +114,8 @@ navbar2 {
 #accessheadershort {
 	font: 1.5em Arial;
 	font-weight: bold;
-  background: #1B79B7;
+  /*background: #1B79B7;*/
+  background: #614e9b;;
   padding: 10px;
   color: #fff !important;
   display: inline-flex;
