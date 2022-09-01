@@ -35,6 +35,15 @@ navbar2 {
   text-decoration: none;
 }
 
+@media (min-width: 1200px)
+.site-header .site-header__site-search {
+    display: block !important;
+}
+.site-header .site-header__site-search {
+    display: none;
+    width: 100%;
+}
+
 .banner_img {
   height: 450px;
 }
