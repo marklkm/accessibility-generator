@@ -37,8 +37,8 @@ navbar2 {
 
 .custom-tooltip {
   --bs-tooltip-bg: var(--bs-primary);
-  /* working for line-height = 18 x 1.618 */
-  /* workign for width = width @ 50cpl = 50*(18/1.618) = 525px */
+  /* workings for line-height = 18 x 1.618 */
+  /* workings for width = width @ 50cpl = 50*(18/1.618) = 525px */
   font-size: 18px;
   line-height: 29px;
   width: 556px;
@@ -158,7 +158,6 @@ a:active {
   color: #000;
 }
 
-
 #buttons {
   display:none;
 }
@@ -197,8 +196,6 @@ label {margin:  2px;}
 #organiser, #comment {
 	/*display:  none;*/
 
-
-
 #printstyle {
   background-color: #FF9999;
   position: relative;
@@ -215,7 +212,6 @@ label {margin:  2px;}
   vertical-align: middle;
   display: inline-block;
 }
-
 
 /* IE hacks */
 *+html .nowrap {white-space: normal; display: inline-block;}
