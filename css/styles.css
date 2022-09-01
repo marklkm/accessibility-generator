@@ -35,6 +35,10 @@ navbar2 {
   text-decoration: none;
 }
 
+.banner_img {
+  height: 450px;
+}
+
 .bg-image-full {
     background-repeat: no-repeat;
     background-attachment: scroll;
