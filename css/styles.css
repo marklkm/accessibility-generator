@@ -35,21 +35,12 @@ input[type="radio"]{
   white-space: nowrap;
 }
 
-navbar2 {
+/*.navbar2 {
   z-index: 999;
-}
+}*/
 
 .navbar a:link {
   text-decoration: none;
-}
-
-@media (min-width: 1200px)
-.site-header .site-header__site-search {
-    display: block !important;
-}
-.site-header .site-header__site-search {
-    display: none;
-    width: 100%;
 }
 
 .banner_img {
