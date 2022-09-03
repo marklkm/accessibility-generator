@@ -27,6 +27,12 @@ input[type="radio"]{
       position: relative;
 }
 
+@media (max-width: 360px) {
+  .logo img {
+    transform: scale(0.5);
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   margin-bottom: 5px;
   font-size: 17px;
