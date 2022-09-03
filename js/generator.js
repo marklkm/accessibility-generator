@@ -53,11 +53,13 @@ var generator = (function ($) {
 			});
 			
 
-			// Standard version questions
+			// Standard version 
+			// generator functions return an iterator
 			generator.toggleSteps ();
 			generator.accessChange ();
 			generator.filmChange ();
 			generator.separateWording ();
+			
 			// Event Name
 			$('#ename').change (generator.enameChange);
 			$('#ename').click(generator.enameChange);
@@ -390,6 +392,13 @@ var generator = (function ($) {
 			// Process the 'no' options
 			s += generator.compileOptions (buckets.no, "There isn't ", 'or');
 
+			
+			// event name
+			var ename = $('#ename')[0].value.trim ();
+			s += generator.processText (s, ename, "The event name is ");
+			s += ". ";
+
+
 			// Add comment, if any
 			var comment = $('#comment') [0].value.trim ();
 			s += generator.processText (s, comment);
@@ -402,11 +411,6 @@ var generator = (function ($) {
 				if (contact!="" && s!="") s+= "\nYou can contact us about any access inquiries on " +contact;
 				else if (contact!="") s+= "You can contact us about any access inquiries on " +contact;
 			s += '. ';
-
-			// event name
-			var ename = $('#ename')[0].value.trim ();
-			s += generator.processText (s, ename, "The event name is ");
-			//s += ". ";
 
 
 			// Add comment, if any
