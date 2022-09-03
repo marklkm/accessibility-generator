@@ -395,19 +395,19 @@ var generator = (function ($) {
 
 			//=======
 			// slides
-			var slide = generator.determineFacilitiesAvailability ('#slides', '');
+			//var slide = generator.determineFacilitiesAvailability ('#slides', '');
 			
 			// Process the 'yes' options
-			s += generator.compileOptions (slide.yes, 'There are ', 'and');
+			//s += generator.compileOptions (slide.yes, 'There are ', 'and');
 			
 			// Process the 'by request in advance' options
-			s += generator.compileOptions (slide.reqad, 'There are ', 'and', ', by request in advance');
+			//s += generator.compileOptions (slide.reqad, 'There are ', 'and', ', by request in advance');
 			
 			// Process the 'by request at the event' options
-			s += generator.compileOptions (slide.req, 'There are ', 'and', ', by request at the event');
+			//s += generator.compileOptions (slide.req, 'There are ', 'and', ', by request at the event');
 			
 			// Process the 'no' options
-			s += generator.compileOptions (slide.no, "There aren't ", 'or');
+			//s += generator.compileOptions (slide.no, "There aren't ", 'or');
 
 
 			
@@ -505,7 +505,7 @@ var generator = (function ($) {
 			
 			// Initialise buckets for each group
 			var buckets = {yes: [], no: [], reqad: [], req: []};
-			var slide = {yes: [], no: [], reqad: [], req: []};
+			//var slide = {yes: [], no: [], reqad: [], req: []};
 			
 			// Determine the chosen group, and the value for each option
 			var inputSelector;
@@ -528,12 +528,12 @@ var generator = (function ($) {
 				
 				// Add to the bucket
 				buckets[value].push (description);
-				slide[value].push (description);
+				//slide[value].push (description);
 			});
 			
 			// Return the lists
 			return buckets;
-			return slide;
+			//return slide;
 		},
 		
 
