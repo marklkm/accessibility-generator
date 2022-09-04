@@ -23,11 +23,11 @@ textarea, #steps_count {font: inherit; color: black;}
 
 /* h1 intro header below background image */
 
-.intro-header {
+/*.intro-header {
   background-color: #81358a;
-  /*font-size: 3.25rem;
-  line-height: 4.25rem;*/
-}
+  font-size: 3.25rem;
+  line-height: 4.25rem;
+} */
 
 /* space after radio buttons */
 input[type="radio"]{
