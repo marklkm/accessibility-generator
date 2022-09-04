@@ -16,15 +16,24 @@ ol li {margin: 1em 0 1em;}
 .grey {color: #888; background: #fff;}
 textarea, #steps_count {font: inherit; color: black;}
 #result {padding: 10px; border: 1px solid #000; resize: none; width: 57%; font: inherit; color: black; }
-#comment, #commentshort, #organiser {width: 57%; resize: none;}
-#contact, #contactorg, #contactshort, #conemail, #ename, #elocation {min-width: 20em;}
+#comment, #organiser {width: 57%; resize: none;}
+#contact, #contactorg, #conemail, #ename, #elocation {min-width: 20em;}
 .nowrap {white-space: nowrap;}
+
+
+/* h1 intro header below background image */
+
+.intro-header {
+  background-color: #81358a;
+  font-size: 3.25rem;
+  line-height: 4.25rem;
+}
 
 /* space after radio buttons */
 input[type="radio"]{
-      margin-right: 5px;
-      display: inline-block;
-      position: relative;
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
 }
 
 @media (max-width: 360px) {
@@ -71,16 +80,17 @@ input[type="radio"]{
 
 /* icons */
 .icon-purple {
-  color: #614e9b;
+  color: #81358a;
   font-size:1.3em;
 }
 
 .select_button, .select_button:hover {
-  background: #614e9b;
+  background: #81358a;
+  font-weight: bolder;
 }
 
 .button-purple, .button-purple:hover {
-  background-color: #6200EA;
+  background-color: #81358a;
 }
 
 .custom-footer p, .custom-footer a:link {
@@ -129,7 +139,7 @@ input[type="radio"]{
 	font: 1.5em Arial;
 	font-weight: bold;
   /*background: #1B79B7;*/
-  background: #614e9b;;
+  background: #81358a;
   padding: 10px;
   color: #fff !important;
   display: inline-flex;
