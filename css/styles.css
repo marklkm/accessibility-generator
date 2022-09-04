@@ -15,15 +15,11 @@ table tr td:first-child {width: 30%;}
 ol li {margin: 1em 0 1em;}
 .grey {color: #888; background: #fff;}
 textarea, #steps_count {font: inherit; color: black;}
-#result {padding: 10px; border: 1px solid #000; resize: none; width: 70%; font: inherit; color: black; }
+#result {padding: 10px; border: 1px solid #000; resize: none; width: 57%; font: inherit; color: black; }
 #comment, #organiser {width: 57%; resize: none;}
 #contact, #contactorg, #conemail, #ename, #elocation {min-width: 20em;}
 .nowrap {white-space: nowrap;}
 
-
-.gen-button {
-  margin-left: -0.25rem !important;
-}
 
 /* h1 intro header below background image */
 
@@ -40,7 +36,6 @@ input[type="radio"]{
   position: relative;
 }
 
-/* media setting for mobile/cell phones */
 @media (max-width: 360px) {
   .logo img {
     transform: scale(0.5);
@@ -55,7 +50,6 @@ input[type="radio"]{
   white-space: nowrap;
 }
 
-/* this navbar will drop below the main navbar menu  by using z-index */
 /*.navbar2 {
   z-index: 999;
 }*/
@@ -116,8 +110,6 @@ input[type="radio"]{
     color: #fff;
     line-height: 1.25;
 }
-
-/* banner image on to of the page */
 .banner_img {
     line-height: 1.25;
     color: #fff;
