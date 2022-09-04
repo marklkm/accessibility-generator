@@ -1,7 +1,7 @@
+
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -9,7 +9,8 @@
     <!-- Keywords -->
     <meta name="author" content="Trinity College Dublin Disability Service">
     <meta name="keywords" content="Trinity, Event, Generator, Accessibility, Disability, Inclusive, Facilities">
-    <title>Trinity Accessibility Event Generator | Accessible Inclusive Events</title>
+    <title>Trinity Accessibility Event Generator | Accessible Inclusive Events
+    </title>
     <link rel="shortcut icon" href="//www.tcd.ie/favicon.ico?v=3" type="image/x-icon" />
     <!-- CSS -->
     <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
@@ -18,900 +19,1187 @@
     <link href="css/docs.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
-
     <!-- Stash any existing jQuery -->
     <script>
-        if (typeof window.$ !== 'undefined') {
-                    var originalDollar = $.noConflict(true);
-                }
-                if (typeof window.jQuery !== 'undefined') {
-                    var originalJquery = jQuery.noConflict(true);
-                }
+      if (typeof window.$ !== 'undefined') {
+        var originalDollar = $.noConflict(true);
+      }
+      if (typeof window.jQuery !== 'undefined') {
+        var originalJquery = jQuery.noConflict(true);
+      }
     </script>
-
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery.tooltip.js"></script>
-    <script src="js/generator.js"></script>
-    <script src="js/jquery.tooltip.js"></script>
-    <script>
-        $(function() {
-                    generator.init ();
-                });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js">
     </script>
-
+    <script src="js/jquery-3.6.0.min.js">
+    </script>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/popper.min.js">
+    </script>
+    <script src="js/jquery.tooltip.js">
+    </script>
+    <script src="js/generator.js">
+    </script>
+    <script src="js/jquery.tooltip.js">
+    </script>
+    <script>
+      $(function() {
+        generator.init ();
+      }
+       );
+    </script>
     <style>
-        /* If embedded in a Wordpress installation, hide the main title */
-                #accessstatementgenerator h1 {display: none;}
-        
-                /* Templates sometimes overwrite textarea height for some reason */
-                textarea {height: auto !important;}
+      /* If embedded in a Wordpress installation, hide the main title */
+      #accessstatementgenerator h1 {
+        display: none;
+      }
+      /* Templates sometimes overwrite textarea height for some reason */
+      textarea {
+        height: auto !important;
+      }
     </style>
-
-</head>
-
-<body>
-
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white p-3">
-        <div class="container">
-            <a class="navbar-brand" href="https://www.tcd.ie/" target="_blank" rel="noopener">
-                <img src="img/trinity_logo.jpeg" alt="Trinity College Dublin, the University of Dublin logo" height="80" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="https://www.tcd.ie/study/">Students</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="https://www.tcd.ie/courses/">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="https://www.tcd.ie/research/">Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="https://www.tcd.ie/structure/">Faculties &amp; Schools</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="https://www.tcd.ie/alumni/">Alumni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="https://www.tcd.ie/az/">A-Z</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="https://www.tcd.ie/" target="_blank" rel="noopener">
+          <img src="img/trinity_logo.svg" alt="Trinity College Dublin, the University of Dublin logo" height="80" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.tcd.ie/study/">Students
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.tcd.ie/courses/">Courses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.tcd.ie/research/">Research
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.tcd.ie/structure/">Faculties &amp; Schools
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.tcd.ie/alumni/">Alumni
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.tcd.ie/az/">A-Z
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!--<nav id="navbar2" class="navbar" role="navigation">
-    </nav>-->
+</nav>-->
     <!-- End of Navigation -->
-
     <!--<div class="px-2 my-2 align-items-left">
-      
-        <h2 id="generatorheader" class="display-4 fw-bold h2">
-            Trinity Accessibility Event Generator</h2>
-    </div>-->
-
+<h2 id="generatorheader" class="display-4 fw-bold h2">
+Trinity Accessibility Event Generator</h2>
+</div>-->
     <!-- BACKGROUND IMAGE -->
     <!-- <div class="item"> 
-        <img src="img/event-generator-img.webp" title="Trinity College Dublin. Showing the Campanile and trees in the foreground, and Trinity front square in the background. There is text at the bottom of the image that reads Trinity Accessibility Event Generator in white letters with a purple background." width="100%" class="banner_img img-fluid">
-    </div> -->
+<img src="img/event-generator-img.webp" title="Trinity College Dublin. Showing the Campanile and trees in the foreground, and Trinity front square in the background. There is text at the bottom of the image that reads Trinity Accessibility Event Generator in white letters with a purple background." width="100%" class="banner_img img-fluid">
+</div> -->
     <!-- END OF BACKGROUND IMAGE -->
-
     <div class="text-center mb-4">
-        <img src="img/trinity-accessibility-banner.webp" alt="Trinity College Dublin. Showing the Campanile and trees in the foreground, and Trinity front square in the background. There is text at the bottom of the image that reads Trinity Accessibility Event Generator in white letters on a purple background. There are also three logos showing on the image, Trinity Ability co_op, Trinity Disability Hub, and Towards Inclusive Trinity Clubs and Societies." width="100%" class=".bg-image-full img-fluid">
-        <h1 class="display-3 fw-bold text-white" style="background-color: #614e9b;">
-            Trinity Accessibility Event Generator</h1>
+      <img src="img/trinity-accessibility-banner.webp" alt="Trinity College Dublin. Showing the Campanile and trees in the foreground, and Trinity front square in the background. There is text at the bottom of the image that reads Trinity Accessibility Event Generator in white letters on a purple background. There are also three logos showing on the image, Trinity Ability co_op, Trinity Disability Hub, and Towards Inclusive Trinity Clubs and Societies." width="100%" class=".bg-image-full img-fluid">
+      <h1 class="display-3 fw-bold text-white" style="background-color: #614e9b;">
+        Trinity Accessibility Event Generator
+      </h1>
     </div>
-
     <!-- Main body container -->
     <div class="container">
-
-        <div id="accessstatementgenerator">
-
-            <h1 class="h1" id="#top">Trinity Accessibility Event Generator</h1>
-
-            <div id="intro">
-
-                <!-- Main text top of page -->
-                <p style="margin-top:20px;">The Trinity Accessibility Event Generator is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible. No event is truly accessible without the information to say that it is!</p>
-
-                <div class="alert alert-info text-black" role="alert" class="alert-info">
-                    <h4 class="alert-heading">How to use the Trinity Accessibility Event Generator</h4>
-                    Just fill in the information you have, click on the 'Generate Accessibility Statement' button and then the 'Select Accessibility Statement' button, and copy the text produced (which you can edit in place) to wherever you need it. You can click on the 'Download Accessibility Statement as a PDF' button after you click on the 'Generate Accessibility Statement' button to download or save the generated text as a PDF document.
-                </div>
-
-                <p style="margin-top:20px;">Trinity College Dublin is committed to providing an environment that is accessible to individuals with disabilities. The <a aria-label="Read more about Trinity Accessible Information Policy" href="https://www.tcd.ie/about/policies/accessible-info-policy.php" target="_blank" rel="noopener" class="text-decoration-none">Trinity Accessible Information Policy</a> sets out a formal commitment by Trinity that information should be available in an accessible format, without discrimination against those with disabilities. This complies with the <a aria-label="Read more about the Disability Act 2205" href="https://www.tcd.ie/equality/legislation/disability-act/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">Disability Act 2005 </a> and shows evidence that Trinity College Dublin ensures that all facilities including events are accessible to all. The Trinity Ability co_op have just released their guidelines. These guidelines will provide clubs and societies with the information that they need to become more inclusive to students with disabilities. You can check them out on their website <a aria-label="Vist the Trinity Ability co_op website" href="https://abilitycoop.com/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">abilitycoop.com</a></p>
-                <!-- End of Main text top of page -->
-
-                <hr class="w-100 clearfix" />
-
-            </div>
-
-            <!-- noscript doesn't play well with some JS blockers -->
-            <div class="noJS">
-                Please enable Javascript.
-            </div>
-
-            <div class="requireJS">
-
-                <!--The buttons at the top-->
-                <!-- The buttons for Short and Standard version -->
-                <div id="buttons">
-                    <div class="toggle">
-                        <label for="greyed">
-                    <span class="unselected">Show inactive questions</span>
-                    <span class="selected">Hide inactive questions</span>
-                </label>
-                        <input type="checkbox" name="toggled" id="greyed" value="1" />
-                    </div>
-                    <div class="toggle">
-                        <label for="type">
-                    <span class="unselected">Go to short version</span>
-                    <span class="selected">Go to standard version</span>
-                </label>
-                        <input type="checkbox" name="toggled" id="type" value="1" />
-                    </div>
-                </div>
-                <!-- End of the buttons for Short and Standard version -->
-
-                <!--The set of questions for the standard version of the form-->
-                <div id="questions" class="questions">
-
-                    <div class="container">
-
-                        <div id="eventinfo">
-
-                            <!-- EVENT NAME -->
-                            <label for="basic-url" class="form-label mt-4">Event Name</label>
-                            <div class="input-group w-50">
-                                <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename">
-                            </div>
-                            <!-- End of Event Name -->
-
-                            <!-- Add Online Event -->
-
-                            <table class="table" style="margin-top:20px;">
-                                <tr id="online">
-                                    <td>
-                                        <label>Online Event?</label>
-                                        <p style="margin-top:20px;">If it's an online event, please refer to the <a aria-label="Read more about Technology and Accessibility" href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">Technology &amp; Accessibility</a> guide for more information. </p>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="online" value="yes: an online event" id="online_yes" />
-                                        <label for="online_yes">yes</label>
-                                        <input type="radio" name="online" value="no: an online event" id="online_no" />
-                                        <label for="online_no">no</label>
-                                        <input type="radio" name="online" value="" id="online_" />
-                                        <label for="online_">unknown
-                                        </label>
-                                    </td>
-                                </tr>
-
-                                <tr id="inperson">
-                                    <!-- In-Person -->
-                                    <td>
-                                        <label>In-Person Event?</label>
-                                        <p style="margin-top:20px;">Check the event against the <a aria-label="Read more about the A to Z Accessibility Checker" href="https://www.tcd.ie/disability/physical-access/building/" target="_blank" class="text-decoration-none">Accessibility Checker</a>
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="inperson" value="yes: an in-person event" id="inperson_yes" /><label for="inperson_yes">yes</label>
-                                        <input type="radio" name="inperson" value="no: an in-person event" id="inperson_no" /><label for="inperson_no">no</label>
-                                        <input type="radio" name="inperson" value="" id="inperson_" />
-                                        <label for="inperson_">unknown</label>
-                                    </td>
-                                </tr>
-
-                            </table>
-                            <!-- End of table -->
-                        </div>
-
-                        <!-- EVENT LOCATION -->
-                        <label for="basic-url" class="form- mt-4">Event Location</label>
-                        <div class="input-group w-50">
-                            <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="elocation" name="elocation">
-                        </div>
-
-                        <!-- EVENT ORGANISER NAME -->
-                        <label for="basic-url" class="form-label mt-4">Event Organiser Name</label>
-                        <div class="input-group w-50">
-                            <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org/Unit/Centre" aria-label="placeholder">
-                        </div>
-
-                        <!-- EVENT ORGANISER EMAIL -->
-                        <label for="basic-url" class="form-label mt-4">Event Organiser Email</label>
-                        <div class="input-group w-50">
-                            <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="conemail" name="conemail" placeholder="Please provide a valid email" aria-label="placeholder">
-                        </div>
-
-                    </div>
-
-                    <!-- MAIN PART FOR ALL THE QUESTIONS -->
-                    <!-- =============================== -->
-
-                    <!-- Section 1 - Access to the Event -->
-
-                    <h2 id="accessheader"> Access to the Event</h2>
-
-                    <table class="table">
-                        <tr id="access">
-                            <td><label>Does the event have:&nbsp;</label>
-
-                                <input type="radio" class="radio inline" name="access" value="wa" id="access_wa" data-toggle="collapse" />
-                                <label for="access_wa" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="top" title="Wheelchair access requires flat access (no lip/transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room.">Wheelchair access&nbsp;<i class="bi bi-question-circle-fill"></i>
-                        </label>
-                                <input type="radio" class="radio inline" name="access" value="sf" id="access_sf" />
-                                <label for="access_sf" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway.">
-                            Step-free access only&nbsp;<i class="bi bi-question-circle-fill"></i></label>
-                                <input type="radio" class="radio inline" name="access" value="no" id="access_no" />
-                                <label for="access_no">No step-free access</label>
-                                <input type="radio" class="radio inline" name="access" value="" id="access_" />
-                                <label for="access_">unknown</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div id="separateaccess" class="hide">
-                                    <input type="checkbox" name="separateaccess" value="route" id="separateaccess_yes" /><label for="separateaccess_yes" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Often events have a separate route into the events for wheelchair users and those needing step-free access. It's important to not assume an event doesn't have step-free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">&nbsp;The step-free or wheelchair access is by a separate route.&nbsp;<i class="bi bi-question-circle-fill"></i></label>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div id="steps" class="hide">
-                    <h2 id="stepsheader">Steps:</h2>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                <label for="steps_count" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Give a number of steps or a number of flights of stairs.">
-                                Approximately how many steps<span id="separateshow"> into the main entrance</span>?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
-                            </td>
-                            <td>
-                                <span class="nowrap"><input type="text" id="steps_count" name="steps_count" /></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="steps_height">How high are the steps?</label></td>
-                            <td id="steps_height">
-                                <input type="radio" name="steps" value="lip" id="lip" /><label for="steps_height_lip">a lip/lips</label>
-                                <input type="radio" name="steps" value="shallow" id="shallow" /><label for="shallow">&nbsp;shallow</label>
-
-                                <input type="radio" name="steps" value="standard height" id="standardheight" /><label for="standardheight">approximately standard height</label>
-
-                                <input type="radio" name="steps" value="deep" id="deep" /><label for="deep">deep</label>
-                                <input type="radio" name="steps" value="" id="steps_height_" /><label for="steps_height_">unknown</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="steps_hr">Is there a handrail?</label></td>
-                            <td id="steps_hr">
-                                <input type="radio" name="steps_hr" value="no" id="steps_hr_no" /><label for="steps_hr_no">no</label>
-                                <input type="radio" name="steps_hr" value="one" id="steps_hr_one" /><label for="steps_hr_one">on one side</label>
-
-                                <input type="radio" name="steps_hr" value="both" id="steps_hr_both" />
-
-                                <label for="steps_hr_both" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Narrow stairs so that someone can hold both at the same time, not a wide flight with one on each side.">
-                                on both sides&nbsp;<i class="bi bi-question-circle-fill">
-                                </i></label>
-
-                                <input type="radio" name="steps_hr" value="" id="steps_hr_" /><label for="steps_hr_">unknown</label>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div id="facilities">
-                    <h2 id="facilitiesheader">Facilities</h2>
-
-                    <p>Which of the following are available?</p>
-                    <table class="tableon">
-
-                        <!--<tr id="online">
-                        <td><label>Online Event?</label>
-                            <p style="margin-top:20px;">Visit <a href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a></p></td>
-
-                        <td>
-                            <input type="radio" name="online" value="yes: an online event" id="online_yes" /><label for="online_yes">yes</label>
-                            <input type="radio" name="online" value="no: an online event" id="online_no" /><label for="online_no">no</label>
-
-                            <input type="radio" name="online" value="" id="online_" /><label for="online_">unknown</label>
-                            
-                        </td>
-                </tr>-->
-
-                        <!-- seating -->
-                        <tr id="seating">
-                            <td><label>Seating?</label></td>
-                            <td>
-                                <input type="radio" name="seating" value="yes: padded seating" id="seating_yp" /><label for="seating_yp">yes - padded/comfortable</label>
-                                <input type="radio" name="seating" value="yes: basic seating" id="seating_yb" /><label for="seating_yb">yes - basic chairs</label>
-                                <input type="radio" name="seating" value="yes: seating" id="seating_yes" /><label for="seating_yes">yes - unknown type</label>
-                                <input type="radio" name="seating" value="no: seating" id="seating_no" /><label for="seating_no">no</label>
-                                <input type="radio" name="seating" value="" id="seating_" /><label for="seating_">unknown</label>
-                            </td>
-                        </tr>
-                        <!-- seating -->
-
-                        <tr id="wheelchairtoilet">
-                            <td><label>Wheelchair accessible toilet?</label></td>
-
-                            <td>
-                                <input type="radio" name="wheelchairtoilet" value="yes: an accessible toilet" id="wheelchairtoilet_yes" /><label for="wheelchairtoilet_yes">yes</label>
-
-                                <!-- added text -->
-
-                                <input type="radio" name="wheelchairtoilet" value="yes: a Changing Places toilet" id="wheelchairtoilet_yes" /><label for="wheelchairtoilet_yes">Changing Places toilets</label>
-
-                                <input type="radio" name="wheelchairtoilet" value="yes: an accessible toilet" id="wheelchairtoilet_yes" /><label for="wheelchairtoilet_yes">accessible toilet</label>
-
-                                <!-- end -->
-
-                                <input type="radio" name="wheelchairtoilet" value="yes: a partially accessible toilet" id="wheelchairtoilet_p" />
-                                <label for="wheelchairtoilet_p" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="For instance, a toilet that is not large enough for a wheelchair to move around in or which is big enough but doesn't have any grab rails.">
-
-                                Partially accessible toilet&nbsp;<i class="bi bi-question-circle-fill"></i></label>
-
-                                <input type="radio" name="wheelchairtoilet" value="no: an accessible toilet" id="wheelchairtoilet_no" /><label for="wheelchairtoilet_no">no</label>
-
-                                <input type="radio" name="wheelchairtoilet" value="" id="wheelchairtoilet_" /><label for="wheelchairtoilet_">unknown</label>
-                            </td>
-                        </tr>
-
-                        <!-- gender neutral -->
-
-                        <!-- end of gender neutral -->
-
-                        <tr id="hearingloop">
-                            <td><label>Hearing loop?</label></td>
-                            <td>
-                                <input type="radio" name="hearingloop" value="yes: a hearing loop" id="hearingloop_yes" /><label for="hearingloop_yes">yes</label>
-                                <input type="radio" name="hearingloop" value="no: a hearing loop" id="hearingloop_no" /><label for="hearingloop_no">no</label>
-                                <input type="radio" name="hearingloop" value="reqad: a hearing loop" id="hearingloop_reqad" /><label for="hearingloop_reqad">by request in advance</label>
-                                <input type="radio" name="hearingloop" value="req: a hearing loop" id="hearingloop_req" /><label for="hearingloop_req">by request at the event</label>
-                                <input type="radio" name="hearingloop" value="" id="hearingloop_" /><label for="hearingloop_">unknown</label>
-                            </td>
-                        </tr>
-
-                        <tr id="isl">
-                            <td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="ISL Interpreters should be provided upon request. Ask attendees if they have any accessibility requirements at least two weeks before an event.">
-
-
-                            ISL Interpreter? &nbsp;<i class="bi bi-question-circle-fill"></i></label>
-                                <p style="margin-top:20px;">More information on booking an <a aria-label="Read more on how to book an ISL interpreter in Trinity" href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank" class="text-decoration-none">ISL interpreter in Trinity</a></p>
-                            </td>
-                            <td>
-                                <input type="radio" name="isl" value="yes: an ISL interpreter" id="isl_yes" /><label for="isl_yes">yes</label>
-                                <input type="radio" name="isl" value="no: an ISL interpreter" id="isl_no" /><label for="isl_no">no</label>
-                                <input type="radio" name="isl" value="reqad: an ISL interpreter" id="isl_reqad" /><label for="isl_reqad">by request in advance</label>
-                                <input type="radio" name="isl" value="req: an ISL interpreter" id="isl_req" /><label for="isl_req">by request at the event</label>
-                                <input type="radio" name="isl" value="" id="isl_" /><label for="isl_">unknown</label>
-                            </td>
-                        </tr>
-
-                        <!-- add on -->
-
-                        <tr id="social">
-                            <td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event'.">
-
-                            Does the event have a question about accessibility requirements of attendees?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
-
-                            <td>
-                                <input type="radio" name="social" value="yes: a standard accessibility contact statement on all publicity" id="social_yes" /><label for="social_yes">yes</label>
-                                <input type="radio" name="social" value="no: a standard accessibility contact statement on all publicity" id="social_no" /><label for="isl_no">no</label>
-
-                                <input type="radio" name="social" value="" id="social_" /><label for="social_">unknown</label>
-
-                            </td>
-                        </tr>
-
-                        <!-- end -->
-
-                        <tr id="quietspace">
-                            <td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Events can be overwhelming for many people. Providing a quiet, sensory-friendly space is important so people can take a break from the main event. Find out more about creating a sensory-friendly environment at the TCD Sense Project.">Designated quiet space?&nbsp;<i class="bi bi-question-circle-fill"></i></label>
-                                <p style="margin-top:20px;">Refer to Trinity's Sensory Processing Project at <a aria-label="Read more about the TCD Sense Project" href="https://linktr.ee/TCDSense" target="_blank" class="text-decoration-none">TCD Sense Project</a></p>
-                            </td>
-                            <td>
-                                <input type="radio" name="quietspace" value="yes: a designated quiet space" id="quietspace_yes" /><label for="quietspace_yes">yes</label>
-                                <input type="radio" name="quietspace" value="no: a designated quiet space" id="quietspace_no" /><label for="quietspace_no">no</label>
-                                <input type="radio" name="quietspace" value="reqad: a designated quiet space" id="quietspace_reqad" /><label for="quietspace_reqad">by request in advance</label>
-                                <input type="radio" name="quietspace" value="req: a designated quiet space" id="quietspace_req" /><label for="quietspace_req">by request at the event</label>
-                                <input type="radio" name="quietspace" value="" id="quietspace_" /><label for="quietspace_">unknown</label>
-                            </td>
-                        </tr>
-
-                        <!--<tr id="parking">
-                        <td><label>Parking nearby/onsite?</label>
-                        </td>
-
-                        <td>
-                            <input type="radio" name="parking" value="yes: general car parking" id="parking_yes" /><label for="parking_yes">yes</label>
-                            <input type="radio" name="parking" value="no: general car parking" id="parking_no" /><label for="parking_no">no</label>
-                            <input type="radio" name="parking" value="reqad: general car parking" id="parking_reqad" /><label for="parking_reqad">by request in advance</label>
-                            <input type="radio" name="parking" value="req: general car parking" id="parking_req" /><label for="parking_req">by request at the event</label>
-                            <input type="radio" name="parking" value="" id="park_" /><label for="parking_">unknown</label>
-                        </td>
-                    </tr>-->
-
-                        <tr id="bluebadge">
-                            <td><label>Disabled Person's Parking near the event?<br>See more information on <a aria-label="Read more about Accessible Campus Parking" href="https://www.tcd.ie/disability/physical-access/parking.php" target="_blank" class="text-decoration-none">Accessible Campus Parking</a></label>
-                            </td>
-                            <td>
-                                <input type="radio" name="bluebadge" value="yes: blue badge parking" id="bluebadge_yes" /><label for="bluebadge_yes">yes</label>
-                                <input type="radio" name="bluebadge" value="no: blue badge parking" id="bluebadge_no" /><label for="bluebadge_no">no</label>
-                                <input type="radio" name="bluebadge" value="reqad: blue badge parking" id="bluebadge_reqad" /><label for="bluebadge_reqad">by request in advance</label>
-                                <input type="radio" name="bluebadge" value="req: blue badge parking" id="bluebadge_req" /><label for="bluebadge_req">by request at the event</label>
-                                <input type="radio" name="bluebadge" value="" id="bluebadge_" /><label for="bluebadge_">unknown</label>
-                            </td>
-                        </tr>
-                    </table>
-
-
-                    <!-- FILM SECTION STARTS HERE -->
-                    <div id="film">
-                        <h2 id="filmheader">Audio &amp; Visual</h2>
-
-                        <p>More information on making media accessible can be found at <a aria-label="Read more about Social Media Accessibility" href="https://www.tcd.ie/disability/teaching-info/TIC/materials/social-media.php" target="_blank" class="text-decoration-none">Social Media Accessibility</a></p>
-
-                        <div id="slides">
-                        <table class="table">
-
-                            <tr>
-                                <td><label>Are the presentation slides (MS PowerPoint etc.) accessible?</label>
-                                    <p style="margin-top:20px;">Refer to the <a aria-label="Read more about Guidlines for Creating Accessible Materials" href="https://www.tcd.ie/disability/teaching-info/TIC/materials.php" target="_blank" rel="noopener" class="text-decoration-none">Guidelines for Creating Accessible Materials</a></p>
-                                </td>
-
-                                <td>
-                                    <input type="radio" name="slides" value="yes: accessible presentation slides" id="slides_yes" /><label for="slides_yes">yes</label>
-
-                                    <input type="radio" name="slides" value="no: accessible presentation slides" id="social_no" /><label for="slides_no">no</label>
-
-                                    <input type="radio" name="slides" value="" id="slides_" /><label for="slides_">unknown</label>
-
-                                </td>
-                            </tr>
-
-                            <tr>
-
-                                <td>Does the event include a video showing or video call?&nbsp; </td>
-                                <td>
-                                    <input type="radio" name="film" value="yes" id="film_yes" /><label for="film_yes">yes</label>
-                                    <input type="radio" name="film" value="no" id="film_no" /><label for="film_no">no</label>
-                                    <input type="radio" name="film" value="" id="film_" /><label for="film_">unknown</label>
-                                </td>
-
-                            </tr>
-                        </table>
-                    </div>
-                    </div>
-
-                    <div id="filmhide" class="hide">
-                        <table class="table">
-                            <tr id="subtitles">
-                                <td><label>Are there subtitles?</label></td>
-                                <td>
-                                    <input type="radio" name="subtitles" value="yes: subtitles" id="subtitles_yes" /><label for="subtitles_yes">yes</label>
-                                    <input type="radio" name="subtitles" value="no: subtitles" id="subtitles_no" /><label for="subtitles_no">no</label>
-                                    <input type="radio" name="subtitles" value="reqad: subtitles" id="subtitles_reqad" /><label for="subtitles_reqad">by request in advance</label>
-                                    <input type="radio" name="subtitles" value="req: subtitles" id="subtitles_req" /><label for="subtitles_req">by request at the event</label>
-                                    <input type="radio" name="subtitles" value="" id="subtitles_" /><label for="subtitles_">unknown</label>
-                                </td>
-                            </tr>
-
-                            <tr id="englishaudio">
-                                <td><label>English language audio?</label></td>
-                                <td>
-                                    <input type="radio" name="englishaudio" value="yes: English audio" id="englishaudio_yes" /><label for="englishaudio_yes">yes</label>
-                                    <input type="radio" name="englishaudio" value="no: English audio" id="englishaudio_no" /><label for="englishaudio_no">no</label>
-                                    <input type="radio" name="englishaudio" value="reqad: English audio" id="englishaudio_reqad" /><label for="englishaudio_reqad">by request in advance</label>
-                                    <input type="radio" name="englishaudio" value="req: English audio" id="englishaudio_req" /><label for="englishaudio_req">by request at the event</label>
-                                    <input type="radio" name="englishaudio" value="" id="Englishaudio_" /><label for="englishaudio_">unknown</label>
-                                </td>
-                            </tr>
-                            <tr id="audiodescription">
-                                <td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Audio description is what's happening on screen for those with sight impairments.">
-                            Is there an audio description?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
-                                <td>
-                                    <input type="radio" name="audiodescription" value="yes: audio description" id="audiodescription_yes" /><label for="audiodescription_yes">yes</label>
-                                    <input type="radio" name="audiodescription" value="no: audio description" id="audiodescription_no" /><label for="audiodescription_no">no</label>
-                                    <input type="radio" name="audiodescription" value="reqad: audio description" id="audiodescription_reqad" /><label for="audiodescription_reqad">by request in advance</label>
-                                    <input type="radio" name="audiodescription" value="req: audio description" id="audiodescription_req" /><label for="audiodescription_req">by request at the event</label>
-                                    <input type="radio" name="audiodescription" value="" id="audiodescription_" /><label for="audiodescription_">unknown</label>
-                                </td>
-                            </tr>
-
-                            <div id="cc" class="hide">
-                                <tr id="cc">
-                                    <td><label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Closed captions are subtitles for people who are deaf or hard of hearing.">
-                                    Including closed captions?&nbsp;<i class="bi bi-question-circle-fill"></i></label></td>
-                                    <td><input type="radio" name="cc" value="yes: closed captions" id="cc_yes" /><label for="cc_yes">yes</label>
-                                        <input type="radio" name="cc" value="no: closed captions" id="cc_no" /><label for="cc_no">no</label>
-                                        <input type="radio" name="cc" value="reqad: closed captions" id="cc_reqad" /><label for="cc_reqad">by request in advance</label>
-                                        <input type="radio" name="cc" value="req: closed captions" id="cc_req" /><label for="cc_req">by request at the event</label>
-                                        <input type="radio" name="cc" value="" id="cc_" /><label for="cc_">unknown</label>
-                                    </td>
-                                </tr>
-                            </div>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Event location -->
-                <div>
-
-                    <!-- can hide this with span style="display:none;" -->
-
-                    <label for="access_wa" class="form-label mt-4" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="These questions are not necessarily complete in terms of providing comprehensive access information. Please think about other details you might want to add in the further comments section. If the event has catering, you might want to include food options.">Any further comments or details?
-                            <i class="bi bi-question-circle-fill"></i></label>
-
-                    <div class="form-outline mb-4"><textarea name="comment" id="comment" rows="5" placeholder="&nbsp;Please enter any further comments or details for the event."></textarea></div>
-
-                    <div>
-                        <label>Please provide contact details for any access inquiries (if not included elsewhere):</label>
-                        <div class="clearfix"></div>
-
-                        <input id="contact" name="contact" type="text" class="input-group w-75">
-                    </div>
-
-                    <div>
-
-                    </div>
-                </div>
-
-                <!-- end -->
-
-            </div>
-
-            <!-- SHORT QUESTIONS -->
-
-            <div id="shortquestions" class="questions">
-                <h2 class="accessheadershort">Access to event</h2>
-                <div id="accessshort"><label>Does the event have:</label>
-
-                    <input type="radio" name="accessshort" value="wa" id="accessshort_wa" />
-                    <!--<label for="accessshort_wa">Wheelchair access<span title="Wheelchair access requires flat access (no lip, transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room."><span></label>-->
-
-                    <input type="radio" name="accessshort" value="sf" id="accessshort_sf" />
-                    <label for="accessshort_sf">Step-free access only<span title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway">(?)</span></label>
-                    <input type="radio" name="accessshort" value="no" id="accessshort_no" />
-                    <label for="accessshort_no">No step-free access</label>
-                    <input type="radio" name="accessshort" value="" id="accessshort_" />
-                    <label for="accessshort_">Unknown</label>
-                </div>
-                <div id="separateaccessshort" class="hide">
-                    <input type="checkbox" name="separateaccessshort" value="route" id="separateaccessshort_yes" /><label for="separateaccessshort_yes" data-tooltip="Often events have a separate route into the events for wheelchair users and those needing step-free access. It's important to not assume an event doesn't have step-free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">
-                    The step-free or wheelchair access is by a separate route.</label>
-                </div>
-                <div id="stepsshort" class="hide">
-                    <label for="stepsshort_data">How many steps<span id="separateshowshort"> into the main entrance</span>?<span title="Give a number of steps or a number of flights of stairs for instance, you can also state and further details (such as height; whether they are straight stairs or whether they have handrail here. If there is separate step free access please describe the main route.">(?)</span></label></td>
-                    <span class="nowrap">
-                    <input type="text" id="stepsshort_data" name="stepsshort_data" />
-                </span>
-                </div>
-                <div>
-                    <h2 id="sectionhead">Facilities:</h2>
-                    <p>Which of the following are available (if relevant given e.g. a film showing)?</p>
-                </div>
-                <div id="facilitiesshort">
-                    <span class="nowrap"><input type="checkbox" name="paddedseatingshort" value="yes: padded seating" id="paddedseatingshort" /><label for="paddedseatingshort">Padded/comfortable seating?</label></span>
-                    <span class="nowrap"><input type="checkbox" name="basicseatingshort" value="yes: basic seating" id="basicseatingshort" /><label for="basicseatingshort">Basic seating?</label></span>
-                    <span class="nowrap"><input type="checkbox" name="wheelchairtoiletshort" value="yes: an accessible toilet" id="wheelchairtoiletshort" /><label for="wheelchairtoiletshort">Wheelchair accessible toilet?</label></span>
-
-                    <!-- gender neutral -->
-
-                    <!-- end of gender neutral -->
-
-                    <span class="nowrap"><input type="checkbox" name="hearingloopshort: a hearing loop" value="yes" id="hearingloopshort" /><label for="hearingloopshort">Hearing loop?</label></span>
-
-                    <span class="nowrap"><input type="checkbox" name="islshort" value="yes: an ISL interpreter" id="islshort" /><label for="islshort">ISL interpreter?</label></span>
-
-                    <!-- add on -->
-                    <span class="nowrap"><input type="checkbox" name="islshort" value="yes: an ISL interpreter" id="islshort" /><label for="islshort">test</label></span>
-                    <!-- end -->
-
-                    <span class="nowrap"><input type="checkbox" name="quietspaceshort" value="yes: a designated quiet space" id="quietspaceshort" /><label for="quietspaceshort">Designated quiet space?<span title="At some events people provide a space that is designated as a quiet space where people can go if they need that. Examples where this is a good idea is where the event might be very emotional or triggering or where the main event is very loud and people might need a break for any number of reasons.">(?)</span></label>
-                    </span>
-
-                    <!--<span class="nowrap"><input type="checkbox" name="parkingshort" value="yes: general car parking" id="parkingshort" /><label for="parkingshort">Parking nearby/onsite?</label></span>-->
-
-                    <span class="nowrap"><input type="checkbox" name="bluebadgeshort" value="yes: blue badge parking" id="bluebadgeshort" /><label for="bluebadgeshort">Disabled Person's Parking</label>
-                </span>
-
-                    <span class="nowrap"><input type="checkbox" name="subtitlesshort" value="yes: subtitles" id="subtitlesshort" /><label for="subtitlesshort">Subtitles?</label></span>
-                    <span class="nowrap"><input type="checkbox" name="ccshort" value="yes: closed captions" id="ccshort" /><label for="ccshort">Including closed captions?<span title="Closed captions are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)</span></label>
-                    </span>
-                    <span class="nowrap"><input type="checkbox" name="audiodescriptionshort" value="yes: audio description" id="audiodescriptionshort" /><label for="audiodescriptionshort">Including audio description?<span title="Audio description narrates what is happening on screen for people who are blind or visually impaired.">(?)</span></label>
-                    </span>
-
-                    <span class="nowrap"><input type="checkbox" name="englishaudioshort" value="yes: English audio" id="englishaudioshort" /><label for="englishaudioshort">English language audio?</label></span>
-                </div>
-
-                <h2>Further details and contacts</h2>
-                <div>
-                    <label>Any further comments?<span title="Examples of things here might be that there is a ramp but in needs putting out and who to contact or that the ramp is a split or gutter ramp which is not suitable for powerchair users, another might be that printouts of the script are available on the door (for those with hearing impairments)">(?)</label>
-                    <div><textarea name="comment" id="comment" placeholder=""></textarea></div>
-                </div>
-
-                <div><label>Please provide contact details for any access inquiries (if not included elsewhere):</label> <input id="contact" name="contact" type="text"></div>
-
-            </div>
-
-            <!-- END OF SHORT QUESTIONS -->
-
-            <div id="generate" class="mt-4">
-                <button type="button" class="btn btn-dark btn-lg text-white" aria-label="Generate Acessibility Statement">
-                Generate Accessibility Statement
-                </button>
-
-            </div>
-
-            <div id="select" class="hide">
-                <button type="button" class="btn btn-success btn-lg text-white select_button">
-                    Select Accessibility Statement
-                </button>
-
-                <div class="clearfix"></div>
-
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="form-outline mb-2 mt-2">
-                <textarea rows="10" id="result" class="hide form-control" name="accessibility_generator"></textarea>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div id="selectBtn" class="hide">
-
-                <button type="button" class="btn btn-info btn-lg text-black mt-2 mb-4" data-bs-toggle="tooltip" data-bs-placement="right" title="Download the Accessibility Statement as a PDF document after you click on the 'Generate Accessibility Statement' button." value="Download Statement as a PDF" aria-label="Download Accessibility Statement as a PDF">Download Accessibility Statement as a [PDF]</button>
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title h4">Contact Trinity Disability Service</h4>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="bi bi-envelope-fill icon-purple" aria-hidden="true"></i>&nbsp;askds@tcd.ie</li>
-                                <li class="list-group-item"><i class="bi bi-telephone-outbound-fill icon-purple" aria-hidden="true"></i>
-                                    <a href="tel:0035318963111" class="text-decoration-none"> +353 1 896 3111</a>
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-twitter icon-purple" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/TCDAbility" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">@TCDAbility</a></li>
-                                <li class="list-group-item"><i class="bi bi-instagram icon-purple" aria-hidden="true"></i>&nbsp;<a href="https://www.instagram.com/tcd.ability/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">tcd.ability</a></li>
-                                <li class="list-group-item">
-                                    <a href="https://www.tcd.ie/disability/" target="_blank" class="text-decoration-none" rel=" noopener nonreferrer"><i class="bi bi-globe icon-purple" aria-hidden="true"></i>&nbsp;https://www.tcd.ie/disability/</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title h4">Contact Trinity Ability co_op</h4>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="bi bi-envelope-fill icon-purple" aria-hidden="true"></i>&nbsp;abilitycoop@gmail.com</li>
-                                <li class="list-group-item"><i class="bi bi-twitter icon-purple" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/abilitycoop/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">@abilitycoop</a></li>
-                                <li class="list-group-item"><i class="bi bi-instagram icon-purple" aria-hidden="true"></i>&nbsp;<a href="https://www.instagram.com/abilityco_op/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">abilityco_op</a></li>
-                                <li class="list-group-item"><i class="bi bi-facebook icon-purple" aria-hidden="true"></i>&nbsp;<a href="https://www.facebook.com/Ability-Co_op-108998600831478/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">trinityabilitycoop</a></li>
-                                <li class="list-group-item">
-                                    <a href="https://abilitycoop.com/" target="_blank" rel=" noopener nonreferrer" class="text-decoration-none"><i class="bi bi-globe icon-purple" aria-hidden="true">
-                                    </i>&nbsp;https://abilitycoop.com/</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Back to top button -->
-
-                <div id="generate">
-                    <button type="button" class="btn btn-dark mt-4 mb-4" aria-label="Back to Top">
-            <a href="#top" title="Back to the top of the page" class="mt-5 back-to-top text-decoration-none text-white">Back to Top of Page</a>
-        </button>
-                </div>
-
-                <!-- ======== -->
-
-            </div>
-
-            <!--<button onClick="history.go(0);">Refresh Page</button>-->
-
+      <div id="accessstatementgenerator">
+        <h1 class="h1" id="#top">Trinity Accessibility Event Generator
+        </h1>
+        <div id="intro">
+          <!-- Main text top of page -->
+          <p style="margin-top:20px;">The Trinity Accessibility Event Generator is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible. No event is truly accessible without the information to say that it is!
+          </p>
+          <div class="alert alert-info text-black" role="alert" class="alert-info">
+            <h4 class="alert-heading">How to use the Trinity Accessibility Event Generator
+            </h4>
+            Just fill in the information you have, click on the 'Generate Accessibility Statement' button and then the 'Select Accessibility Statement' button, and copy the text produced (which you can edit in place) to wherever you need it. You can click on the 'Download Accessibility Statement as a PDF' button after you click on the 'Generate Accessibility Statement' button to download or save the generated text as a PDF document.
+          </div>
+          <p style="margin-top:20px;">Trinity College Dublin is committed to providing an environment that is accessible to individuals with disabilities. The 
+            <a aria-label="Read more about Trinity Accessible Information Policy" href="https://www.tcd.ie/about/policies/accessible-info-policy.php" target="_blank" rel="noopener" class="text-decoration-none">Trinity Accessible Information Policy
+            </a> sets out a formal commitment by Trinity that information should be available in an accessible format, without discrimination against those with disabilities. This complies with the 
+            <a aria-label="Read more about the Disability Act 2205" href="https://www.tcd.ie/equality/legislation/disability-act/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">Disability Act 2005 
+            </a> and shows evidence that Trinity College Dublin ensures that all facilities including events are accessible to all. The Trinity Ability co_op have just released their guidelines. These guidelines will provide clubs and societies with the information that they need to become more inclusive to students with disabilities. You can check them out on their website 
+            <a aria-label="Vist the Trinity Ability co_op website" href="https://abilitycoop.com/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">abilitycoop.com
+            </a>
+          </p>
+          <!-- End of Main text top of page -->
+          <hr class="w-100 clearfix" />
         </div>
-
+        <!-- noscript doesn't play well with some JS blockers -->
+        <div class="noJS">
+          Please enable Javascript.
+        </div>
+        <div class="requireJS">
+          <!--The buttons at the top-->
+          <!-- The buttons for Short and Standard version -->
+          <div id="buttons">
+            <div class="toggle">
+              <label for="greyed">
+                <span class="unselected">Show inactive questions
+                </span>
+                <span class="selected">Hide inactive questions
+                </span>
+              </label>
+              <input type="checkbox" name="toggled" id="greyed" value="1" />
+            </div>
+            <div class="toggle">
+              <label for="type">
+                <span class="unselected">Go to short version
+                </span>
+                <span class="selected">Go to standard version
+                </span>
+              </label>
+              <input type="checkbox" name="toggled" id="type" value="1" />
+            </div>
+          </div>
+          <!-- End of the buttons for Short and Standard version -->
+          <!--The set of questions for the standard version of the form-->
+          <div id="questions" class="questions">
+            <div class="container">
+              <div id="eventinfo">
+                <!-- EVENT NAME -->
+                <label for="basic-url" class="form-label mt-4">Event Name
+                </label>
+                <div class="input-group w-50">
+                  <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename">
+                </div>
+                <!-- End of Event Name -->
+                <!-- Add Online Event -->
+                <table class="table" style="margin-top:20px;">
+                  <tr id="online">
+                    <td>
+                      <label>Online Event?
+                      </label>
+                      <p style="margin-top:20px;">If it's an online event, please refer to the 
+                        <a aria-label="Read more about Technology and Accessibility" href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">Technology &amp; Accessibility
+                        </a> guide for more information. 
+                      </p>
+                    </td>
+                    <td>
+                      <input type="radio" name="online" value="yes: an online event" id="online_yes" />
+                      <label for="online_yes">yes
+                      </label>
+                      <input type="radio" name="online" value="no: an online event" id="online_no" />
+                      <label for="online_no">no
+                      </label>
+                      <input type="radio" name="online" value="" id="online_" />
+                      <label for="online_">unknown
+                      </label>
+                    </td>
+                  </tr>
+                  <tr id="inperson">
+                    <!-- In-Person -->
+                    <td>
+                      <label>In-Person Event?
+                      </label>
+                      <p style="margin-top:20px;">Check the event against the 
+                        <a aria-label="Read more about the A to Z Accessibility Checker" href="https://www.tcd.ie/disability/physical-access/building/" target="_blank" class="text-decoration-none">Accessibility Checker
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <input type="radio" name="inperson" value="yes: an in-person event" id="inperson_yes" />
+                      <label for="inperson_yes">yes
+                      </label>
+                      <input type="radio" name="inperson" value="no: an in-person event" id="inperson_no" />
+                      <label for="inperson_no">no
+                      </label>
+                      <input type="radio" name="inperson" value="" id="inperson_" />
+                      <label for="inperson_">unknown
+                      </label>
+                    </td>
+                  </tr>
+                </table>
+                <!-- End of table -->
+              </div>
+              <!-- EVENT LOCATION -->
+              <label for="basic-url" class="form- mt-4">Event Location
+              </label>
+              <div class="input-group w-50">
+                <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="elocation" name="elocation">
+              </div>
+              <!-- EVENT ORGANISER NAME -->
+              <label for="basic-url" class="form-label mt-4">Event Organiser Name
+              </label>
+              <div class="input-group w-50">
+                <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org/Unit/Centre" aria-label="placeholder">
+              </div>
+              <!-- EVENT ORGANISER EMAIL -->
+              <label for="basic-url" class="form-label mt-4">Event Organiser Email
+              </label>
+              <div class="input-group w-50">
+                <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="conemail" name="conemail" placeholder="Please provide a valid email" aria-label="placeholder">
+              </div>
+            </div>
+            <!-- MAIN PART FOR ALL THE QUESTIONS -->
+            <!-- =============================== -->
+            <!-- Section 1 - Access to the Event -->
+            <h2 id="accessheader"> Access to the Event
+            </h2>
+            <table class="table">
+              <tr id="access">
+                <td>
+                  <label>Does the event have:&nbsp;
+                  </label>
+                  <input type="radio" class="radio inline" name="access" value="wa" id="access_wa" data-toggle="collapse" />
+                  <label for="access_wa" data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-placement="top" title="Wheelchair access requires flat access (no lip/transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room.">Wheelchair access&nbsp;
+                    <i class="bi bi-question-circle-fill">
+                    </i>
+                  </label>
+                  <input type="radio" class="radio inline" name="access" value="sf" id="access_sf" />
+                  <label for="access_sf" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway.">
+                    Step-free access only&nbsp;
+                    <i class="bi bi-question-circle-fill">
+                    </i>
+                  </label>
+                  <input type="radio" class="radio inline" name="access" value="no" id="access_no" />
+                  <label for="access_no">No step-free access
+                  </label>
+                  <input type="radio" class="radio inline" name="access" value="" id="access_" />
+                  <label for="access_">unknown
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div id="separateaccess" class="hide">
+                    <input type="checkbox" name="separateaccess" value="route" id="separateaccess_yes" />
+                    <label for="separateaccess_yes" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Often events have a separate route into the events for wheelchair users and those needing step-free access. It's important to not assume an event doesn't have step-free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">&nbsp;The step-free or wheelchair access is by a separate route.&nbsp;
+                      <i class="bi bi-question-circle-fill">
+                      </i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="steps" class="hide">
+            <h2 id="stepsheader">Steps:
+            </h2>
+            <table class="table">
+              <tr>
+                <td>
+                  <label for="steps_count" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Give a number of steps or a number of flights of stairs.">
+                    Approximately how many steps
+                    <span id="separateshow"> into the main entrance
+                    </span>?&nbsp;
+                    <i class="bi bi-question-circle-fill">
+                    </i>
+                  </label>
+                </td>
+                <td>
+                  <span class="nowrap">
+                    <input type="text" id="steps_count" name="steps_count" />
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="steps_height">How high are the steps?
+                  </label>
+                </td>
+                <td id="steps_height">
+                  <input type="radio" name="steps" value="lip" id="lip" />
+                  <label for="steps_height_lip">a lip/lips
+                  </label>
+                  <input type="radio" name="steps" value="shallow" id="shallow" />
+                  <label for="shallow">&nbsp;shallow
+                  </label>
+                  <input type="radio" name="steps" value="standard height" id="standardheight" />
+                  <label for="standardheight">approximately standard height
+                  </label>
+                  <input type="radio" name="steps" value="deep" id="deep" />
+                  <label for="deep">deep
+                  </label>
+                  <input type="radio" name="steps" value="" id="steps_height_" />
+                  <label for="steps_height_">unknown
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="steps_hr">Is there a handrail?
+                  </label>
+                </td>
+                <td id="steps_hr">
+                  <input type="radio" name="steps_hr" value="no" id="steps_hr_no" />
+                  <label for="steps_hr_no">no
+                  </label>
+                  <input type="radio" name="steps_hr" value="one" id="steps_hr_one" />
+                  <label for="steps_hr_one">on one side
+                  </label>
+                  <input type="radio" name="steps_hr" value="both" id="steps_hr_both" />
+                  <label for="steps_hr_both" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Narrow stairs so that someone can hold both at the same time, not a wide flight with one on each side.">
+                    on both sides&nbsp;
+                    <i class="bi bi-question-circle-fill">
+                    </i>
+                  </label>
+                  <input type="radio" name="steps_hr" value="" id="steps_hr_" />
+                  <label for="steps_hr_">unknown
+                  </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="facilities">
+            <h2 id="facilitiesheader">Facilities
+            </h2>
+            <p>Which of the following are available?
+            </p>
+            <table class="tableon">
+              <!--<tr id="online">
+<td><label>Online Event?</label>
+<p style="margin-top:20px;">Visit <a href="https://www.tcd.ie/disability/resources/technology%20and%20accessibility.php" target="_blank" rel="noopener nonreferrer">Online Event Accessibility</a></p></td>
+<td>
+<input type="radio" name="online" value="yes: an online event" id="online_yes" /><label for="online_yes">yes</label>
+<input type="radio" name="online" value="no: an online event" id="online_no" /><label for="online_no">no</label>
+<input type="radio" name="online" value="" id="online_" /><label for="online_">unknown</label>
+</td>
+</tr>-->
+              <!-- seating -->
+              <tr id="seating">
+                <td>
+                  <label>Seating?
+                  </label>
+                </td>
+                <td>
+                  <input type="radio" name="seating" value="yes: padded seating" id="seating_yp" />
+                  <label for="seating_yp">yes - padded/comfortable
+                  </label>
+                  <input type="radio" name="seating" value="yes: basic seating" id="seating_yb" />
+                  <label for="seating_yb">yes - basic chairs
+                  </label>
+                  <input type="radio" name="seating" value="yes: seating" id="seating_yes" />
+                  <label for="seating_yes">yes - unknown type
+                  </label>
+                  <input type="radio" name="seating" value="no: seating" id="seating_no" />
+                  <label for="seating_no">no
+                  </label>
+                  <input type="radio" name="seating" value="" id="seating_" />
+                  <label for="seating_">unknown
+                  </label>
+                </td>
+              </tr>
+              <!-- seating -->
+              <tr id="wheelchairtoilet">
+                <td>
+                  <label>Wheelchair accessible toilet?
+                  </label>
+                </td>
+                <td>
+                  <input type="radio" name="wheelchairtoilet" value="yes: an accessible toilet" id="wheelchairtoilet_yes" />
+                  <label for="wheelchairtoilet_yes">yes
+                  </label>
+                  <!-- added text -->
+                  <input type="radio" name="wheelchairtoilet" value="yes: a Changing Places toilet" id="wheelchairtoilet_yes" />
+                  <label for="wheelchairtoilet_yes">Changing Places toilets
+                  </label>
+                  <input type="radio" name="wheelchairtoilet" value="yes: an accessible toilet" id="wheelchairtoilet_yes" />
+                  <label for="wheelchairtoilet_yes">accessible toilet
+                  </label>
+                  <!-- end -->
+                  <input type="radio" name="wheelchairtoilet" value="yes: a partially accessible toilet" id="wheelchairtoilet_p" />
+                  <label for="wheelchairtoilet_p" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="For instance, a toilet that is not large enough for a wheelchair to move around in or which is big enough but doesn't have any grab rails.">
+                    Partially accessible toilet&nbsp;
+                    <i class="bi bi-question-circle-fill">
+                    </i>
+                  </label>
+                  <input type="radio" name="wheelchairtoilet" value="no: an accessible toilet" id="wheelchairtoilet_no" />
+                  <label for="wheelchairtoilet_no">no
+                  </label>
+                  <input type="radio" name="wheelchairtoilet" value="" id="wheelchairtoilet_" />
+                  <label for="wheelchairtoilet_">unknown
+                  </label>
+                </td>
+              </tr>
+              <!-- gender neutral -->
+              <!-- end of gender neutral -->
+              <tr id="hearingloop">
+                <td>
+                  <label>Hearing loop?
+                  </label>
+                </td>
+                <td>
+                  <input type="radio" name="hearingloop" value="yes: a hearing loop" id="hearingloop_yes" />
+                  <label for="hearingloop_yes">yes
+                  </label>
+                  <input type="radio" name="hearingloop" value="no: a hearing loop" id="hearingloop_no" />
+                  <label for="hearingloop_no">no
+                  </label>
+                  <input type="radio" name="hearingloop" value="reqad: a hearing loop" id="hearingloop_reqad" />
+                  <label for="hearingloop_reqad">by request in advance
+                  </label>
+                  <input type="radio" name="hearingloop" value="req: a hearing loop" id="hearingloop_req" />
+                  <label for="hearingloop_req">by request at the event
+                  </label>
+                  <input type="radio" name="hearingloop" value="" id="hearingloop_" />
+                  <label for="hearingloop_">unknown
+                  </label>
+                </td>
+              </tr>
+              <tr id="isl">
+                <td>
+                  <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="ISL Interpreters should be provided upon request. Ask attendees if they have any accessibility requirements at least two weeks before an event.">
+                    ISL Interpreter? &nbsp;
+                    <i class="bi bi-question-circle-fill">
+                    </i>
+                  </label>
+                  <p style="margin-top:20px;">More information on booking an 
+                    <a aria-label="Read more on how to book an ISL interpreter in Trinity" href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank" class="text-decoration-none">ISL interpreter in Trinity
+                    </a>
+                  </p>
+                </td>
+                <td>
+                  <input type="radio" name="isl" value="yes: an ISL interpreter" id="isl_yes" />
+                  <label for="isl_yes">yes
+                  </label>
+                  <input type="radio" name="isl" value="no: an ISL interpreter" id="isl_no" />
+                  <label for="isl_no">no
+                  </label>
+                  <input type="radio" name="isl" value="reqad: an ISL interpreter" id="isl_reqad" />
+                  <label for="isl_reqad">by request in advance
+                  </label>
+                  <input type="radio" name="isl" value="req: an ISL interpreter" id="isl_req" />
+                  <label for="isl_req">by request at the event
+                  </label>
+                  <input type="radio" name="isl" value="" id="isl_" />
+                  <label for="isl_">unknown
+                  </label>
+                </td>
+              </tr>
+              <!-- add on -->
+              <tr id="social">
+                <td>
+                  <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event'.">
+                    Does the event have a question about accessibility requirements of attendees?&nbsp;
+                    <i class="bi bi-question-circle-fill">
+                    </i>
+                  </label>
+                </td>
+                <td>
+                  <input type="radio" name="social" value="yes: a standard accessibility contact statement on all publicity" id="social_yes" />
+                  <label for="social_yes">yes
+                  </label>
+                  <input type="radio" name="social" value="no: a standard accessibility contact statement on all publicity" id="social_no" />
+                  <label for="isl_no">no
+                  </label>
+                  <input type="radio" name="social" value="" id="social_" />
+                  <label for="social_">unknown
+                  </label>
+                </td>
+              </tr>
+              <!-- end -->
+              <tr id="quietspace">
+                <td>
+                  <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Events can be overwhelming for many people. Providing a quiet, sensory-friendly space is important so people can take a break from the main event. Find out more about creating a sensory-friendly environment at the TCD Sense Project.">Designated quiet space?&nbsp;
+                    <i class="bi bi-question-circle-fill">
+                    </i>
+                  </label>
+                  <p style="margin-top:20px;">Refer to Trinity's Sensory Processing Project at 
+                    <a aria-label="Read more about the TCD Sense Project" href="https://linktr.ee/TCDSense" target="_blank" class="text-decoration-none">TCD Sense Project
+                    </a>
+                  </p>
+                </td>
+                <td>
+                  <input type="radio" name="quietspace" value="yes: a designated quiet space" id="quietspace_yes" />
+                  <label for="quietspace_yes">yes
+                  </label>
+                  <input type="radio" name="quietspace" value="no: a designated quiet space" id="quietspace_no" />
+                  <label for="quietspace_no">no
+                  </label>
+                  <input type="radio" name="quietspace" value="reqad: a designated quiet space" id="quietspace_reqad" />
+                  <label for="quietspace_reqad">by request in advance
+                  </label>
+                  <input type="radio" name="quietspace" value="req: a designated quiet space" id="quietspace_req" />
+                  <label for="quietspace_req">by request at the event
+                  </label>
+                  <input type="radio" name="quietspace" value="" id="quietspace_" />
+                  <label for="quietspace_">unknown
+                  </label>
+                </td>
+              </tr>
+              <!--<tr id="parking">
+<td><label>Parking nearby/onsite?</label>
+</td>
+<td>
+<input type="radio" name="parking" value="yes: general car parking" id="parking_yes" /><label for="parking_yes">yes</label>
+<input type="radio" name="parking" value="no: general car parking" id="parking_no" /><label for="parking_no">no</label>
+<input type="radio" name="parking" value="reqad: general car parking" id="parking_reqad" /><label for="parking_reqad">by request in advance</label>
+<input type="radio" name="parking" value="req: general car parking" id="parking_req" /><label for="parking_req">by request at the event</label>
+<input type="radio" name="parking" value="" id="park_" /><label for="parking_">unknown</label>
+</td>
+</tr>-->
+              <tr id="bluebadge">
+                <td>
+                  <label>Disabled Person's Parking near the event?
+                    <br>See more information on 
+                    <a aria-label="Read more about Accessible Campus Parking" href="https://www.tcd.ie/disability/physical-access/parking.php" target="_blank" class="text-decoration-none">Accessible Campus Parking
+                    </a>
+                  </label>
+                </td>
+                <td>
+                  <input type="radio" name="bluebadge" value="yes: blue badge parking" id="bluebadge_yes" />
+                  <label for="bluebadge_yes">yes
+                  </label>
+                  <input type="radio" name="bluebadge" value="no: blue badge parking" id="bluebadge_no" />
+                  <label for="bluebadge_no">no
+                  </label>
+                  <input type="radio" name="bluebadge" value="reqad: blue badge parking" id="bluebadge_reqad" />
+                  <label for="bluebadge_reqad">by request in advance
+                  </label>
+                  <input type="radio" name="bluebadge" value="req: blue badge parking" id="bluebadge_req" />
+                  <label for="bluebadge_req">by request at the event
+                  </label>
+                  <input type="radio" name="bluebadge" value="" id="bluebadge_" />
+                  <label for="bluebadge_">unknown
+                  </label>
+                </td>
+              </tr>
+            </table>
+            <!-- FILM SECTION STARTS HERE -->
+            <div id="film">
+              <h2 id="filmheader">Audio &amp; Visual
+              </h2>
+              <p>More information on making media accessible can be found at 
+                <a aria-label="Read more about Social Media Accessibility" href="https://www.tcd.ie/disability/teaching-info/TIC/materials/social-media.php" target="_blank" class="text-decoration-none">Social Media Accessibility
+                </a>
+              </p>
+              <div id="slides">
+                <table class="table">
+                  <tr>
+                    <td>
+                      <label>Are the presentation slides (MS PowerPoint etc.) accessible?
+                      </label>
+                      <p style="margin-top:20px;">Refer to the 
+                        <a aria-label="Read more about Guidlines for Creating Accessible Materials" href="https://www.tcd.ie/disability/teaching-info/TIC/materials.php" target="_blank" rel="noopener" class="text-decoration-none">Guidelines for Creating Accessible Materials
+                        </a>
+                      </p>
+                    </td>
+                    <td>
+                      <input type="radio" name="slides" value="yes: accessible presentation slides" id="slides_yes" />
+                      <label for="slides_yes">yes
+                      </label>
+                      <input type="radio" name="slides" value="no: accessible presentation slides" id="social_no" />
+                      <label for="slides_no">no
+                      </label>
+                      <input type="radio" name="slides" value="" id="slides_" />
+                      <label for="slides_">unknown
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Does the event include a video showing or video call?&nbsp; 
+                    </td>
+                    <td>
+                      <input type="radio" name="film" value="yes" id="film_yes" />
+                      <label for="film_yes">yes
+                      </label>
+                      <input type="radio" name="film" value="no" id="film_no" />
+                      <label for="film_no">no
+                      </label>
+                      <input type="radio" name="film" value="" id="film_" />
+                      <label for="film_">unknown
+                      </label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div id="filmhide" class="hide">
+              <table class="table">
+                <tr id="subtitles">
+                  <td>
+                    <label>Are there subtitles?
+                    </label>
+                  </td>
+                  <td>
+                    <input type="radio" name="subtitles" value="yes: subtitles" id="subtitles_yes" />
+                    <label for="subtitles_yes">yes
+                    </label>
+                    <input type="radio" name="subtitles" value="no: subtitles" id="subtitles_no" />
+                    <label for="subtitles_no">no
+                    </label>
+                    <input type="radio" name="subtitles" value="reqad: subtitles" id="subtitles_reqad" />
+                    <label for="subtitles_reqad">by request in advance
+                    </label>
+                    <input type="radio" name="subtitles" value="req: subtitles" id="subtitles_req" />
+                    <label for="subtitles_req">by request at the event
+                    </label>
+                    <input type="radio" name="subtitles" value="" id="subtitles_" />
+                    <label for="subtitles_">unknown
+                    </label>
+                  </td>
+                </tr>
+                <tr id="englishaudio">
+                  <td>
+                    <label>English language audio?
+                    </label>
+                  </td>
+                  <td>
+                    <input type="radio" name="englishaudio" value="yes: English audio" id="englishaudio_yes" />
+                    <label for="englishaudio_yes">yes
+                    </label>
+                    <input type="radio" name="englishaudio" value="no: English audio" id="englishaudio_no" />
+                    <label for="englishaudio_no">no
+                    </label>
+                    <input type="radio" name="englishaudio" value="reqad: English audio" id="englishaudio_reqad" />
+                    <label for="englishaudio_reqad">by request in advance
+                    </label>
+                    <input type="radio" name="englishaudio" value="req: English audio" id="englishaudio_req" />
+                    <label for="englishaudio_req">by request at the event
+                    </label>
+                    <input type="radio" name="englishaudio" value="" id="Englishaudio_" />
+                    <label for="englishaudio_">unknown
+                    </label>
+                  </td>
+                </tr>
+                <tr id="audiodescription">
+                  <td>
+                    <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Audio description is what's happening on screen for those with sight impairments.">
+                      Is there an audio description?&nbsp;
+                      <i class="bi bi-question-circle-fill">
+                      </i>
+                    </label>
+                  </td>
+                  <td>
+                    <input type="radio" name="audiodescription" value="yes: audio description" id="audiodescription_yes" />
+                    <label for="audiodescription_yes">yes
+                    </label>
+                    <input type="radio" name="audiodescription" value="no: audio description" id="audiodescription_no" />
+                    <label for="audiodescription_no">no
+                    </label>
+                    <input type="radio" name="audiodescription" value="reqad: audio description" id="audiodescription_reqad" />
+                    <label for="audiodescription_reqad">by request in advance
+                    </label>
+                    <input type="radio" name="audiodescription" value="req: audio description" id="audiodescription_req" />
+                    <label for="audiodescription_req">by request at the event
+                    </label>
+                    <input type="radio" name="audiodescription" value="" id="audiodescription_" />
+                    <label for="audiodescription_">unknown
+                    </label>
+                  </td>
+                </tr>
+                <div id="cc" class="hide">
+                  <tr id="cc">
+                    <td>
+                      <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Closed captions are subtitles for people who are deaf or hard of hearing.">
+                        Including closed captions?&nbsp;
+                        <i class="bi bi-question-circle-fill">
+                        </i>
+                      </label>
+                    </td>
+                    <td>
+                      <input type="radio" name="cc" value="yes: closed captions" id="cc_yes" />
+                      <label for="cc_yes">yes
+                      </label>
+                      <input type="radio" name="cc" value="no: closed captions" id="cc_no" />
+                      <label for="cc_no">no
+                      </label>
+                      <input type="radio" name="cc" value="reqad: closed captions" id="cc_reqad" />
+                      <label for="cc_reqad">by request in advance
+                      </label>
+                      <input type="radio" name="cc" value="req: closed captions" id="cc_req" />
+                      <label for="cc_req">by request at the event
+                      </label>
+                      <input type="radio" name="cc" value="" id="cc_" />
+                      <label for="cc_">unknown
+                      </label>
+                    </td>
+                  </tr>
+                </div>
+              </table>
+            </div>
+          </div>
+          <!-- Event location -->
+          <div>
+            <!-- can hide this with span style="display:none;" -->
+            <label for="access_wa" class="form-label mt-4" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="These questions are not necessarily complete in terms of providing comprehensive access information. Please think about other details you might want to add in the further comments section. If the event has catering, you might want to include food options.">Any further comments or details?
+              <i class="bi bi-question-circle-fill">
+              </i>
+            </label>
+            <div class="form-outline mb-4">
+              <textarea name="comment" id="comment" rows="5" placeholder="&nbsp;Please enter any further comments or details for the event.">
+              </textarea>
+            </div>
+            <div>
+              <label>Please provide contact details for any access inquiries (if not included elsewhere):
+              </label>
+              <div class="clearfix">
+              </div>
+              <input id="contact" name="contact" type="text" class="input-group w-75">
+            </div>
+            <div>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+        <!-- SHORT QUESTIONS -->
+        <div id="shortquestions" class="questions">
+          <h2 class="accessheadershort">Access to event
+          </h2>
+          <div id="accessshort">
+            <label>Does the event have:
+            </label>
+            <input type="radio" name="accessshort" value="wa" id="accessshort_wa" />
+            <!--<label for="accessshort_wa">Wheelchair access<span title="Wheelchair access requires flat access (no lip, transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room."><span></label>-->
+            <input type="radio" name="accessshort" value="sf" id="accessshort_sf" />
+            <label for="accessshort_sf">Step-free access only
+              <span title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway">(?)
+              </span>
+            </label>
+            <input type="radio" name="accessshort" value="no" id="accessshort_no" />
+            <label for="accessshort_no">No step-free access
+            </label>
+            <input type="radio" name="accessshort" value="" id="accessshort_" />
+            <label for="accessshort_">Unknown
+            </label>
+          </div>
+          <div id="separateaccessshort" class="hide">
+            <input type="checkbox" name="separateaccessshort" value="route" id="separateaccessshort_yes" />
+            <label for="separateaccessshort_yes" data-tooltip="Often events have a separate route into the events for wheelchair users and those needing step-free access. It's important to not assume an event doesn't have step-free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">
+              The step-free or wheelchair access is by a separate route.
+            </label>
+          </div>
+          <div id="stepsshort" class="hide">
+            <label for="stepsshort_data">How many steps
+              <span id="separateshowshort"> into the main entrance
+              </span>?
+              <span title="Give a number of steps or a number of flights of stairs for instance, you can also state and further details (such as height; whether they are straight stairs or whether they have handrail here. If there is separate step free access please describe the main route.">(?)
+              </span>
+            </label>
+            </td>
+          <span class="nowrap">
+            <input type="text" id="stepsshort_data" name="stepsshort_data" />
+          </span>
+        </div>
+        <div>
+          <h2 id="sectionhead">Facilities:
+          </h2>
+          <p>Which of the following are available (if relevant given e.g. a film showing)?
+          </p>
+        </div>
+        <div id="facilitiesshort">
+          <span class="nowrap">
+            <input type="checkbox" name="paddedseatingshort" value="yes: padded seating" id="paddedseatingshort" />
+            <label for="paddedseatingshort">Padded/comfortable seating?
+            </label>
+          </span>
+          <span class="nowrap">
+            <input type="checkbox" name="basicseatingshort" value="yes: basic seating" id="basicseatingshort" />
+            <label for="basicseatingshort">Basic seating?
+            </label>
+          </span>
+          <span class="nowrap">
+            <input type="checkbox" name="wheelchairtoiletshort" value="yes: an accessible toilet" id="wheelchairtoiletshort" />
+            <label for="wheelchairtoiletshort">Wheelchair accessible toilet?
+            </label>
+          </span>
+          <!-- gender neutral -->
+          <!-- end of gender neutral -->
+          <span class="nowrap">
+            <input type="checkbox" name="hearingloopshort: a hearing loop" value="yes" id="hearingloopshort" />
+            <label for="hearingloopshort">Hearing loop?
+            </label>
+          </span>
+          <span class="nowrap">
+            <input type="checkbox" name="islshort" value="yes: an ISL interpreter" id="islshort" />
+            <label for="islshort">ISL interpreter?
+            </label>
+          </span>
+          <!-- add on -->
+          <span class="nowrap">
+            <input type="checkbox" name="islshort" value="yes: an ISL interpreter" id="islshort" />
+            <label for="islshort">test
+            </label>
+          </span>
+          <!-- end -->
+          <span class="nowrap">
+            <input type="checkbox" name="quietspaceshort" value="yes: a designated quiet space" id="quietspaceshort" />
+            <label for="quietspaceshort">Designated quiet space?
+              <span title="At some events people provide a space that is designated as a quiet space where people can go if they need that. Examples where this is a good idea is where the event might be very emotional or triggering or where the main event is very loud and people might need a break for any number of reasons.">(?)
+              </span>
+            </label>
+          </span>
+          <!--<span class="nowrap"><input type="checkbox" name="parkingshort" value="yes: general car parking" id="parkingshort" /><label for="parkingshort">Parking nearby/onsite?</label></span>-->
+          <span class="nowrap">
+            <input type="checkbox" name="bluebadgeshort" value="yes: blue badge parking" id="bluebadgeshort" />
+            <label for="bluebadgeshort">Disabled Person's Parking
+            </label>
+          </span>
+          <span class="nowrap">
+            <input type="checkbox" name="subtitlesshort" value="yes: subtitles" id="subtitlesshort" />
+            <label for="subtitlesshort">Subtitles?
+            </label>
+          </span>
+          <span class="nowrap">
+            <input type="checkbox" name="ccshort" value="yes: closed captions" id="ccshort" />
+            <label for="ccshort">Including closed captions?
+              <span title="Closed captions are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)
+              </span>
+            </label>
+          </span>
+          <span class="nowrap">
+            <input type="checkbox" name="audiodescriptionshort" value="yes: audio description" id="audiodescriptionshort" />
+            <label for="audiodescriptionshort">Including audio description?
+              <span title="Audio description narrates what is happening on screen for people who are blind or visually impaired.">(?)
+              </span>
+            </label>
+          </span>
+          <span class="nowrap">
+            <input type="checkbox" name="englishaudioshort" value="yes: English audio" id="englishaudioshort" />
+            <label for="englishaudioshort">English language audio?
+            </label>
+          </span>
+        </div>
+        <h2>Further details and contacts
+        </h2>
+        <div>
+          <label>Any further comments?
+            <span title="Examples of things here might be that there is a ramp but in needs putting out and who to contact or that the ramp is a split or gutter ramp which is not suitable for powerchair users, another might be that printouts of the script are available on the door (for those with hearing impairments)">(?)
+              </label>
+            <div>
+              <textarea name="comment" id="comment" placeholder="">
+              </textarea>
+            </div>
+            </div>
+          <div>
+            <label>Please provide contact details for any access inquiries (if not included elsewhere):
+            </label> 
+            <input id="contact" name="contact" type="text">
+          </div>
+        </div>
+        <!-- END OF SHORT QUESTIONS -->
+        <div id="generate" class="mt-4">
+          <button type="button" class="btn btn-dark btn-lg text-white" aria-label="Generate Acessibility Statement">
+            Generate Accessibility Statement
+          </button>
+        </div>
+        <div id="select" class="hide">
+          <button type="button" class="btn btn-success btn-lg text-white select_button">
+            Select Accessibility Statement
+          </button>
+          <div class="clearfix">
+          </div>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="form-outline mb-2 mt-2">
+          <textarea rows="10" id="result" class="hide form-control" name="accessibility_generator">
+          </textarea>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div id="selectBtn" class="hide">
+          <button type="button" class="btn btn-info btn-lg text-black mt-2 mb-4" data-bs-toggle="tooltip" data-bs-placement="right" title="Download the Accessibility Statement as a PDF document after you click on the 'Generate Accessibility Statement' button." value="Download Statement as a PDF" aria-label="Download Accessibility Statement as a PDF">Download Accessibility Statement as a [PDF]
+          </button>
+          <div class="clearfix">
+          </div>
+        </div>
+        <div class="clearfix">
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title h4">Contact Trinity Disability Service
+                </h4>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <i class="bi bi-envelope-fill icon-purple" aria-hidden="true">
+                    </i>&nbsp;askds@tcd.ie
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-telephone-outbound-fill icon-purple" aria-hidden="true">
+                    </i>
+                    <a href="tel:0035318963111" class="text-decoration-none"> +353 1 896 3111
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-twitter icon-purple" aria-hidden="true">
+                    </i>&nbsp;
+                    <a href="https://twitter.com/TCDAbility" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">@TCDAbility
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-instagram icon-purple" aria-hidden="true">
+                    </i>&nbsp;
+                    <a href="https://www.instagram.com/tcd.ability/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">tcd.ability
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://www.tcd.ie/disability/" target="_blank" class="text-decoration-none" rel=" noopener nonreferrer">
+                      <i class="bi bi-globe icon-purple" aria-hidden="true">
+                      </i>&nbsp;https://www.tcd.ie/disability/
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title h4">Contact Trinity Ability co_op
+                </h4>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <i class="bi bi-envelope-fill icon-purple" aria-hidden="true">
+                    </i>&nbsp;abilitycoop@gmail.com
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-twitter icon-purple" aria-hidden="true">
+                    </i>&nbsp;
+                    <a href="https://twitter.com/abilitycoop/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">@abilitycoop
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-instagram icon-purple" aria-hidden="true">
+                    </i>&nbsp;
+                    <a href="https://www.instagram.com/abilityco_op/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">abilityco_op
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-facebook icon-purple" aria-hidden="true">
+                    </i>&nbsp;
+                    <a href="https://www.facebook.com/Ability-Co_op-108998600831478/" target="_blank" rel="noopener nonreferrer" class="text-decoration-none">trinityabilitycoop
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="https://abilitycoop.com/" target="_blank" rel=" noopener nonreferrer" class="text-decoration-none">
+                      <i class="bi bi-globe icon-purple" aria-hidden="true">
+                      </i>&nbsp;https://abilitycoop.com/
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Back to top button -->
+          <div id="generate">
+            <button type="button" class="btn btn-dark mt-4 mb-4" aria-label="Back to Top">
+              <a href="#top" title="Back to the top of the page" class="mt-5 back-to-top text-decoration-none text-white">Back to Top of Page
+              </a>
+            </button>
+          </div>
+          <!-- ======== -->
+        </div>
+        <!--<button onClick="history.go(0);">Refresh Page</button>-->
+      </div>
     </div>
     <!-- End of .container -->
-
     <!-- Remove the container if you want to extend the Footer to full width. -->
     <!-- <div class="container my-5"> -->
     <!-- Footer -->
     <footer class="text-left text-lg-start text-white custom-footer" style="background-color: #36434d;">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Links -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                    <!-- Grid column -->
-                    <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
-                        <p> Trinity College Dublin, The University of Dublin.</p>
-                        <p>College Green, Dublin 2, Ireland</p>
-                        <p><i class="fas fa-phone mr-3"></i> T: <a href="tel:0035318961000" class="text-white"> +353 1 896 1000</a></p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 align-items-right customer-footer">
-                        <p><a href="https://www.tcd.ie/accessibility/" target="_blank" rel="noopener nonreferrer" class="text-white">Accessibility</a></p>
-
-                        <p><a href="https://www.tcd.ie/privacy/" target="_blank" rel="noopener nonreferrer" class="text-white">Privacy</a></p>
-
-                        <p><a href="https://www.tcd.ie/disclaim/" target="_blank" rel="noopener nonreferrer" class="text-white">Disclaimer</a></p>
-                    </div>
-
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 align-items-right">
-                        <p><a href="https://www.tcd.ie/about/policies/cookie-policy.php" target="_blank" rel="noopener nonreferrer" class="text-white">Cookie policy</a></p>
-
-                        <p><a href="#" class="text-white">Cookies Settings</a></p>
-
-                        <p><a href="https://www.tcd.ie/contacts/" target="_blank" rel="noopener nonreferrer" class="text-white">Contact</a></p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!--Grid row-->
-            </section>
-            <!-- Section: Links -->
-
-            <!-- Section: Copyright -->
-            <section class="p-3 pt-0">
-                <div class="row d-flex align-items-center">
-                    <!-- Grid column -->
-                    <div class="col-md-6 col-lg-6 text-center text-md-start">
-                        <!-- Copyright -->
-                        <div class="p-3">
-                            <p>Trinity Associations and Charters</p>
-                            <p>
-                                <a href="https://www.tcd.ie/diversity-inclusion/athena-swan/" rel="noopener noreferrer" target="_blank">
-                                    <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/athenaswan.png" alt="Athena Swan">
-                                </a>
-                                <a href="http://www.coimbra-group.eu/" rel="noopener noreferrer" target="_blank">
-                                    <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/tcd/content-assets/images/coimbragroupuniversities.png" alt="Coimbra Group Universities">
-                                </a>
-                                <a href="https://www.tcd.ie/about/leru/" rel="noopener noreferrer" target="_blank">
-                                    <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/tcd/content-assets/images/leru.png" alt="LERU">
-                                </a>
-                            </p>
-                        </div>
-                        <!-- Copyright -->
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-6 col-lg-5 ml-lg-0 text-left text-md-end">
-                        <!-- iTunes -->
-                        <a href="https://itunes.tcd.ie/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"><i class="bi bi-music-note-beamed"></i></a>
-
-                        <!-- YouTube -->
-                        <a href="https://www.youtube.com/user/trinitycollegedublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"><i class="bi bi-youtube"></i></a>
-
-                        <!-- Facebook -->
-                        <a href="https://www.facebook.com/trinitycollegedublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"><i class="bi bi-facebook"></i></a>
-
-                        <!-- Twitter -->
-                        <a href="https://twitter.com/tcddublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"><i class="bi bi-twitter"></i></a>
-
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/school/trinity-college-dublin/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"><i class="bi bi-linkedin"></i></a>
-
-                        <!-- Instagram -->
-                        <a href="https://www.instagram.com/trinitycollegedublin/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"><i class="bi bi-instagram"></i></a>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-            </section>
-            <!-- Section: Copyright -->
-        </div>
-        <!-- Grid container -->
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+              <p> Trinity College Dublin, The University of Dublin.
+              </p>
+              <p>College Green, Dublin 2, Ireland
+              </p>
+              <p>
+                <i class="fas fa-phone mr-3">
+                </i> T: 
+                <a href="tel:0035318961000" class="text-white"> +353 1 896 1000
+                </a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 align-items-right customer-footer">
+              <p>
+                <a href="https://www.tcd.ie/accessibility/" target="_blank" rel="noopener nonreferrer" class="text-white">Accessibility
+                </a>
+              </p>
+              <p>
+                <a href="https://www.tcd.ie/privacy/" target="_blank" rel="noopener nonreferrer" class="text-white">Privacy
+                </a>
+              </p>
+              <p>
+                <a href="https://www.tcd.ie/disclaim/" target="_blank" rel="noopener nonreferrer" class="text-white">Disclaimer
+                </a>
+              </p>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 align-items-right">
+              <p>
+                <a href="https://www.tcd.ie/about/policies/cookie-policy.php" target="_blank" rel="noopener nonreferrer" class="text-white">Cookie policy
+                </a>
+              </p>
+              <p>
+                <a href="#" class="text-white">Cookies Settings
+                </a>
+              </p>
+              <p>
+                <a href="https://www.tcd.ie/contacts/" target="_blank" rel="noopener nonreferrer" class="text-white">Contact
+                </a>
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-6 text-center text-md-start">
+              <!-- Copyright -->
+              <div class="p-3">
+                <p>Trinity Associations and Charters
+                </p>
+                <p>
+                  <a href="https://www.tcd.ie/diversity-inclusion/athena-swan/" rel="noopener noreferrer" target="_blank">
+                    <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/athenaswan.png" alt="Athena Swan">
+                  </a>
+                  <a href="http://www.coimbra-group.eu/" rel="noopener noreferrer" target="_blank">
+                    <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/tcd/content-assets/images/coimbragroupuniversities.png" alt="Coimbra Group Universities">
+                  </a>
+                  <a href="https://www.tcd.ie/about/leru/" rel="noopener noreferrer" target="_blank">
+                    <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/tcd/content-assets/images/leru.png" alt="LERU">
+                  </a>
+                </p>
+              </div>
+              <!-- Copyright -->
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 ml-lg-0 text-left text-md-end">
+              <!-- iTunes -->
+              <a href="https://itunes.tcd.ie/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+                <i class="bi bi-music-note-beamed">
+                </i>
+              </a>
+              <!-- YouTube -->
+              <a href="https://www.youtube.com/user/trinitycollegedublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+                <i class="bi bi-youtube">
+                </i>
+              </a>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/trinitycollegedublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+                <i class="bi bi-facebook">
+                </i>
+              </a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/tcddublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+                <i class="bi bi-twitter">
+                </i>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/school/trinity-college-dublin/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+                <i class="bi bi-linkedin">
+                </i>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/trinitycollegedublin/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+                <i class="bi bi-instagram">
+                </i>
+              </a>
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
     </footer>
     <!-- Footer -->
     <!-- Footer -->
     <!-- </div> -->
     <!-- End of .container -->
-
     </div>
-
-    </container>
-
-    <!-- JS SCRIPTS HERE -->
-
-    <!-- Restore any existing jQuery -->
-    <script>
-        if (typeof originalJquery !== 'undefined') {
-                    window.jQuery = originalJquery;
-                }
-                if (typeof originalDollar !== 'undefined') {
-                    window.$ = originalDollar;
-                }
-        
-                $('[name="collapseGroup"]').on('change', function() {  
-          if($(this).val() === "yes") {
-            $('#collapseOne').collapse('show');
-          } else {
-            $('#collapseOne').collapse('hide');
-          }
-        });
-        
-        /* bootstrap validation */
-        
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-          'use strict'
-        
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.querySelectorAll('.needs-validation')
-        
-          // Loop over them and prevent submission
-          Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-              form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                  event.preventDefault()
-                  event.stopPropagation()
-                }
-        
-                form.classList.add('was-validated')
-              }, false)
-            })
-        })()
-    </script>
-
-    <!--  print generated text button -->
-    <script>
-        document.getElementById("selectBtn").addEventListener("click", printTextArea);
-        
-                      function printTextArea() {
-                childWindow = window.open('','childWindow','location=yes, menubar=yes, toolbar=yes');
-                childWindow.document.open();
-                childWindow.document.write('<html><head></head><body>');
-                childWindow.document.write(document.getElementById('result').value.replace(/\n/gi,'<br>'));
-                childWindow.document.write('</body></html>');
-                childWindow.print();
-                childWindow.document.close();
-                childWindow.close();
-              }
-    </script>
-
-    <!-- TOOLTIPS -->
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    </script>
-
-    <!-- ============ -->
-
+  </container>
+<!-- JS SCRIPTS HERE -->
+<!-- Restore any existing jQuery -->
+<script>
+  if (typeof originalJquery !== 'undefined') {
+    window.jQuery = originalJquery;
+  }
+  if (typeof originalDollar !== 'undefined') {
+    window.$ = originalDollar;
+  }
+  $('[name="collapseGroup"]').on('change', function() {
+    if($(this).val() === "yes") {
+      $('#collapseOne').collapse('show');
+    }
+    else {
+      $('#collapseOne').collapse('hide');
+    }
+  }
+                                );
+  /* bootstrap validation */
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }
+                            , false)
+    }
+              )
+  }
+  )()
+</script>
+<!--  print generated text button -->
+<script>
+  document.getElementById("selectBtn").addEventListener("click", printTextArea);
+  function printTextArea() {
+    childWindow = window.open('','childWindow','location=yes, menubar=yes, toolbar=yes');
+    childWindow.document.open();
+    childWindow.document.write('<html><head></head><body>');
+    childWindow.document.write(document.getElementById('result').value.replace(/\n/gi,'<br>'));
+    childWindow.document.write('</body></html>');
+    childWindow.print();
+    childWindow.document.close();
+    childWindow.close();
+  }
+</script>
+<!-- TOOLTIPS -->
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  }
+                                          )
+</script>
+<!-- ============ -->
 </body>
-
 </html>

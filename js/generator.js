@@ -414,21 +414,25 @@ var generator = (function ($) {
 			// event name
 			var ename = $('#ename')[0].value.trim ();
 			s += generator.processText (s, ename, "The event name is ");
-			s += ". ";
+			//s += ". ";
 
 
 			// Add comment, if any
-			var comment = $('#comment') [0].value.trim ();
-			s += generator.processText (s, comment);
-			s += ". ";
+			//var comment = $('#comment') [0].value.trim ();
+			//s += generator.processText (s, comment);
+			//s += ". ";
+			var comment=$('#comment')[0].value;				
+				if (comment!="" && s!="") s+= " " +comment;
+				else if (comment!="") s+= " " +comment +'. ';
+			
 			
 			// Add contact details, if any
 			
 			// provide contact details box
 			var contact=$('#contact')[0].value;				
 				if (contact!="" && s!="") s+= "\nYou can contact us about any access inquiries on " +contact;
-				else if (contact!="") s+= "You can contact us about any access inquiries on " +contact;
-			s += '. ';
+				else if (contact!="") s+= "You can contact us about any access inquiries on " +contact +'. ';
+			//s += '. ';
 
 
 			// Add comment, if any
