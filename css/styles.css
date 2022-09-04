@@ -15,11 +15,15 @@ table tr td:first-child {width: 30%;}
 ol li {margin: 1em 0 1em;}
 .grey {color: #888; background: #fff;}
 textarea, #steps_count {font: inherit; color: black;}
-#result {padding: 10px; border: 1px solid #000; resize: none; width: 57%; font: inherit; color: black; }
+#result {padding: 10px; border: 1px solid #000; resize: none; width: 65%; font: inherit; color: black; }
 #comment, #organiser {width: 57%; resize: none;}
 #contact, #contactorg, #conemail, #ename, #elocation {min-width: 20em;}
 .nowrap {white-space: nowrap;}
 
+
+.gen-button {
+  margin-left: -0.25rem !important;
+}
 
 /* h1 intro header below background image */
 
@@ -136,8 +140,8 @@ input[type="radio"]{
 #facilitiesheader,
 #filmheader, 
 #accessheadershort {
-	font: 1.5em Arial;
-	font-weight: bold;
+  font: 1.5em Arial;
+  font-weight: bold;
   /*background: #1B79B7;*/
   background: #81358a;
   padding: 10px;
@@ -151,8 +155,8 @@ input[type="radio"]{
 
 /* section header for the category headings */
 #sectionheader {
-	font: 1.2em Arial;
-	font-weight: bold;
+  font: 1.2em Arial;
+  font-weight: bold;
   background: #614e9b;
   padding: 10px;
   color: #fff !important;
@@ -226,16 +230,16 @@ h2,h3 {
 
 /* Style the label so it looks like a button */
 button, .toggle {
-	/*border: 4px outset #FF9999;*/
-	background-color: #FF9999;
-	position: relative;
-	z-index: 3;
-	float: left;
-	text-align: center;
-	margin: 1em;
-	/*text-transform: uppercase;*/
-	font-size: 1.2em;
-	font-weight: bold;
+  /*border: 4px outset #FF9999;*/
+  background-color: #FF9999;
+  position: relative;
+  z-index: 3;
+  float: left;
+  text-align: center;
+  margin: 1em;
+  /*text-transform: uppercase;*/
+  font-size: 1.2em;
+  font-weight: bold;
   /*background: #FF9999;*/
   padding: 8px 10px 10px 10px;
   color: #000 !important;
@@ -245,13 +249,13 @@ button, .toggle {
 
 /* CSS to make the checkbox disappear (but remain functional) */
 /*.toggle input {
-	visibility: hidden;
-	}
+  visibility: hidden;
+  }
 
 label {margin:  2px;}
-		
+    
 #organiser, #comment {
-	/*display:  none;*/
+  /*display:  none;*/
 
 /* Print css */
 #printstyle {
