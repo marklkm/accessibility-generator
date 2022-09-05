@@ -21,9 +21,36 @@ textarea, #steps_count {font: inherit; color: black;}
 .nowrap {white-space: nowrap;}
 
 
+
+#flex1 { 
+  display: flex; 
+  /* Optional, if you want the DIVs 100% width: */ 
+  flex-direction: row;
+}
+#flex1 > #a { 
+  order: 1; 
+}
+
+#flex2 {
+  display:  flex;
+  flex-direction: row;
+}
+#flex2 > #b {
+  order:  1;
+}
+
+#flex3 {
+  display:  flex;
+  flex-direction: row;
+}
+#flex3 > #c {
+  order:  1;
+}
+
 .gen-button {
   margin-left: -0.25rem !important;
 }
+
 
 /* h1 intro header below background image */
 
@@ -90,7 +117,6 @@ input[type="radio"]{
 
 .select_button, .select_button:hover {
   background: #81358a;
-  font-weight: bolder;
 }
 
 .button-purple, .button-purple:hover {
@@ -131,7 +157,7 @@ input[type="radio"]{
 /* set position for radio buttons */
 .radioButton {
   display:block;
-  position:absolute
+  position:absolute;
 }
 
 /* Accessibility Generator Statement - Header */

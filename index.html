@@ -163,15 +163,20 @@
           <!--The set of questions for the standard version of the form-->
           <div id="questions" class="questions">
             <div class="container">
+              
               <div id="eventinfo">
                 <!-- EVENT NAME -->
-                <label for="basic-url" class="form-label mt-4">Event Name
-                </label>
-                <div class="input-group w-50">
-                  <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename">
-                </div>
+
+                    <label for="basic-url" class="form-label mt-4">Event Name</label>
+                    <div class="input-group w-50">
+                    <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename">
+                    </div>
+
                 <!-- End of Event Name -->
+                
                 <!-- Add Online Event -->
+             
+                
                 <table class="table" style="margin-top:20px;">
                   <tr id="online">
                     <td>
@@ -217,20 +222,31 @@
                     </td>
                   </tr>
                 </table>
+        
+    
                 <!-- End of table -->
               </div>
+
               <!-- EVENT LOCATION -->
-              <label for="basic-url" class="form- mt-4">Event Location
+
+              <label for="basic-url" class="form- mt-4" id="flex3">Event Location
               </label>
-              <div class="input-group w-50">
+              <div class="input-group w-50" id="c">
                 <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="elocation" name="elocation">
               </div>
+
+
+
               <!-- EVENT ORGANISER NAME -->
+
               <label for="basic-url" class="form-label mt-4">Event Organiser Name
               </label>
               <div class="input-group w-50">
                 <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org/Unit/Centre" aria-label="placeholder">
               </div>
+
+
+
               <!-- EVENT ORGANISER EMAIL -->
               <label for="basic-url" class="form-label mt-4">Event Organiser Email
               </label>
@@ -238,6 +254,8 @@
                 <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="conemail" name="conemail" placeholder="Please provide a valid email" aria-label="placeholder">
               </div>
             </div>
+
+
             <!-- MAIN PART FOR ALL THE QUESTIONS -->
             <!-- =============================== -->
             <!-- Section 1 - Access to the Event -->
@@ -390,7 +408,7 @@
                   </label>
                   <!-- added text -->
                   <input type="radio" name="wheelchairtoilet" value="yes: a Changing Places toilet" id="wheelchairtoilet_yes" />
-                  <label for="wheelchairtoilet_yes">Changing Places toilets
+                  <label for="wheelchairtoilet_yes">Changing Places toilet
                   </label>
                   <input type="radio" name="wheelchairtoilet" value="yes: an accessible toilet" id="wheelchairtoilet_yes" />
                   <label for="wheelchairtoilet_yes">accessible toilet
@@ -708,7 +726,7 @@
               </table>
             </div>
           </div>
-          <!-- End ofEvent location -->
+          <!-- End of Event location -->
 
           <div>
             <!-- can hide this with span style="display:none;" -->
@@ -720,18 +738,19 @@
               <textarea class="form-control"
           id="comment"
           rows="6"
-          placeholder="Please enter any further comments or details for the event."
+         
           required
           name="comment"></textarea>
             </div>
 
 
             <div>
-              <label>Please provide contact details for any access inquiries (if not included elsewhere):
+              <label>Please provide contact details for any access enquiries (if not included elsewhere):
               </label>
               <div class="clearfix">
               </div>
-              <input id="contact" name="contact" type="text" class="input-group w-75">
+              <input id="contact" name="contact" type="text" class="input-group w-75"
+              placeholder="You can contact us about any access enquiries on ..">
             </div>
             <div>
             </div>
@@ -881,7 +900,7 @@
           </button>
         </div>
         <div id="select" class="hide">
-          <button type="button" class="btn btn-success btn-lg text-white select_button">
+          <button type="button" class="btn btn-lg text-white select_button">
             Select Accessibility Statement
           </button>
           <div class="clearfix">

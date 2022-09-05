@@ -395,29 +395,45 @@ var generator = (function ($) {
 
 			//=======
 			// slides
-			//var slide = generator.determineFacilitiesAvailability ('#slides', '');
+			var slides = generator.determineFacilitiesAvailability ('#slides', '');
 			
 			// Process the 'yes' options
-			//s += generator.compileOptions (slide.yes, 'There are ', 'and');
+			s += generator.compileOptions (slides.yes, 'There are ', 'and');
 			
 			// Process the 'by request in advance' options
-			//s += generator.compileOptions (slide.reqad, 'There are ', 'and', ', by request in advance');
+			s += generator.compileOptions (slides.reqad, 'There are ', 'and', ', by request in advance');
 			
 			// Process the 'by request at the event' options
-			//s += generator.compileOptions (slide.req, 'There are ', 'and', ', by request at the event');
+			s += generator.compileOptions (slides.req, 'There are ', 'and', ', by request at the event');
 			
 			// Process the 'no' options
-			//s += generator.compileOptions (slide.no, "There aren't ", 'or');
+			s += generator.compileOptions (slides.no, "There aren't ", 'or');
 
 
 			
-			// event name
+			// 1. event name
 			var ename = $('#ename')[0].value.trim ();
 			s += generator.processText (s, ename, "The event name is ");
 			//s += ". ";
 
 
-			// Add comment, if any
+			// 2. event location
+			var elocation = $('#elocation')[0].value.trim ();
+			s += generator.processText (s, elocation, "The event location is ");
+			//s += ". ";
+
+			// 3. event organiser name
+			var contactorg = $('#contactorg')[0].value.trim ();
+			s += generator.processText (s, contactorg, "The event organiser is ");
+			//s += ". ";
+
+			// 4. event organiser email
+			var conemail = $('#conemail')[0].value.trim ();
+			s += generator.processText (s, conemail, "The event organiser's email is ");
+			//s += ". ";
+
+
+			// 5. Any further comments
 			var comment = $('#comment') [0].value.trim ();
 			s += generator.processText (s, comment);
 			//s += ". ";
@@ -426,14 +442,10 @@ var generator = (function ($) {
 				//else if (comment!="") s+= " " +comment;
 			
 			
-			// Add contact details, if any
-			
-			// provide contact details box
+			// 6. provide contact details 
 			var contact=$('#contact')[0].value;				
 				if (contact!="" && s!="") s+= "\nYou can contact us about any access inquiries on " +contact;
 				else if (contact!="") s+= "You can contact us about any access inquiries on " +contact;
-			//s += '. ';
-
 
 			// Add comment, if any
 
@@ -445,20 +457,11 @@ var generator = (function ($) {
 			//var comment = $('#comment')[0].value.trim ();
 			//s += generator.processText (s, comment);
 			//s += ". ";
-		
-			
-			// Add contact details, if any
-			var contactorg = $('#contactorg')[0].value.trim ();
-			s += generator.processText (s, contactorg, "The event organiser is ");
-			//s += ". ";
+
 			
 			// Show the result
 			//generator.showResult (s);
 
-			// organiser email
-			var conemail = $('#conemail')[0].value.trim ();
-			s += generator.processText (s, conemail, "The event organiser's email is ");
-			//s += ". ";
 	
 			// Show the result
 			//generator.showResult (s);
@@ -467,11 +470,6 @@ var generator = (function ($) {
 			// Show the result
 			//generator.showResult (s);
 
-
-			// event location
-			var elocation = $('#elocation')[0].value.trim ();
-			s += generator.processText (s, elocation, "The event location is ");
-			//s += ". ";
 			
 			// Show the result
 			generator.showResult (s);
@@ -506,7 +504,7 @@ var generator = (function ($) {
 				'audiodescription',
 				'englishaudio',
 			];
-			
+
 			// Initialise buckets for each group
 			var buckets = {yes: [], no: [], reqad: [], req: []};
 			//var slide = {yes: [], no: [], reqad: [], req: []};
@@ -616,12 +614,7 @@ var generator = (function ($) {
 			// Add comment, if any
 			var comment = $('#commentshort','#contactdetails')[0].value.trim();
 			s += generator.processText (s, comment);
-		
-
-
-			// Add contact details, if any
-			var contactorg = $('#contactorg')[0].value.trim();
-			s += generator.processText (s, contactorg, 'Event Organiser is ');
+	
 
 
 			// Show the result
