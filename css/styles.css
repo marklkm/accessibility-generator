@@ -21,7 +21,6 @@ textarea, #steps_count {font: inherit; color: black;}
 .nowrap {white-space: nowrap;}
 
 
-
 #flex1 { 
   display: flex; 
   /* Optional, if you want the DIVs 100% width: */ 
@@ -160,7 +159,8 @@ input[type="radio"]{
   position:absolute;
 }
 
-/* Accessibility Generator Statement - Header */
+/* Accessibility or Statement - Header */
+#eventheader,
 #generatorheader, 
 #accessheader, 
 #stepsheader, 

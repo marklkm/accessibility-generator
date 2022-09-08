@@ -360,19 +360,19 @@ var generator = (function ($) {
 
 			// Determine the event info available / unavailable
 			// This generates the yes, no, reqad and req arrays for lists of what is available
-			var e = generator.determineFacilitiesAvailability ('#eventinfo', '');
+			//var e = generator.determineFacilitiesAvailability ('#eventinfo', '');
 			
 			// Process the 'yes' options
-			s += generator.compileOptions (e.yes, 'There is ', 'and');
+			//s += generator.compileOptions (e.yes, 'There is ', 'and');
 			
 			// Process the 'by request in advance' options
-			s += generator.compileOptions (e.reqad, 'There is ', 'and', ', by request in advance');
+			//s += generator.compileOptions (e.reqad, 'There is ', 'and', ', by request in advance');
 			
 			// Process the 'by request at the event' options
-			s += generator.compileOptions (e.req, 'There is ', 'and', ', by request at the event');
+			//s += generator.compileOptions (e.req, 'There is ', 'and', ', by request at the event');
 			
 			// Process the 'no' options
-			s += generator.compileOptions (e.no, "There isn't ", 'or');
+			//s += generator.compileOptions (e.no, "There isn't ", 'or');
 
 
 			
@@ -393,29 +393,10 @@ var generator = (function ($) {
 			s += generator.compileOptions (buckets.no, "There isn't ", 'or');
 
 
-			//=======
-			// slides
-			var slides = generator.determineFacilitiesAvailability ('#slides', '');
-			
-			// Process the 'yes' options
-			s += generator.compileOptions (slides.yes, 'There are ', 'and');
-			
-			// Process the 'by request in advance' options
-			s += generator.compileOptions (slides.reqad, 'There are ', 'and', ', by request in advance');
-			
-			// Process the 'by request at the event' options
-			s += generator.compileOptions (slides.req, 'There are ', 'and', ', by request at the event');
-			
-			// Process the 'no' options
-			s += generator.compileOptions (slides.no, "There aren't ", 'or');
-
-
 			
 			// 1. event name
 			var ename = $('#ename')[0].value.trim ();
 			s += generator.processText (s, ename, "The event name is ");
-			//s += ". ";
-
 
 			// 2. event location
 			var elocation = $('#elocation')[0].value.trim ();
