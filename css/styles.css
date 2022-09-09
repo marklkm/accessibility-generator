@@ -129,6 +129,21 @@ input[type="radio"]{
     text-decoration: none;
 }
 
+@media only screen and (min-width: 200px) and (max-width: 670px) {
+.nav-logo img {
+    max-width:320px;
+    max-height:56px;   
+  }
+}
+
+
+@media only screen and (min-width: 670px) and (max-width: 1023px) {
+.nav-logo img {
+    max-width:640px;
+    max-height:118px;   
+  }
+}
+
 @media (min-width: 992px)
 .banner_img {
     font-size: 52px;
