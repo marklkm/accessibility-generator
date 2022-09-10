@@ -8,7 +8,7 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     font: normal 1em Arial, Verdana; /* best size and font for accessibility */
-     line-height: 1.85;
+    line-height: 1.85;
   }
 }
 
@@ -253,8 +253,8 @@ table, th, td {
 a:link {
  color: #000;
  font-weight: bold;
- font-size: 1.2rem;
- line-height: 1.4375rem;
+ font-size: 1em;
+line-height: 1.85;
  text-decoration: underline;
 }
 
