@@ -64,7 +64,6 @@ textarea, #steps_count {font: inherit; color: black;}
   margin-left: -0.25rem !important;
 }
 
-
 /* h1 intro header below background image */
 
 /*.intro-header {
@@ -96,6 +95,7 @@ input[type="radio"]{
 
 .navbar2 {
   z-index: 999;
+  padding-top: 2px;
 }
 
 .navbar a:link {
