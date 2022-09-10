@@ -5,6 +5,20 @@ body {
      line-height: 2;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font: normal 1em Arial, Verdana; /* best size and font for accessibility */
+     line-height: 1.85;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-header {
+    font-size: 1.2em;
+    line-height: 2;
+  }
+}
+
 .requireJS {display: none;}
 .hide {display: none;}
 .noJS {background: #ff0; color: #000; padding: 1em;}
@@ -80,9 +94,9 @@ input[type="radio"]{
   white-space: nowrap;
 }
 
-/*.navbar2 {
+.navbar2 {
   z-index: 999;
-}*/
+}
 
 .navbar a:link {
   text-decoration: none;
