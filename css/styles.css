@@ -86,16 +86,13 @@ input[type="radio"]{
 }
 
 .navbar-light .navbar-nav .nav-link {
-  margin-bottom: 5px;
   font-size: 17px;
   color: #53565a;
-  padding: 5px;
   white-space: nowrap;
 }
 
 .navbar2 {
   z-index: 999;
-  padding-top: 2px;
 }
 
 .navbar a:link {
