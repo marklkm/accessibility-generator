@@ -64,6 +64,10 @@ textarea, #steps_count {font: inherit; color: black;}
   margin-left: -0.25rem !important;
 }
 
+u {
+  color: #81358a;
+}
+
 /* h1 intro header below background image */
 
 /*.intro-header {
