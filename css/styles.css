@@ -5,6 +5,7 @@ body {
      line-height: 2;
 }
 
+
 @media only screen and (max-width: 600px) {
   body {
     font: normal 1em Arial, Verdana; /* best size and font for accessibility */
@@ -89,8 +90,26 @@ input[type="radio"]{
   }
 }
 
- .navbar {
+.search-input {
+
+    background: #ececec;
+    border: none;
+    height: 45px;
+}  
+
+.blue-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 40px;
+    background: #0569b9;
+    position: relative;
+} 
+
+
+.navbar {
   min-height: 80px;
+  font-size: 15px;
 }
 
 .navbar-brand {
@@ -131,12 +150,6 @@ input[type="radio"]{
   height: 450px;
 }
 
-.bg-image-full {
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-}
 
 .custom-tooltip {
   --bs-tooltip-bg: var(--bs-primary);
@@ -166,6 +179,14 @@ input[type="radio"]{
     font-style: normal !important;
     line-height: 1.9 !important;
     text-decoration: none;
+}
+
+.bg-image {
+  max-height: 580px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    font-family: "object-fit: cover; object-position: center";
 }
 
 @media only screen and (min-width: 200px) and (max-width: 670px) {
