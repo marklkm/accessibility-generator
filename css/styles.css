@@ -104,6 +104,12 @@ textarea, #steps_count {font: inherit; color: black;}
   order:  1;
 }
 
+/* textarea border */
+
+textarea {
+  border: solid 1px #000 !important;  
+}
+
 /* css for buttons */
 .gen-button {
   margin-left: -0.25rem !important;
@@ -152,7 +158,8 @@ button, .toggle {
   display:none;
 }
 
-#back-to-top a:hover {
+#back-to-top  {
+  font-size: 1em;
   border-bottom: none;
   text-decoration: none;
 }
@@ -174,7 +181,6 @@ input[type="radio"]{
 
 /* search input */
 .search-input {
-
     background: #ececec;
     border: none;
     height: 45px;
@@ -208,7 +214,7 @@ input[type="radio"]{
   padding: 9px 10px !important;
 }
 
-.navbar-light .navbar-nav .nav-link { s
+.navbar-light .navbar-nav .nav-link {
   color: #53565a;
   white-space: nowrap;
 }
@@ -254,28 +260,28 @@ input[type="radio"]{
     font-style: normal !important;
     line-height: 1.9 !important;
     text-decoration: none;
-     border-bottom: none;
+    border-bottom: none;
 }
 
 .bg-image {
   max-height: 580px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    font-family: "object-fit: cover; object-position: center";
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  font-family: "object-fit: cover; object-position: center";
 }
 
 .banner_img {
-    line-height: 1.25;
-    color: #fff;
+  line-height: 1.25;
+  color: #fff;
 }
 
 /* Set with for responsive images */
 .responsive-image {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    background-size: cover;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  background-size: cover;
 }
 
 /* set position for radio buttons */

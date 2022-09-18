@@ -360,19 +360,19 @@ var generator = (function ($) {
 
 			// Determine the event info available / unavailable
 			// This generates the yes, no, reqad and req arrays for lists of what is available
-			//var e = generator.determineFacilitiesAvailability ('#eventinfo', '');
+			var buckets = generator.determineFacilitiesAvailability ('#eventinfo', '');
 			
 			// Process the 'yes' options
-			//s += generator.compileOptions (e.yes, 'There is ', 'and');
+			s += generator.compileOptions (buckets.yes, 'There is ', 'and');
 			
 			// Process the 'by request in advance' options
-			//s += generator.compileOptions (e.reqad, 'There is ', 'and', ', by request in advance');
+			s += generator.compileOptions (buckets.reqad, 'There is ', 'and', ', by request in advance');
 			
 			// Process the 'by request at the event' options
-			//s += generator.compileOptions (e.req, 'There is ', 'and', ', by request at the event');
+			s += generator.compileOptions (buckets.req, 'There is ', 'and', ', by request at the event');
 			
 			// Process the 'no' options
-			//s += generator.compileOptions (e.no, "There isn't ", 'or');
+			s += generator.compileOptions (buckets.no, "There isn't ", 'or');
 
 
 			
@@ -393,40 +393,47 @@ var generator = (function ($) {
 			s += generator.compileOptions (buckets.no, "There isn't ", 'or');
 
 
+			//=======
+			// slides
+			//var slide = generator.determineFacilitiesAvailability ('#slides', '');
 			
-			// 1. event name
+			// Process the 'yes' options
+			//s += generator.compileOptions (slide.yes, 'There are ', 'and');
+			
+			// Process the 'by request in advance' options
+			//s += generator.compileOptions (slide.reqad, 'There are ', 'and', ', by request in advance');
+			
+			// Process the 'by request at the event' options
+			//s += generator.compileOptions (slide.req, 'There are ', 'and', ', by request at the event');
+			
+			// Process the 'no' options
+			//s += generator.compileOptions (slide.no, "There aren't ", 'or');
+
+
+			
+			// event name
 			var ename = $('#ename')[0].value.trim ();
 			s += generator.processText (s, ename, "The event name is ");
-
-			// 2. event location
-			var elocation = $('#elocation')[0].value.trim ();
-			s += generator.processText (s, elocation, "The event location is ");
-			//s += ". ";
-
-			// 3. event organiser name
-			var contactorg = $('#contactorg')[0].value.trim ();
-			s += generator.processText (s, contactorg, "The event organiser is ");
-			//s += ". ";
-
-			// 4. event organiser email
-			var conemail = $('#conemail')[0].value.trim ();
-			s += generator.processText (s, conemail, "The event organiser's email is ");
 			//s += ". ";
 
 
-			// 5. Any further comments
-			var comment = $('#comment') [0].value.trim ();
-			s += generator.processText (s, comment);
+			// Add comment, if any
+			//var comment = $('#comment') [0].value.trim ();
+			//s += generator.processText (s, comment);
 			//s += ". ";
-			//var comment=$('#comment')[0].value;				
-				//if (comment!="" && s!="") s+= " " +comment;
-				//else if (comment!="") s+= " " +comment;
+			var comment=$('#comment')[0].value;				
+				if (comment!="" && s!="") s+= " " +comment;
+				else if (comment!="") s+= " " +comment +'. ';
 			
 			
-			// 6. provide contact details 
+			// Add contact details, if any
+			
+			// provide contact details box
 			var contact=$('#contact')[0].value;				
 				if (contact!="" && s!="") s+= "\nYou can contact us about any access inquiries on " +contact;
-				else if (contact!="") s+= "You can contact us about any access inquiries on " +contact;
+				else if (contact!="") s+= "You can contact us about any access inquiries on " +contact +'. ';
+			//s += '. ';
+
 
 			// Add comment, if any
 
@@ -438,11 +445,20 @@ var generator = (function ($) {
 			//var comment = $('#comment')[0].value.trim ();
 			//s += generator.processText (s, comment);
 			//s += ". ";
-
+		
+			
+			// Add contact details, if any
+			var contactorg = $('#contactorg')[0].value.trim ();
+			s += generator.processText (s, contactorg, "The event organiser is ");
+			//s += ". ";
 			
 			// Show the result
 			//generator.showResult (s);
 
+			// organiser email
+			var conemail = $('#conemail')[0].value.trim ();
+			s += generator.processText (s, conemail, "The event organiser's email is ");
+			//s += ". ";
 	
 			// Show the result
 			//generator.showResult (s);
@@ -451,6 +467,11 @@ var generator = (function ($) {
 			// Show the result
 			//generator.showResult (s);
 
+
+			// event location
+			var elocation = $('#elocation')[0].value.trim ();
+			s += generator.processText (s, elocation, "The event location is ");
+			//s += ". ";
 			
 			// Show the result
 			generator.showResult (s);
@@ -485,7 +506,7 @@ var generator = (function ($) {
 				'audiodescription',
 				'englishaudio',
 			];
-
+			
 			// Initialise buckets for each group
 			var buckets = {yes: [], no: [], reqad: [], req: []};
 			//var slide = {yes: [], no: [], reqad: [], req: []};
@@ -595,7 +616,12 @@ var generator = (function ($) {
 			// Add comment, if any
 			var comment = $('#commentshort','#contactdetails')[0].value.trim();
 			s += generator.processText (s, comment);
-	
+		
+
+
+			// Add contact details, if any
+			var contactorg = $('#contactorg')[0].value.trim();
+			s += generator.processText (s, contactorg, 'Event Organiser is ');
 
 
 			// Show the result
