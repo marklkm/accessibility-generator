@@ -297,11 +297,15 @@ table, th, td {
 
 /* unvisited link */
 a:link {
- color: #000;
- font-weight: bold;
- font-size: 1em;
-line-height: 1.85;
- text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.85;
+  text-decoration: underline;
+}
+
+.custom-footer a:link {
+  text-decoration: underline;
 }
 
 /* visited link */
