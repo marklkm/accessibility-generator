@@ -487,6 +487,8 @@ var generator = (function ($) {
 				'paddedseating',		// Used instead of seating for the short form
 				'basicseating',		// Used instead of seating for the short form
 				'wheelchairtoilet',
+				'accessibletoilet',
+				'changingplacestoilet',
 				'genderneutraltoilet',
 				'hearingloop',
 				'isl',

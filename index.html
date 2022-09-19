@@ -111,15 +111,19 @@
     </nav>
      <!-- Site Navigation - second navbar menu for search input box -->
     <nav class="navbar2 navbar-expand-lg navbar-light bg-white">
-    <div class="container-xl">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown2" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Open menu navigation">
+          <span class="">Search
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown2">
           <ul class="navbar-nav me-auto mb-lg-0">
           </ul>
             <form class="d-flex w-50" role="search" 
             aria-label="Site Search" action="https://www.tcd.ie/search/q/" method="get">
             <div class="input-group">
-              <input class="form-control search-input mt-3 mb-4" type="search" placeholder="Search" aria-label="Search">
-              <button type="submit" class="btn btn-primary btn-lg mt-3 mb-4 text-white">
+              <input class="form-control search-input mt-3 mb-3" type="search" placeholder="Search" aria-label="Search">
+              <button type="submit" class="btn btn-primary">
               <i class="bi bi-search blue-box"></i>
             </button>
           </div>
@@ -217,7 +221,8 @@
                     <label class="form-label mt-4">Event Name</label>
                     <div class="input-group w-50">
                   
-                    <input type="text" class="form-control border border-dark" id="ename" name="ename" required>
+                    <input type="text" class="form-control border border-dark" id="ename" name="ename" 
+                    aria-label="event name" required>
              
                     </div>
 
@@ -280,7 +285,7 @@
               <label class="form- mt-4" id="flex3">Event Location
               </label>
               <div class="input-group w-50">
-                <input type="text" class="form-control border border-dark" id="elocation" name="elocation">
+                <input aria-label="event location" type="text" class="form-control border border-dark" id="elocation" name="elocation">
               </div>
 
 
@@ -290,7 +295,7 @@
               <label class="form-label mt-4">Event Organiser Name
               </label>
               <div class="input-group w-50">
-                <input type="text" class="form-control border border-dark" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org" aria-label="placeholder">
+                <input type="text" class="form-control border border-dark" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org" aria-label="event organiser name">
               </div>
 
 
@@ -299,7 +304,7 @@
               <label class="form-label mt-4">Event Organiser Email
               </label>
               <div class="input-group w-50">
-                <input type="text" class="form-control border border-dark"   id="conemail" name="conemail" placeholder="Please provide a valid email" aria-label="placeholder">
+                <input type="text" class="form-control border border-dark"   id="conemail" name="conemail" placeholder="Please provide a valid email" aria-label="event orgaiser email">
               </div>
             </div>
 
@@ -454,13 +459,16 @@
                   <input type="radio" name="wheelchairtoilet" value="yes: an accessible toilet" id="wheelchairtoilet_yes" />
                   <label for="wheelchairtoilet_yes">yes
                   </label>
+
                   <!-- added text -->
-                  <input type="radio" name="wheelchairtoilet" value="yes: a Changing Places toilet" id="wheelchairtoilet_yes" />
-                  <label for="wheelchairtoilet_yes">Changing Places toilet
+                  <input type="radio" name="changingplacestoilet" value="yes: a Changing Places toilet" id="changingplacestoilet_yes" />
+                  <label for="changingplacestoilet_yes">Changing Places toilet
                   </label>
-                  <input type="radio" name="wheelchairtoilet" value="yes: an accessible toilet" id="wheelchairtoilet_yes" />
-                  <label for="wheelchairtoilet_yes">accessible toilet
+
+                  <input type="radio" name="accessibletoilet" value="yes: an accessible toilet" id="accessibletoilet_yes" />
+                  <label for="accessibletoilet_yes">accessible toilet
                   </label>
+
                   <!-- end -->
                   <input type="radio" name="wheelchairtoilet" value="yes: a partially accessible toilet" id="wheelchairtoilet_p" />
                   <label for="wheelchairtoilet_p" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="For instance, a toilet that is not large enough for a wheelchair to move around in or which is big enough but doesn't have any grab rails.">
@@ -1021,31 +1029,34 @@
             <!-- Grid column -->
             <div class="col-md-6 col-lg-5 ml-lg-0 text-left text-md-end">
               <!-- iTunes -->
-              <a href="https://itunes.tcd.ie/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+              <a href="https://itunes.tcd.ie/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"
+               aria-label="Open iTunes">
                 <i class="bi bi-music-note-beamed">
                 </i>
               </a>
               <!-- YouTube -->
-              <a href="https://www.youtube.com/user/trinitycollegedublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+              <a href="https://www.youtube.com/user/trinitycollegedublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button" aria-label="Open YouTube">
                 <i class="bi bi-youtube">
                 </i>
               </a>
               <!-- Facebook -->
-              <a href="https://www.facebook.com/trinitycollegedublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+              <a href="https://www.facebook.com/trinitycollegedublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button" aria-label="Open facebook">
                 <i class="bi bi-facebook"></i>
               </a>
               <!-- Twitter -->
-              <a href="https://twitter.com/tcddublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+              <a href="https://twitter.com/tcddublin" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"
+              aria-label="Open Twitter">
                 <i class="bi bi-twitter">
                 </i>
               </a>
               <!-- LinkedIn -->
-              <a href="https://www.linkedin.com/school/trinity-college-dublin/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+              <a href="https://www.linkedin.com/school/trinity-college-dublin/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button"
+              aria-label="Open LinkedIn">
                 <i class="bi bi-linkedin">
                 </i>
               </a>
               <!-- Instagram -->
-              <a href="https://www.instagram.com/trinitycollegedublin/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button">
+              <a href="https://www.instagram.com/trinitycollegedublin/" target="_blank" rel="noopener nonreferrer" class="btn btn-outline-dark btn-floating m-1 text-white rounded-circle" role="button" aria-label="Open Instagram">
                 <i class="bi bi-instagram">
                 </i>
               </a>

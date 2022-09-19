@@ -192,6 +192,7 @@ input[type="radio"]{
     flex: 0 1 40px;
     background: #0569b9;
     position: relative;
+    color: #fff;
 } 
 
 /* navbar and navigation */
