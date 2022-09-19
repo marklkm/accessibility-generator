@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#000000" />
     <!-- meta description -->
     <meta name="description" content="The Trinity Accessibility Event Generator is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible." />
-    <meta itemprop="description" content="The Trinity Accessibility Event Generator is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible." />
     <!-- meta Keywords -->
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
@@ -76,7 +75,7 @@
           <span class="navbar-toggler-icon">
           </span>
         </button>
-        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto ml-auto">
             <li class="nav-item">
               <a class="nav-link mx-2" href="https://www.tcd.ie/study/">Students
@@ -106,8 +105,6 @@
               <a class="nav-link mx-2" href="https://www.tcd.ie/gaeloifig/gaeilge/index.ga.php">Gaeilge
               </a>
             </li>
-            <div class="input-group">
-            </div>
           </ul>
         </div>
       </div>
@@ -115,7 +112,7 @@
      <!-- Site Navigation - second navbar menu for search input box -->
     <nav class="navbar2 navbar-expand-lg navbar-light bg-white">
     <div class="container-xl">
-        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav me-auto mb-lg-0">
           </ul>
             <form class="d-flex w-50" role="search" 
@@ -210,15 +207,18 @@
           <div id="questions" class="questions">
             <div class="container">
               
-              
+       
+
               <div id="eventinfo">
                 <h2 id="eventheader" class="mt-2">Enter Event Details:</h2>
                 <div class="clearfix"></div>
                 <!-- EVENT NAME -->
 
-                    <label for="basic-url" class="form-label mt-4">Event Name</label>
+                    <label class="form-label mt-4">Event Name</label>
                     <div class="input-group w-50">
-                    <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="ename" name="ename" required>
+                  
+                    <input type="text" class="form-control border border-dark" id="ename" name="ename" required>
+             
                     </div>
 
                 <!-- End of Event Name -->
@@ -277,29 +277,29 @@
 
               <!-- EVENT LOCATION -->
 
-              <label for="basic-url" class="form- mt-4" id="flex3">Event Location
+              <label class="form- mt-4" id="flex3">Event Location
               </label>
-              <div class="input-group w-50" id="c">
-                <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="elocation" name="elocation">
+              <div class="input-group w-50">
+                <input type="text" class="form-control border border-dark" id="elocation" name="elocation">
               </div>
 
 
 
               <!-- EVENT ORGANISER NAME -->
 
-              <label for="basic-url" class="form-label mt-4">Event Organiser Name
+              <label class="form-label mt-4">Event Organiser Name
               </label>
               <div class="input-group w-50">
-                <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org" aria-label="placeholder">
+                <input type="text" class="form-control border border-dark" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org" aria-label="placeholder">
               </div>
 
 
 
               <!-- EVENT ORGANISER EMAIL -->
-              <label for="basic-url" class="form-label mt-4">Event Organiser Email
+              <label class="form-label mt-4">Event Organiser Email
               </label>
               <div class="input-group w-50">
-                <input type="text" class="form-control border border-dark" aria-describedby="inputGroup-sizing-lg" id="conemail" name="conemail" placeholder="Please provide a valid email" aria-label="placeholder">
+                <input type="text" class="form-control border border-dark"   id="conemail" name="conemail" placeholder="Please provide a valid email" aria-label="placeholder">
               </div>
             </div>
 
@@ -368,12 +368,12 @@
               </tr>
               <tr>
                 <td>
-                  <label for="steps_height">How high are the steps?
+                  <label>How high are the steps?
                   </label>
                 </td>
                 <td id="steps_height">
                   <input type="radio" name="steps" value="lip" id="lip" />
-                  <label for="steps_height_lip">a lip/lips
+                  <label>a lip/lips
                   </label>
                   <input type="radio" name="steps" value="shallow" id="shallow" />
                   <label for="shallow">&nbsp;shallow
@@ -391,7 +391,7 @@
               </tr>
               <tr>
                 <td>
-                  <label for="steps_hr">Is there a handrail?
+                  <label>Is there a handrail?
                   </label>
                 </td>
                 <td id="steps_hr">
@@ -509,7 +509,7 @@
                     </i>
                   </label>
                   <p style="margin-top:20px;">More information on booking an 
-                    <a aria-label="Read more on how to book an ISL interpreter in Trinity" href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank" class="text-decoration-none"data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" title="tcd.ie/equality">ISL interpreter in Trinity
+                    <a aria-label="Read more on how to book an ISL interpreter in Trinity" href="https://www.tcd.ie/equality/policy/other-policies/#ISL" target="_blank" class="text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" title="tcd.ie/equality">ISL interpreter in Trinity
                     </a>
                   </p>
                 </td>
@@ -643,7 +643,7 @@
                       <input type="radio" name="slides" value="yes: accessible presentation slides" id="slides_yes" />
                       <label for="slides_yes">yes
                       </label>
-                      <input type="radio" name="slides" value="no: accessible presentation slides" id="social_no" />
+                      <input type="radio" name="slides" value="no: accessible presentation slides" id="slides_no" />
                       <label for="slides_no">no
                       </label>
                       <input type="radio" name="slides" value="" id="slides_" />
@@ -712,7 +712,8 @@
                     <input type="radio" name="englishaudio" value="req: English audio" id="englishaudio_req" />
                     <label for="englishaudio_req">by request at the event
                     </label>
-                    <input type="radio" name="englishaudio" value="" id="Englishaudio_" />
+                    <input type="radio" name="englishaudio" value="" 
+                    id="englishaudio_" />
                     <label for="englishaudio_">unknown
                     </label>
                   </td>
@@ -743,7 +744,7 @@
                     </label>
                   </td>
                 </tr>
-                <div id="cc" class="hide">
+                <!--<div id="cc" class="hide">-->
                   <tr id="cc">
                     <td>
                       <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="Closed captions are subtitles for people who are deaf or hard of hearing.">
@@ -770,7 +771,7 @@
                       </label>
                     </td>
                   </tr>
-                </div>
+                <!--</div>-->
               </table>
             </div>
           </div>
@@ -803,145 +804,6 @@
           </div>
           <!-- end -->
         </div>
-
-
-        <!-- SHORT QUESTIONS -->
-        <div id="shortquestions" class="questions">
-          <h2 class="accessheadershort">Access to event
-          </h2>
-          <div id="accessshort">
-            <label>Does the event have:
-            </label>
-            <input type="radio" name="accessshort" value="wa" id="accessshort_wa" />
-            <!--<label for="accessshort_wa">Wheelchair access<span title="Wheelchair access requires flat access (no lip, transition changes), no very steep ramps or narrow doorways as well as space for wheelchair users in the room."><span></label>-->
-            <input type="radio" name="accessshort" value="sf" id="accessshort_sf" />
-            <label for="accessshort_sf">Step-free access only
-              <span title="e.g. There is a significant lip/transition change into the room or there is a narrow doorway">(?)
-              </span>
-            </label>
-            <input type="radio" name="accessshort" value="no" id="accessshort_no" />
-            <label for="accessshort_no">No step-free access
-            </label>
-            <input type="radio" name="accessshort" value="" id="accessshort_" />
-            <label for="accessshort_">Unknown
-            </label>
-          </div>
-          <div id="separateaccessshort" class="hide">
-            <input type="checkbox" name="separateaccessshort" value="route" id="separateaccessshort_yes" />
-            <label for="separateaccessshort_yes" data-tooltip="Often events have a separate route into the events for wheelchair users and those needing step-free access. It's important to not assume an event doesn't have step-free access just because there are some steps up to the front door, they might have a ramp they can put in or a separate route.">
-              The step-free or wheelchair access is by a separate route.
-            </label>
-          </div>
-          <div id="stepsshort" class="hide">
-            <label for="stepsshort_data">How many steps
-              <span id="separateshowshort"> into the main entrance
-              </span>?
-              <span title="Give a number of steps or a number of flights of stairs for instance, you can also state and further details (such as height; whether they are straight stairs or whether they have handrail here. If there is separate step free access please describe the main route.">(?)
-              </span>
-            </label>
-            </td>
-          <span class="nowrap">
-            <input type="text" id="stepsshort_data" name="stepsshort_data" />
-          </span>
-        </div>
-        <div>
-          <h2 id="sectionhead">Facilities:
-          </h2>
-          <p>Which of the following are available (if relevant given e.g. a film showing)?
-          </p>
-        </div>
-        <div id="facilitiesshort">
-          <span class="nowrap">
-            <input type="checkbox" name="paddedseatingshort" value="yes: padded seating" id="paddedseatingshort" />
-            <label for="paddedseatingshort">Padded/comfortable seating?
-            </label>
-          </span>
-          <span class="nowrap">
-            <input type="checkbox" name="basicseatingshort" value="yes: basic seating" id="basicseatingshort" />
-            <label for="basicseatingshort">Basic seating?
-            </label>
-          </span>
-          <span class="nowrap">
-            <input type="checkbox" name="wheelchairtoiletshort" value="yes: an accessible toilet" id="wheelchairtoiletshort" />
-            <label for="wheelchairtoiletshort">Wheelchair accessible toilet?
-            </label>
-          </span>
-          <!-- gender neutral -->
-          <!-- end of gender neutral -->
-          <span class="nowrap">
-            <input type="checkbox" name="hearingloopshort: a hearing loop" value="yes" id="hearingloopshort" />
-            <label for="hearingloopshort">Hearing loop?
-            </label>
-          </span>
-          <span class="nowrap">
-            <input type="checkbox" name="islshort" value="yes: an ISL interpreter" id="islshort" />
-            <label for="islshort">ISL interpreter?
-            </label>
-          </span>
-          <!-- add on -->
-          <span class="nowrap">
-            <input type="checkbox" name="islshort" value="yes: an ISL interpreter" id="islshort" />
-            <label for="islshort">test
-            </label>
-          </span>
-          <!-- end -->
-          <span class="nowrap">
-            <input type="checkbox" name="quietspaceshort" value="yes: a designated quiet space" id="quietspaceshort" />
-            <label for="quietspaceshort">Designated quiet space?
-              <span title="At some events people provide a space that is designated as a quiet space where people can go if they need that. Examples where this is a good idea is where the event might be very emotional or triggering or where the main event is very loud and people might need a break for any number of reasons.">(?)
-              </span>
-            </label>
-          </span>
-          <!--<span class="nowrap"><input type="checkbox" name="parkingshort" value="yes: general car parking" id="parkingshort" /><label for="parkingshort">Parking nearby/onsite?</label></span>-->
-          <span class="nowrap">
-            <input type="checkbox" name="bluebadgeshort" value="yes: blue badge parking" id="bluebadgeshort" />
-            <label for="bluebadgeshort">Disabled Person's Parking
-            </label>
-          </span>
-          <span class="nowrap">
-            <input type="checkbox" name="subtitlesshort" value="yes: subtitles" id="subtitlesshort" />
-            <label for="subtitlesshort">Subtitles?
-            </label>
-          </span>
-          <span class="nowrap">
-            <input type="checkbox" name="ccshort" value="yes: closed captions" id="ccshort" />
-            <label for="ccshort">Including closed captions?
-              <span title="Closed captions are subtitles that for those with hearing impairments, decribing noises on the film in addition to what people are saying">(?)
-              </span>
-            </label>
-          </span>
-          <span class="nowrap">
-            <input type="checkbox" name="audiodescriptionshort" value="yes: audio description" id="audiodescriptionshort" />
-            <label for="audiodescriptionshort">Including audio description?
-              <span title="Audio description narrates what is happening on screen for people who are blind or visually impaired.">(?)
-              </span>
-            </label>
-          </span>
-          <span class="nowrap">
-            <input type="checkbox" name="englishaudioshort" value="yes: English audio" id="englishaudioshort" />
-            <label for="englishaudioshort">English language audio?
-            </label>
-          </span>
-        </div>
-        <h2>Further details and contacts
-        </h2>
-        <div>
-          <label>Any further comments?
-            <span title="Examples of things here might be that there is a ramp but in needs putting out and who to contact or that the ramp is a split or gutter ramp which is not suitable for powerchair users, another might be that printouts of the script are available on the door (for those with hearing impairments)">(?)
-              </label>
-            <div>
-              <textarea name="comment" id="comment" placeholder="">
-              </textarea>
-            </div>
-            </div>
-
-          <div>
-            <label>Please provide contact details for any access inquiries (if not included elsewhere):
-            </label> 
-            <input id="contact" name="contact" type="text">
-          </div>
-        </div>
-        <!-- END OF SHORT QUESTIONS -->
 
 
 
@@ -1058,12 +920,12 @@
             </div>
           </div>
           <!-- Back to top button -->
-          <div id="generate">
-            <button type="button" class="btn btn-dark mt-4 mb-4" aria-label="Back to Top" id="back-to-top">
+          <!--<div id="generate">
+            <button type="button" class="btn btn-dark mt-4 mb-4" aria-label="Back to Top">
               <a href="#top" title="Back to top" class="mt-5 text-decoration-none text-white" id="back-to-top"><i class="bi bi-arrow-up-square"></i>&nbsp;Back to Top
               </a>
             </button>
-          </div>
+          </div>-->
           <!-- ======== -->
         </div>
         <!--<button onClick="history.go(0);">Refresh Page</button>-->
@@ -1077,7 +939,7 @@
       <!-- Grid container -->
       <div class="container p-4 pb-0">
         <!-- Section: Links -->
-        <section class="">
+        <div class="">
           <!--Grid row-->
           <div class="row">
             <!-- Grid column -->
@@ -1130,10 +992,10 @@
             <!-- Grid column -->
           </div>
           <!--Grid row-->
-        </section>
+        </div>
         <!-- Section: Links -->
         <!-- Section: Copyright -->
-        <section class="p-3 pt-0">
+        <div class="p-3 pt-0">
           <div class="row d-flex align-items-center">
             <!-- Grid column -->
             <div class="col-md-6 col-lg-6 text-center text-md-start">
@@ -1144,10 +1006,10 @@
                 <p>
                   <a href="https://www.tcd.ie/diversity-inclusion/athena-swan/" rel="noopener noreferrer" target="_blank">
                     <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/athenaswan.png" alt="Athena Swan">
-                  </a>
+                  </a>&nbsp;
                   <a href="http://www.coimbra-group.eu/" rel="noopener noreferrer" target="_blank">
                     <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/tcd/content-assets/images/coimbragroupuniversities.png" alt="Coimbra Group Universities">
-                  </a>
+                  </a>&nbsp;
                   <a href="https://www.tcd.ie/about/leru/" rel="noopener noreferrer" target="_blank">
                     <img src="https://pxl-tcdie.terminalfour.net/fit-in/200x50/prod01/channel_3/media/tcd/content-assets/images/leru.png" alt="LERU">
                   </a>
@@ -1190,7 +1052,7 @@
             </div>
             <!-- Grid column -->
           </div>
-        </section>
+        </div>
         <!-- Section: Copyright -->
       </div>
       <!-- Grid container -->
@@ -1199,8 +1061,8 @@
     <!-- Footer -->
     <!-- </div> -->
     <!-- End of .container -->
-    </div>
-  </container>
+    <!--</div>-->
+  <!--</container>-->
 <!-- JS SCRIPTS HERE -->
 <!-- Restore any existing jQuery -->
 <script>
@@ -1261,8 +1123,20 @@
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   }
-                                          )
+)
 </script>
+
+<script>
+function myFunction() {
+ const event = ["ename", "online", "inperson", "elocation", "contactorg", 
+ "conemail",
+ "access","seperateaccess", "steps","facilities","film"];
+ event.sort();
+ document.getElementById("demo").innerHTML = event;
+}
+</script>
+
+
 <!-- ============ -->
 </body>
 </html>
