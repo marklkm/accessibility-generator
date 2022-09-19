@@ -23,7 +23,8 @@
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="css/docs.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
-    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" 
+    media="all" />
     <!-- scripts -->
     <!-- Stash any existing jQuery -->
     <script>
@@ -129,7 +130,7 @@
     </nav>
 
     <div class="mb-2 text-center">
-      <img src="img/jack-kavanagh-tcd.webp" alt="Jack Kavanagh on the front square in Trinity College Dublin in front of the Dining Hall." class="bg-image img-fluid" title="Jack Kavanagh in Trinity College Dublin">
+      <img src="img/jack-kavanagh-tcd.webp" alt="Jack Kavanagh on the front square in Trinity College Dublin in front of the Dining Hall." class="bg-image img-fluid" title="Jack Kavanagh in Trinity College Dublin" loading="lazy">
       <h1 class="display-3 fw-bold text-white text-header" style="background-color: #81358a;" id="#top">
         Trinity Accessibility Event Generator
       </h1>
@@ -144,14 +145,14 @@
         <div id="intro">
           <!-- Main text top of page -->
           <!-- into text content -->
-          <p style="margin-top:20px;">The Trinity Accessibility Event Generator is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible. It's necessary to create events that are universally designed – accessible to everyone. No event is truly accessible without the information to say that it is.
+          <p style="margin-top:20px;">The Trinity Accessibility Event Generator is designed to provide clear and concise access information for events. Having clear information is very important for an event to be as accessible and inclusive as possible, and ensuring that physical and digital spaces are accessible to everyone. It's necessary to create events that are universally designed – accessible to everyone. No event is truly accessible without the information to say that it is.
           </p>
           
           <!-- Alert for How to use the Trinity Event Generator -->
            <div class="alert alert-white text-black" role="alert">
             <h4 class="alert-heading">How to use the Trinity Accessibility Event Generator
             </h4>
-            Just fill in the information you have, click on the 'Generate Accessibility Statement' button and then the 'Select Accessibility Statement' button, and copy the text produced (which you can edit in place) to wherever you need it. You can click on the 'Download Accessibility Statement as a PDF' button after you click on the 'Generate Accessibility Statement' button to download or save the generated text as a PDF document.
+            Fill in the information you have for your event, click on the 'Generate Accessibility Statement' button and then the 'Select Accessibility Statement' button, and copy the text produced (which you can edit in place) to wherever you need it. You can click on the 'Download Accessibility Statement as a PDF' button after you click on the 'Generate Accessibility Statement' button to download or save the generated text as a PDF document.
           </div>
           
          <!-- text content for Disibility Service and Ability co_op --> 
@@ -214,7 +215,8 @@
                 <div class="clearfix"></div>
                 <!-- EVENT NAME -->
 
-                    <label class="form-label mt-4">Event Name</label>
+                    <label aria-label="Event Name" class="form-label mt-4">Event Name</label>
+
                     <div class="input-group w-50">
                   
                     <input type="text" class="form-control border border-dark" id="ename" name="ename" 
@@ -278,8 +280,9 @@
 
               <!-- EVENT LOCATION -->
 
-              <label class="form- mt-4" id="flex3">Event Location
+              <label aria-label="Event Location" class="form- mt-4" id="flex3">Event Location
               </label>
+
               <div class="input-group w-50">
                 <input aria-label="event location" type="text" class="form-control border border-dark" id="elocation" name="elocation">
               </div>
@@ -288,8 +291,9 @@
 
               <!-- EVENT ORGANISER NAME -->
 
-              <label class="form-label mt-4">Event Organiser Name
+              <label arial-label="Event Orgainser Name" class="form-label mt-4">Event Organiser Name
               </label>
+
               <div class="input-group w-50">
                 <input type="text" class="form-control border border-dark" id="contactorg" name="contactorg" placeholder="School/Dept/Club/Society/Org" aria-label="event organiser name">
               </div>
@@ -297,8 +301,9 @@
 
 
               <!-- EVENT ORGANISER EMAIL -->
-              <label class="form-label mt-4">Event Organiser Email
+              <label aria-label= "Event Organiser Email" class="form-label mt-4">Event Organiser Email
               </label>
+
               <div class="input-group w-50">
                 <input type="text" class="form-control border border-dark"   id="conemail" name="conemail" placeholder="Please provide a valid email" aria-label="event orgaiser email">
               </div>
@@ -538,7 +543,7 @@
               <!-- add on -->
               <tr id="social">
                 <td>
-                  <label data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event'.">
+                  <label aria-label="accessibility requirements" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" title="When publicising events ensure that there is a standard accessibility contact statement on all publicity, including print ads, web pages, and information flyers. An example of this statement is: 'Please indicate if you have any access requirements so that we may facilitate you in attending this event'.">
                     Does the event have a question about accessibility requirements of attendees?&nbsp;
                     <i class="bi bi-question-circle-fill">
                     </i>
@@ -795,7 +800,6 @@
           name="comment"></textarea>
             </div>
 
-
             <div>
               <label>Please provide contact details for any access enquiries (if not included elsewhere):
               </label>
@@ -888,7 +892,8 @@
               <div class="card-body">
                 <h4 class="card-title h4">Contact Trinity Ability co_op
                 </h4>
-                <img src="img/ability-co_op_qr.png" class="card-img-top" alt="Trinity Ability co_op QR code logo" style="width:25%;">
+                <img src="img/ability-co_op_qr.png" class="card-img-top" alt="Trinity Ability co_op QR code logo" 
+                style="width:25%;">
                   <p>Scan the QR code for more information&nbsp;<i class="bi bi-search"></i></p>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
@@ -1143,8 +1148,6 @@ function myFunction() {
  document.getElementById("demo").innerHTML = event;
 }
 </script>
-
-
 <!-- ============ -->
 </body>
 </html>
